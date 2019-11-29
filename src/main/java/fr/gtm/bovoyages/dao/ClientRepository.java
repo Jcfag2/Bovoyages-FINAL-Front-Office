@@ -18,7 +18,7 @@ public interface ClientRepository extends JpaRepository<Client, Long> {
 	String getValues(String nom);
 	
 	@Modifying
-	@Query(value = "INSERT INTO users (pk_client, nom, password, sha) VALUES (0, ?1, ?2, ?3)", nativeQuery = true)
+	@Query(value = "INSERT INTO clients (pk_client, nom, password, sha) VALUES (0, ?1, ?2, ?3)", nativeQuery = true)
 	@Transactional
 	void createUser( String nom, String pw, String sha);
 }

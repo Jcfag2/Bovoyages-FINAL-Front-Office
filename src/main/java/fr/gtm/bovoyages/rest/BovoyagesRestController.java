@@ -1,15 +1,18 @@
 package fr.gtm.bovoyages.rest;
 
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.gtm.bovoyages.dao.ClientRepository;
@@ -149,5 +152,30 @@ public class BovoyagesRestController {
 		
 
 		return dv;
+	}
+	
+	@PostMapping("/connexion")
+	public boolean connexion(@RequestParam("password") String password, Client client, Model model) throws NoSuchAlgorithmException {
+	String hash = fr.gtm.bovoyages.util.Digest.Sha256(password);
+	
+		model.addAttribute("client",client);
+		String nom = client.getNom();
+		Client bdd = clientRepo.getByNom(nom);
+		if(bdd != null) {
+			if(clientRepo.getValues(nom).equals(hash)) {
+				return true;
+			}else {
+				return false;
+			}
+			
+		}else {
+		return false;
+		}
+	}
+	
+	@PostMapping("/user/new")
+	public void createUser(String nom,String pw) throws NoSuchAlgorithmException {
+		String sha = fr.gtm.bovoyages.util.Digest.Sha256(pw);
+		clientRepo.createUser(nom, pw, sha);
 	}
 }
