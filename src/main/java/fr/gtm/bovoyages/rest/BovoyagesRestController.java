@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Optional;
 
+import javax.persistence.NoResultException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -141,7 +143,7 @@ public class BovoyagesRestController {
 
 		return dv;
 	}
-	
+
 	@GetMapping("/datesvoyages/{id}")
 	public DatesVoyages getdatesVoyages(@PathVariable("id") long id) {
 		DatesVoyages dv = dvRepo.getDatesVoyagesById(id);
@@ -149,33 +151,43 @@ public class BovoyagesRestController {
 		// recupération du nom de la destination.
 		idDest = dv.getFk_destination();
 		dv.setNmDestination(destRepo.findById(idDest).get().getRegion());
-		
 
 		return dv;
 	}
-	
+
 	@PostMapping("/connexion")
-	public boolean connexion(@RequestParam("password") String password, Client client, Model model) throws NoSuchAlgorithmException {
-	String hash = fr.gtm.bovoyages.util.Digest.Sha256(password);
-	
-		model.addAttribute("client",client);
+	public boolean connexion(@RequestParam("password") String password, Client client, Model model)
+			throws NoSuchAlgorithmException {
+		String hash = fr.gtm.bovoyages.util.Digest.Sha256(password);
+
+		model.addAttribute("client", client);
 		String nom = client.getNom();
 		Client bdd = clientRepo.getByNom(nom);
-		if(bdd != null) {
-			if(clientRepo.getValues(nom).equals(hash)) {
+		if (bdd != null) {
+			if (clientRepo.getValues(nom).equals(hash)) {
 				return true;
-			}else {
+			} else {
 				return false;
 			}
-			
-		}else {
-		return false;
+
+		} else {
+			return false;
 		}
 	}
-	
+
 	@PostMapping("/user/new")
-	public void createUser(String nom,String pw) throws NoSuchAlgorithmException {
+	public String createUser(String nom, String pw) throws NoSuchAlgorithmException {
 		String sha = fr.gtm.bovoyages.util.Digest.Sha256(pw);
-		clientRepo.createUser(nom, pw, sha);
+
+		try {
+			Client c = clientRepo.getByNom(nom);
+			c.getNom();
+		} catch (NullPointerException e) {
+			clientRepo.createUser(nom, pw, sha);
+			return "L'utilisateur a été créé";
+		}
+		return "Le nom d'utilisateur existe deja en base";
+
 	}
+
 }
