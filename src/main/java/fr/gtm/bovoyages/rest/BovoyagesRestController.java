@@ -186,7 +186,7 @@ public class BovoyagesRestController {
 			clientRepo.createUser(nom, pw, sha);
 			return "L'utilisateur a été créé";
 		}
-		return "Le nom d'utilisateur existe deja en base";
+		return "Le nom d'utilisateur existe déjà en base";
 
 	}
 
