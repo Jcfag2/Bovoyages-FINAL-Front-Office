@@ -9,5 +9,4 @@ import fr.gtm.bovoyages.entities.Destination;
 
 @Repository
 public interface DestinationRepository extends JpaRepository<Destination, Long> {
-	Destination findByRegion(String nom);
 }
