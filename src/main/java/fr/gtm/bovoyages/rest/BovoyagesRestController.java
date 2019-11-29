@@ -16,6 +16,7 @@ import fr.gtm.bovoyages.dao.ClientRepository;
 import fr.gtm.bovoyages.dao.DatesVoyagesRepository;
 import fr.gtm.bovoyages.dao.DestinationRepository;
 import fr.gtm.bovoyages.dao.VoyagesRepository;
+import fr.gtm.bovoyages.entities.Client;
 import fr.gtm.bovoyages.entities.DatesVoyages;
 import fr.gtm.bovoyages.entities.Destination;
 import fr.gtm.bovoyages.entities.Voyage;
@@ -78,6 +79,8 @@ public class BovoyagesRestController {
 			return null;
 		}
 		
+		//sauvegarde des dates de voyages
+		dvRepo.save(v.getDateVoyage());
 		//Création du voyage
 		voyageRepo.save(v);
 		//renvoi du voyage créé
@@ -100,11 +103,24 @@ public class BovoyagesRestController {
 		//màj du nombre de places
 		v.getDateVoyage().setNbPlaces(nbPlaces-nbVoyageurs);
 		
+		//sauvegarde des dates de voyages
+		dvRepo.save(v.getDateVoyage());
 		//Création du voyage
 		voyageRepo.save(v);
 		//renvoi du voyage créé
 		return v;
 	}
 
+	@PostMapping("/voyage/client/all")
+	public List<Voyage> getVoyagesClient(@RequestBody Client c) {
+		List<Voyage> v = voyageRepo.findByClient(c);
+		return v;
+	}
+	
+	@GetMapping("/voyage/{id}")
+	public Voyage getVoyageById(@PathVariable("id") long id) {
+		Voyage v = voyageRepo.findById(id).get();
+		return v;
+	}
 	
 }
