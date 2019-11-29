@@ -8,6 +8,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.gtm.bovoyages.dao.ClientRepository;
@@ -16,6 +18,7 @@ import fr.gtm.bovoyages.dao.DestinationRepository;
 import fr.gtm.bovoyages.dao.VoyagesRepository;
 import fr.gtm.bovoyages.entities.DatesVoyages;
 import fr.gtm.bovoyages.entities.Destination;
+import fr.gtm.bovoyages.entities.Voyage;
 
 @RestController
 public class BovoyagesRestController {
@@ -30,23 +33,28 @@ public class BovoyagesRestController {
 
 	@GetMapping("/destinations/uniques")
 	public List<DatesVoyages> getAllDestinationsMoinsCher() {
+		//Récupère les DatesVoyages en base triées par fk_destination et par prix croissant (voir Query dans le repository)
 		List<DatesVoyages> avecDoublons = dvRepo.getAllVoyagesOrdered();
+		//création d'une liste pour contenir les dates de voyage sans les doublons
 		List<DatesVoyages> sansDoublons = new ArrayList<DatesVoyages>();
+		
 		long fk = 0;
 		long id = 0;
 
+		//on met les dates de voyage au prix le plus faible pour chaque destination dans la nouvelle liste
 		for (DatesVoyages a : avecDoublons) {
 			if (a.getFk_destination() != fk) {
 				sansDoublons.add(a);
 				fk = a.getFk_destination();
 			}
 		}
-
+		//Pour chaque date de voyage dans la liste sans doublons, on récupère le nom de la région (pour affichage sur le site)
 		for (DatesVoyages sd : sansDoublons) {
 			id = sd.getFk_destination();
 			sd.setNmDestination(destRepo.findById(id).get().getRegion());
 		}
-
+		
+		//Renvoi de la liste sans doublon.
 		return sansDoublons;
 
 	}
@@ -57,6 +65,46 @@ public class BovoyagesRestController {
 		return destination;
 	}
 	
+	@PostMapping("/voyage/new")
+	public Voyage createVoyage(@RequestBody Voyage v) {
+		//récupération du nombre de places disponibles pour les dates de voyage choisie
+		long idDate = v.getDateVoyage().getId();
+		double nbPlaces = dvRepo.findById(idDate).get().getNbPlaces();
+		
+		int nbVoyageurs = v.getVoyageurs().size();
+		
+		//Vérification que le nb de places dispo est inférieur au nb de voyageurs
+		if(nbPlaces < nbVoyageurs) {
+			return null;
+		}
+		
+		//Création du voyage
+		voyageRepo.save(v);
+		//renvoi du voyage créé
+		return v;
+	}
+	
+	@PostMapping("/voyage/order")
+	public Voyage commanderVoyage(@RequestBody Voyage v) {
+		//récupération du nombre de places disponibles pour les dates de voyage choisie
+		long idDate = v.getDateVoyage().getId();
+		double nbPlaces = dvRepo.findById(idDate).get().getNbPlaces();
+		
+		int nbVoyageurs = v.getVoyageurs().size();
+		
+		//Vérification que le nb de places dispo est inférieur au nb de voyageurs
+		if(nbPlaces < nbVoyageurs) {
+			return null;
+		}
+		
+		//màj du nombre de places
+		v.getDateVoyage().setNbPlaces(nbPlaces-nbVoyageurs);
+		
+		//Création du voyage
+		voyageRepo.save(v);
+		//renvoi du voyage créé
+		return v;
+	}
 
 	
 }
