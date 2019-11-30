@@ -67,6 +67,13 @@ public class BovoyagesRestController {
 		for (DatesVoyages sd : sansDoublons) {
 			id = sd.getFk_destination();
 			sd.setNmDestination(destRepo.findById(id).get().getRegion());
+			try {
+			sd.setImageURL(destRepo.findById(id).get().getImages().get(0));
+			}catch (IndexOutOfBoundsException e) {
+			sd.setImageURL("default-image.png");
+			}{
+				
+			}
 		}
 
 		// Renvoi de la liste sans doublon.

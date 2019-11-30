@@ -57,6 +57,9 @@ public class DatesVoyages implements Serializable {
 	@Transient
 	private String nmDestination;
 	
+	@Transient
+	private String imageURL;
+	
 	
 	public DatesVoyages() {}
 
@@ -146,6 +149,14 @@ public class DatesVoyages implements Serializable {
 
 	public void setNmDestination(String nmDestination) {
 		this.nmDestination = nmDestination;
+	}
+
+	public String getImageURL() {
+		return imageURL;
+	}
+
+	public void setImageURL(String imageURL) {
+		this.imageURL = imageURL;
 	}
 	
 	
