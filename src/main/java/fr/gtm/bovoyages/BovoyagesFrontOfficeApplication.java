@@ -2,8 +2,11 @@ package fr.gtm.bovoyages;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -17,8 +20,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableAsync
 @EnableSwagger2
-public class BovoyagesFrontOfficeApplication {
+@Controller
+public class BovoyagesFrontOfficeApplication implements ErrorController{
 
+	private static final String PATH = "/error";
+	
 	public static void main(String[] args) {
 		SpringApplication.run(BovoyagesFrontOfficeApplication.class, args);
 	}
@@ -34,8 +40,17 @@ public class BovoyagesFrontOfficeApplication {
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
 				.title("REST API de bovoyages")
-				.contact(new Contact("Erwan", "http://bovoyages.net", "contact@bovoyages.net"))
+				.contact(new Contact("Contact", "http://bovoyages.net", "contact@bovoyages.net"))
 				.version("0.alpha")
 				.build();
+	}
+	
+	@RequestMapping(value=PATH)
+	public String error() { return "forward:/index.html"; }
+	
+	@Override
+	public String getErrorPath() {
+		return PATH;
+		
 	}
 }
