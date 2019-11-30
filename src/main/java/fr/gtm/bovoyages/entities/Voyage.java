@@ -30,41 +30,23 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * 
- * @author Voyage est un objet métier qui permet de décrire les entités 
- * manipulées par les acteurs dans le cadre de la description du métier.
- *
- */
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
+
+
 @Entity
 @Table(name = "voyages")
-@Access(AccessType.FIELD)
-@NamedQueries({ 
-	@NamedQuery(name = "Voyage.getById", query = "SELECT v FROM Voyage v WHERE v.id = :id"),
-	@NamedQuery(name = "Voyage.getAllVoyage", query = "SELECT v FROM Voyage v"), 
-	@NamedQuery(name = "Voyage.getAllVoyageurs", query = "SELECT v FROM Voyage v WHERE v.id = :id")
-})
 public class Voyage implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "pk_voyage")
-	@XmlElement
 	private long id;
-	@XmlElement
 	private String region;
-	@XmlElement
 	private String descriptif;
-	@XmlElement
 	@JoinColumn(name = "fk_client")
 	@ManyToOne(cascade=CascadeType.ALL,fetch=FetchType.EAGER)
 	private Client client;
-	@XmlElement
 	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER, orphanRemoval = true)
 	@JoinTable(name="voyages_voyageurs", joinColumns=@JoinColumn(name="fk_voyage"), inverseJoinColumns = @JoinColumn(name = "fk_voyageur"))
 	private List<Voyageur> voyageurs = new ArrayList<>();
-	@XmlElement
 	@JoinColumn(name="fk_dates_voyage")
 	@OneToOne
 	private DatesVoyages dateVoyage;
@@ -130,10 +112,7 @@ public class Voyage implements Serializable {
 		this.voyageurs = voyageurs;
 	}
 
-	/**
-	 * 
-	 * @return La methode getPrixTotalHT retourne le prix total HT pour la totalite des voyageurs
-	 */
+
 	public double getPrixTotalHT() {
 
 		double prixTotalHT = 0;
@@ -144,11 +123,7 @@ public class Voyage implements Serializable {
 		return prixTotalHT;
 	}
 	
-	/**
-	 * 
-	 * @param Prend en parametre le voyageur
-	 * @return la liste des voyageurs
-	 */
+
 	public List<Voyageur> addParticipants(Voyageur v) {
 		List<Voyageur> voyageurs = Arrays.asList(new Voyageur[9]);
 

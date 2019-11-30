@@ -18,17 +18,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Entity
 @Table(name = "clients")
 @Access(AccessType.FIELD)
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Client implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "pk_client")
-	@XmlElement
 	private long id;
-	@XmlElement
 	private String nom;
-	
 
 	public Client() {}
 	public Client(String nom, long id) {

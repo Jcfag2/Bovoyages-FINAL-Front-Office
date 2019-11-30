@@ -33,10 +33,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
 @Table(name = "destinations")
-@NamedQueries({ 
-	@NamedQuery(name = "Destination.byRegion", query = "SELECT d FROM Destination d WHERE d.region = :region"),
-	@NamedQuery(name = "Destination.getAll", query = "SELECT d FROM Destination d WHERE d.deleted = 0"),
-	@NamedQuery(name = "Destination.getDatesVoyagePromotion", query = "SELECT d FROM Destination d JOIN d.datesVoyages dv WHERE dv.promotion = 1")})
 public class Destination implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -22,33 +22,20 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * 
- * @author Voyageur est un objet métier qui permet de décrire les entités 
- * manipulées par les acteurs dans le cadre de la description du métier.
- *
- */
+
 @Entity
 @Table(name = "voyageurs")
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Voyageur implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "pk_voyageur")
-	@XmlElement
 	private long id;
-	@XmlElement
 	private String civilite;
-	@XmlElement
 	private String prenom;
-	@XmlElement
 	private String nom;
 	@Column(name = "date_naissance")
-	@XmlElement
 	private Date dateNaissance;
-	
-//	List<Voyage> voyages = new ArrayList<Voyage>();
+
 	public Voyageur() {}
 	public Voyageur(String civilite, String nom, String prenom, Date dateNaissance, long id) {
 		super();
