@@ -9,6 +9,9 @@ import java.util.Optional;
 import javax.persistence.NoResultException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,6 +28,7 @@ import fr.gtm.bovoyages.entities.Client;
 import fr.gtm.bovoyages.entities.DatesVoyages;
 import fr.gtm.bovoyages.entities.Destination;
 import fr.gtm.bovoyages.entities.Voyage;
+import fr.gtm.bovoyages.util.MailReceptor;
 
 @RestController
 public class BovoyagesRestController {
@@ -36,6 +40,8 @@ public class BovoyagesRestController {
 	DestinationRepository destRepo;
 	@Autowired
 	VoyagesRepository voyageRepo;
+	@Autowired
+	private JavaMailSender mailSender;
 
 	@GetMapping("/destinations/uniques")
 	public List<DatesVoyages> getAllDestinationsMoinsCher() {
@@ -187,6 +193,19 @@ public class BovoyagesRestController {
 			return "L'utilisateur a été créé";
 		}
 		return "Le nom d'utilisateur existe déjà en base";
+
+	}
+	
+	@PostMapping("/mail/send")
+	@Async
+	public void testMail(@RequestBody MailReceptor r) {
+		SimpleMailMessage mail = new SimpleMailMessage();
+		mail.setTo(r.getEmail());
+		mail.setFrom("NePasRepondre@bovoyages.net");
+		mail.setSubject("Merci pour votre commande");
+		mail.setText("Très cher " + r.getPrenom()
+				+ ",\n\nNous vous remercions chaleureusement pour votre commande.\nProfitez bien de votre séjour et à bientôt sur BoVoyages\n\nBovoyages.net");
+		mailSender.send(mail);
 
 	}
 
