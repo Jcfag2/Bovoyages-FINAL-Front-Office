@@ -178,12 +178,15 @@ public class BovoyagesRestController {
 		Client bdd = clientRepo.getByNom(nom);
 		if (bdd != null) {
 			if (clientRepo.getValues(nom).equals(hash)) {
+				System.out.println("connexion accepté");
 				return true;
 			} else {
+				System.out.println("connexion refusée");
 				return false;
 			}
 
 		} else {
+			System.out.println("connexion refusée");
 			return false;
 		}
 	}

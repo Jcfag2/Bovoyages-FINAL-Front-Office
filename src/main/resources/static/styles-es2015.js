@@ -376,8 +376,8 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Adminl\Documents\jc\Bovoyages-FINAL-master\src\styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! C:\Users\Adminl\Documents\jc\Bovoyages-FINAL-master\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! C:\Users\Adminl\Documents\jc\Bovoyages-FINAL\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Adminl\Documents\jc\Bovoyages-FINAL\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 
 /***/ })
