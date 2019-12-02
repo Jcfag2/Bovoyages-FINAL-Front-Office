@@ -143,6 +143,12 @@ public class BovoyagesRestController {
 		Voyage v = voyageRepo.findById(id).get();
 		return v;
 	}
+	
+	@GetMapping("/client/{nom}")
+	public Client getClientByNom(@PathVariable("nom") String nom) {
+		Client c = clientRepo.getByNom(nom);
+		return c;
+	}
 
 	@GetMapping("/promotion")
 	public List<DatesVoyages> getPromotion() {
