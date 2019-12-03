@@ -198,17 +198,19 @@ public class BovoyagesRestController {
 	}
 
 	@PostMapping("/user/new")
-	public String createUser(String nom, String pw) throws NoSuchAlgorithmException {
-		String sha = fr.gtm.bovoyages.util.Digest.Sha256(pw);
+	public boolean createUser(String nom,String password) throws NoSuchAlgorithmException {
+		String sha = fr.gtm.bovoyages.util.Digest.Sha256(password);
 
 		try {
 			Client c = clientRepo.getByNom(nom);
 			c.getNom();
 		} catch (NullPointerException e) {
-			clientRepo.createUser(nom, pw, sha);
-			return "L'utilisateur a été créé";
+			clientRepo.createUser(nom, password, sha);
+			System.out.println("L'utilisateur a été créé");
+			return true; 
 		}
-		return "Le nom d'utilisateur existe déjà en base";
+		System.out.println("Le nom d'utilisateur existe déjà en base");
+		return false;
 
 	}
 	

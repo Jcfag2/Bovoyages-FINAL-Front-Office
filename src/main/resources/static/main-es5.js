@@ -97,6 +97,17 @@
             /* harmony default export */ __webpack_exports__["default"] = ("<br><br><br>\r\n<div class=\"login-form\">\r\n    <form #f=\"ngForm\" (ngSubmit)=\"login(f)\">\r\n        <div class=\"avatar\">\r\n            <img [src]=\"'assets/avatar.png'\" alt=\"avatar\" />\r\n        </div>\r\n        <h2 class=\"text-center\">Login</h2>\r\n        <div class=\"form-group\">\r\n            <input type=\"text\" class=\"form-control\" name=\"nom\" ngModel placeholder=\"Nom\"\r\n                #nom=\"ngModel\" required minlength=\"3\">\r\n            <div *ngIf=\"nom.invalid && (nom.touched || nom.dirty)\">\r\n                <p *ngIf=\"nom.errors.required\" class=\"text-center invalid\">\r\n                Username is required\r\n                </p>\r\n                <p *ngIf=\"nom.errors.minlength\" class=\"text-center invalid\">\r\n                    min length is 3\r\n                </p>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <input type=\"password\" class=\"form-control\" name=\"password\" ngModel placeholder=\"Password\" required>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"submit\" class=\"btn btn-primary btn-lg btn-block\">Sign in</button>\r\n        </div>\r\n        <p *ngIf=\"error\">{{error}}</p>\r\n        <div class=\"clearfix text-center\">\r\n            <a [routerLink]=\"['/signup']\">Créer un compte</a>\r\n        </div>\r\n    </form>\r\n</div>");
             /***/ 
         }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/signup/signup.component.html": 
+        /*!*************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/signup/signup.component.html ***!
+          \*************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<br><br><br><br>\n<div class=\"centrer\"><h2>Création d'un compte utilisateur:</h2></div>\n<br>\n<div class=\"container form-group\">\n    <form #userForm=\"ngForm\" (ngSubmit)=\"onFormSubmit(userForm)\">\n        <label>Nom d'utilisateur:</label>\n        <input type=\"text\" ngModel name=\"nom\" id =\"nom\" class=\"form-control\">\n        <label>Mot de passe:</label>\n        <input type=\"password\" ngModel name=\"password\" id =\"password\" class=\"form-control\">\n        <label>Retapez votre mot de passe:</label>\n        <input type=\"password\" id =\"password2\" class=\"form-control\">\n        <br>\n        <button class=\"btn btn-primary\" type=\"submit\">Créer le compte</button>\n    </form>\n</div>\n<br><br><br>");
+            /***/ 
+        }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyage-creation/voyage-creation.component.html": 
         /*!*******************************************************************************************************************!*\
           !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyage-creation/voyage-creation.component.html ***!
@@ -448,6 +459,7 @@
             /* harmony import */ var _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./voyage/pages/voyage-creation/voyage-creation.component */ "./src/app/voyage/pages/voyage-creation/voyage-creation.component.ts");
             /* harmony import */ var _auth_guard_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth-guard.service */ "./src/app/auth-guard.service.ts");
             /* harmony import */ var _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./voyage/pages/login/login.component */ "./src/app/voyage/pages/login/login.component.ts");
+            /* harmony import */ var _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./voyage/pages/signup/signup.component */ "./src/app/voyage/pages/signup/signup.component.ts");
             var routes = [
                 {
                     path: 'login', component: _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"]
@@ -463,6 +475,9 @@
                 },
                 {
                     path: 'voyage-creation/:id', component: _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_6__["VoyageCreationComponent"], canActivate: [_auth_guard_service__WEBPACK_IMPORTED_MODULE_7__["AuthGuardService"]]
+                },
+                {
+                    path: 'signup', component: _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_9__["SignupComponent"],
                 },
                 {
                     path: '**', redirectTo: 'home' //ou 'page-not-found'
@@ -547,6 +562,7 @@
             /* harmony import */ var ng2_validation__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng2-validation */ "./node_modules/ng2-validation/dist/index.js");
             /* harmony import */ var ng2_validation__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/ __webpack_require__.n(ng2_validation__WEBPACK_IMPORTED_MODULE_17__);
             /* harmony import */ var _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./voyage/pages/login/login.component */ "./src/app/voyage/pages/login/login.component.ts");
+            /* harmony import */ var _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./voyage/pages/signup/signup.component */ "./src/app/voyage/pages/signup/signup.component.ts");
             // import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
             // import { InMemoryDataServiceService } from 'src/app/in-memory-data-service.service';
             var AppModule = /** @class */ (function () {
@@ -568,6 +584,7 @@
                         _voyage_components_destination_details_destination_details_component__WEBPACK_IMPORTED_MODULE_13__["DestinationDetailsComponent"],
                         _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_16__["VoyageCreationComponent"],
                         _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_18__["LoginComponent"],
+                        _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_19__["SignupComponent"],
                     ],
                     imports: [
                         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1124,6 +1141,51 @@
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./login.component.css */ "./src/app/voyage/pages/login/login.component.css")).default]
                 })
             ], LoginComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/voyage/pages/signup/signup.component.css": 
+        /*!**********************************************************!*\
+          !*** ./src/app/voyage/pages/signup/signup.component.css ***!
+          \**********************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = (".centrer {\r\n    text-align: center;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL3BhZ2VzL3NpZ251cC9zaWdudXAuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQjtFQUNwQiIsImZpbGUiOiJzcmMvYXBwL3ZveWFnZS9wYWdlcy9zaWdudXAvc2lnbnVwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2VudHJlciB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfSJdfQ== */");
+            /***/ 
+        }),
+        /***/ "./src/app/voyage/pages/signup/signup.component.ts": 
+        /*!*********************************************************!*\
+          !*** ./src/app/voyage/pages/signup/signup.component.ts ***!
+          \*********************************************************/
+        /*! exports provided: SignupComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function () { return SignupComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var SignupComponent = /** @class */ (function () {
+                function SignupComponent() {
+                }
+                SignupComponent.prototype.ngOnInit = function () {
+                };
+                SignupComponent.prototype.onFormSubmit = function (userForm) {
+                    console.log(userForm);
+                    console.log(userForm.value);
+                };
+                SignupComponent.prototype.resetUserForm = function (userForm) {
+                    userForm.resetForm();
+                };
+                return SignupComponent;
+            }());
+            SignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-signup',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./signup.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/signup/signup.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./signup.component.css */ "./src/app/voyage/pages/signup/signup.component.css")).default]
+                })
+            ], SignupComponent);
             /***/ 
         }),
         /***/ "./src/app/voyage/pages/voyage-creation/voyage-creation.component.css": 
