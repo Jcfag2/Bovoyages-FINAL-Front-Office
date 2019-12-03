@@ -93,6 +93,9 @@ public class BovoyagesRestController {
 		long idDate = v.getDateVoyage().getId();
 		double nbPlaces = dvRepo.findById(idDate).get().getNbPlaces();
 		v.setDateVoyage(dvRepo.findById(idDate).get());
+//		
+		Optional<Client> clientRecupereParId = clientRepo.findById(v.getClient().getId());
+		if(clientRecupereParId.isPresent()) v.setClient(clientRecupereParId.get());
 		int nbVoyageurs = v.getVoyageurs().size();
 
 		// Vérification que le nb de places dispo est inférieur au nb de voyageurs
