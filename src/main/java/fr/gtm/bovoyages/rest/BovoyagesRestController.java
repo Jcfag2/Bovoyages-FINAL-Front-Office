@@ -215,7 +215,7 @@ public class BovoyagesRestController {
 		System.out.println("Le nom d'utilisateur existe déjà en base");
 		return false;
 
-	}
+	} //
 	
 	@PostMapping("/mail/send")
 	@Async
