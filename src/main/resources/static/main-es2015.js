@@ -110,20 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div class=\"container\">\r\n    <form class=\"form-inline\">\r\n        <label for=\"email\" class=\"mr-sm-2\">Nom d'utilisateur : </label>\r\n        <input type=\"text\" class=\"form-control mb-2 mr-sm-2\" id=\"text\">\r\n        <label for=\"pwd\" class=\"mr-sm-2\">Password : </label>\r\n        <input type=\"password\" class=\"form-control mb-2 mr-sm-2\" id=\"pwd\">\r\n        <div class=\"form-check mb-2 mr-sm-2\">\r\n            <label class=\"form-check-label\">\r\n                <input class=\"form-check-input\" type=\"checkbox\"> Remember me\r\n            </label>\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-primary mb-2\" (click)=\"onLogIn()\" *ngIf=\"!isAuth\">Submit</button>\r\n    </form>\r\n</div> -->\r\n<div class=\"login-form\">\r\n    <form #f=\"ngForm\" (ngSubmit)=\"login(f)\">\r\n        <div class=\"avatar\">\r\n            <img [src]=\"'assets/avatar.png'\" alt=\"avatar\" />\r\n        </div>\r\n        <h2 class=\"text-center\">Login</h2>\r\n        <div class=\"form-group\">\r\n            <input type=\"text\" class=\"form-control\" name=\"nom\" ngModel placeholder=\"Nom\"\r\n                #nom=\"ngModel\" required minlength=\"3\">\r\n            <div *ngIf=\"nom.invalid && (nom.touched || nom.dirty)\">\r\n                <p *ngIf=\"nom.errors.required\" class=\"text-center invalid\">\r\n                Username is required\r\n                </p>\r\n                <p *ngIf=\"nom.errors.minlength\" class=\"text-center invalid\">\r\n                    min length is 3\r\n                </p>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <input type=\"password\" class=\"form-control\" name=\"password\" ngModel placeholder=\"Password\" required>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"submit\" class=\"btn btn-primary btn-lg btn-block\">Sign in</button>\r\n        </div>\r\n        <p *ngIf=\"error\">{{error}}</p>\r\n        <div class=\"clearfix text-center\">\r\n            <label class=\"pull-left checkbox-inline\"><input type=\"checkbox\"> Remember me</label>\r\n        </div>\r\n    </form>\r\n</div>");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.html":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.html ***!
-  \*********************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<br><br><br>\n<div>\n    <div class=\"table-wrapper\">\n        <div class=\"table-title\">\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <h2><b>Vos voyages :</b></h2>\n                </div>\n            </div>\n        </div>\n        <table class=\"table table-striped table-hover\">\n            <thead>\n                <tr>\n                    <th>#</th>\n                    <th>Dates Aller</th>\n                    <th>Dates Retour</th>\n                    <th>Prix HT</th>\n                    <th>Promotion</th>\n                    <th>Modifier</th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr data-status=\"active\" *ngFor=\"let v of voyages; let i = index;\">\n                    <td>{{i+1}}</td>\n                    <td>Du {{v?.dateVoyage.dateAller | date: 'dd/MM/yyyy'}}</td>\n                    <td>Au {{v?.dateVoyage.dateRetour | date: 'dd/MM/yyyy'}}</td>\n                    <td>{{v?.dateVoyage.tarifUnitaireHT}} €</td>\n                    <td>{{v?.dateVoyage.promotion}}</td>\n                    <td><a [routerLink]=\"['/#']\" class=\"btn btn-sm manage\">modifier ce voyage</a></td>\n                    <!-- <td><a [routerLink]=\"['/voyage-modif', v?.id]\" class=\"btn btn-sm manage\">modifier ce voyage</a></td> -->\n                </tr>\n\n            </tbody>\n        </table>\n    </div>\n\n</div>\n<p>{{voyages}}</p>");
+/* harmony default export */ __webpack_exports__["default"] = ("<br><br><br>\r\n<div class=\"login-form\">\r\n    <form #f=\"ngForm\" (ngSubmit)=\"login(f)\">\r\n        <div class=\"avatar\">\r\n            <img [src]=\"'assets/avatar.png'\" alt=\"avatar\" />\r\n        </div>\r\n        <h2 class=\"text-center\">Login</h2>\r\n        <div class=\"form-group\">\r\n            <input type=\"text\" class=\"form-control\" name=\"nom\" ngModel placeholder=\"Nom\"\r\n                #nom=\"ngModel\" required minlength=\"3\">\r\n            <div *ngIf=\"nom.invalid && (nom.touched || nom.dirty)\">\r\n                <p *ngIf=\"nom.errors.required\" class=\"text-center invalid\">\r\n                Username is required\r\n                </p>\r\n                <p *ngIf=\"nom.errors.minlength\" class=\"text-center invalid\">\r\n                    min length is 3\r\n                </p>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <input type=\"password\" class=\"form-control\" name=\"password\" ngModel placeholder=\"Password\" required>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"submit\" class=\"btn btn-primary btn-lg btn-block\">Sign in</button>\r\n        </div>\r\n        <p *ngIf=\"error\">{{error}}</p>\r\n        <div class=\"clearfix text-center\">\r\n            <a [routerLink]=\"['/signup']\">Créer un compte</a>\r\n        </div>\r\n    </form>\r\n</div>");
 
 /***/ }),
 
@@ -414,8 +401,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./voyage/pages/voyage-creation/voyage-creation.component */ "./src/app/voyage/pages/voyage-creation/voyage-creation.component.ts");
 /* harmony import */ var _auth_guard_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth-guard.service */ "./src/app/auth-guard.service.ts");
 /* harmony import */ var _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./voyage/pages/login/login.component */ "./src/app/voyage/pages/login/login.component.ts");
-/* harmony import */ var _voyage_pages_voyage_commandes_voyage_commandes_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./voyage/pages/voyage-commandes/voyage-commandes.component */ "./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.ts");
-
 
 
 
@@ -440,9 +425,6 @@ const routes = [
     },
     {
         path: 'voyage-creation/:id', component: _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_6__["VoyageCreationComponent"], canActivate: [_auth_guard_service__WEBPACK_IMPORTED_MODULE_7__["AuthGuardService"]]
-    },
-    {
-        path: 'commandes', component: _voyage_pages_voyage_commandes_voyage_commandes_component__WEBPACK_IMPORTED_MODULE_9__["VoyageCommandesComponent"], canActivate: [_auth_guard_service__WEBPACK_IMPORTED_MODULE_7__["AuthGuardService"]]
     },
     {
         path: '**', redirectTo: 'home' //ou 'page-not-found'
@@ -535,8 +517,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng2_validation__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng2-validation */ "./node_modules/ng2-validation/dist/index.js");
 /* harmony import */ var ng2_validation__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(ng2_validation__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./voyage/pages/login/login.component */ "./src/app/voyage/pages/login/login.component.ts");
-/* harmony import */ var _voyage_pages_voyage_commandes_voyage_commandes_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./voyage/pages/voyage-commandes/voyage-commandes.component */ "./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.ts");
-
 
 
 
@@ -574,7 +554,6 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _voyage_components_destination_details_destination_details_component__WEBPACK_IMPORTED_MODULE_13__["DestinationDetailsComponent"],
             _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_16__["VoyageCreationComponent"],
             _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_18__["LoginComponent"],
-            _voyage_pages_voyage_commandes_voyage_commandes_component__WEBPACK_IMPORTED_MODULE_19__["VoyageCommandesComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1206,60 +1185,6 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.css":
-/*!******************************************************************************!*\
-  !*** ./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.css ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("  /**************** Tableau  *******************/\r\n  .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {\r\n    border-top-right-radius: 0;\r\n    border-bottom-right-radius: 0;\r\n}\r\n  .btn-group>.btn:first-child {\r\n  margin-left: 0;\r\n}\r\n  .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {\r\n  border-radius: 0;\r\n}\r\n  .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {\r\n  margin-left: -1px;\r\n}\r\n  .btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child) {\r\n  border-top-left-radius: 0;\r\n  border-bottom-left-radius: 0;\r\n}\r\n  [data-toggle=buttons]>.btn input[type=checkbox], [data-toggle=buttons]>.btn input[type=radio], [data-toggle=buttons]>.btn-group>.btn input[type=checkbox], [data-toggle=buttons]>.btn-group>.btn input[type=radio] {\r\n  position: absolute;\r\n  clip: rect(0,0,0,0);\r\n  pointer-events: none;\r\n}\r\n  input[type=checkbox], input[type=radio] {\r\n  margin: 4px 0 0;\r\n  margin-top: 1px\\9;\r\n  line-height: normal;\r\n}\r\n  .table-wrapper {\r\n    width: 850px;\r\n    background: #fff;\r\n    padding: 20px 30px 5px;\r\n    margin: 30px auto;\r\n    box-shadow: 0 0 1px 0 rgba(0,0,0,.25);\r\n}\r\n  .table-title .btn-group {\r\nfloat: right;\r\n}\r\n  .table-title .btn {\r\nmin-width: 50px;\r\nborder-radius: 2px;\r\nborder: none;\r\npadding: 6px 12px;\r\nfont-size: 95%;\r\noutline: none !important;\r\nheight: 30px;\r\n}\r\n  .table-title {\r\nborder-bottom: 1px solid #e9e9e9;\r\npadding-bottom: 15px;\r\nmargin-bottom: 5px;\r\nbackground: rgb(0, 50, 74);\r\nmargin: -20px -31px 10px;\r\npadding: 15px 30px;\r\ncolor: #fff;\r\n}\r\n  .table-title h2 {\r\nmargin: 2px 0 0;\r\nfont-size: 24px;\r\n}\r\n  table.table tr th, table.table tr td {\r\n    border-color: #e9e9e9;\r\npadding: 12px 15px;\r\nvertical-align: middle;\r\n}\r\n  table.table tr th:first-child {\r\nwidth: 40px;\r\n}\r\n  table.table tr th:last-child {\r\nwidth: 100px;\r\n}\r\n  table.table-striped tbody tr:nth-of-type(odd) {\r\n  background-color: #fcfcfc;\r\n}\r\n  table.table-striped.table-hover tbody tr:hover {\r\nbackground: #f5f5f5;\r\n}\r\n  table.table td a {\r\n    color: #2196f3;\r\n}\r\n  table.table td .btn.manage {\r\npadding: 2px 10px;\r\nbackground: #37BC9B;\r\ncolor: #fff;\r\nborder-radius: 2px;\r\n}\r\n  table.table td .btn.manage:hover {\r\nbackground: #2e9c81;\t\t\r\n}\r\n  .label {\r\n  display: inline;\r\n  padding: .2em .6em .3em;\r\n  font-size: 75%;\r\n  font-weight: 700;\r\n  line-height: 1;\r\n  color: #fff;\r\n  text-align: center;\r\n  white-space: nowrap;\r\n  vertical-align: baseline;\r\n  border-radius: .25em;\r\n}\r\n  .label-success {\r\n  background-color: #5cb85c;\r\n}\r\n  .label-danger {\r\n  background-color: #d9534f;\r\n}\r\n  .label-warning {\r\n  background-color: #f0ad4e;\r\n}\r\n  /**************  *************************************/\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL3BhZ2VzL3ZveWFnZS1jb21tYW5kZXMvdm95YWdlLWNvbW1hbmRlcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJFQUFFLDhDQUE4QztFQUM5QztJQUNFLDBCQUEwQjtJQUMxQiw2QkFBNkI7QUFDakM7RUFDQTtFQUNFLGNBQWM7QUFDaEI7RUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtFQUNBO0VBQ0UsaUJBQWlCO0FBQ25CO0VBQ0E7RUFDRSx5QkFBeUI7RUFDekIsNEJBQTRCO0FBQzlCO0VBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLG9CQUFvQjtBQUN0QjtFQUNBO0VBQ0UsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixtQkFBbUI7QUFDckI7RUFFQTtJQUNJLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsc0JBQXNCO0lBQ3RCLGlCQUFpQjtJQUNqQixxQ0FBcUM7QUFDekM7RUFDQTtBQUNBLFlBQVk7QUFDWjtFQUNBO0FBQ0EsZUFBZTtBQUNmLGtCQUFrQjtBQUNsQixZQUFZO0FBQ1osaUJBQWlCO0FBQ2pCLGNBQWM7QUFDZCx3QkFBd0I7QUFDeEIsWUFBWTtBQUNaO0VBQ0E7QUFDQSxnQ0FBZ0M7QUFDaEMsb0JBQW9CO0FBQ3BCLGtCQUFrQjtBQUNsQiwwQkFBMEI7QUFDMUIsd0JBQXdCO0FBQ3hCLGtCQUFrQjtBQUNsQixXQUFXO0FBQ1g7RUFDQTtBQUNBLGVBQWU7QUFDZixlQUFlO0FBQ2Y7RUFDQTtJQUNJLHFCQUFxQjtBQUN6QixrQkFBa0I7QUFDbEIsc0JBQXNCO0FBQ3RCO0VBQ0E7QUFDQSxXQUFXO0FBQ1g7RUFDQTtBQUNBLFlBQVk7QUFDWjtFQUNBO0VBQ0UseUJBQXlCO0FBQzNCO0VBQ0E7QUFDQSxtQkFBbUI7QUFDbkI7RUFDQTtJQUNJLGNBQWM7QUFDbEI7RUFDQTtBQUNBLGlCQUFpQjtBQUNqQixtQkFBbUI7QUFDbkIsV0FBVztBQUNYLGtCQUFrQjtBQUNsQjtFQUNBO0FBQ0EsbUJBQW1CO0FBQ25CO0VBQ0E7RUFDRSxlQUFlO0VBQ2YsdUJBQXVCO0VBQ3ZCLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsY0FBYztFQUNkLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLHdCQUF3QjtFQUN4QixvQkFBb0I7QUFDdEI7RUFFQTtFQUNFLHlCQUF5QjtBQUMzQjtFQUNBO0VBQ0UseUJBQXlCO0FBQzNCO0VBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7RUFDQSxzREFBc0QiLCJmaWxlIjoic3JjL2FwcC92b3lhZ2UvcGFnZXMvdm95YWdlLWNvbW1hbmRlcy92b3lhZ2UtY29tbWFuZGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIgIC8qKioqKioqKioqKioqKioqIFRhYmxlYXUgICoqKioqKioqKioqKioqKioqKiovXHJcbiAgLmJ0bi1ncm91cD4uYnRuOmZpcnN0LWNoaWxkOm5vdCg6bGFzdC1jaGlsZCk6bm90KC5kcm9wZG93bi10b2dnbGUpIHtcclxuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAwO1xyXG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDA7XHJcbn1cclxuLmJ0bi1ncm91cD4uYnRuOmZpcnN0LWNoaWxkIHtcclxuICBtYXJnaW4tbGVmdDogMDtcclxufVxyXG4uYnRuLWdyb3VwPi5idG46bm90KDpmaXJzdC1jaGlsZCk6bm90KDpsYXN0LWNoaWxkKTpub3QoLmRyb3Bkb3duLXRvZ2dsZSkge1xyXG4gIGJvcmRlci1yYWRpdXM6IDA7XHJcbn1cclxuLmJ0bi1ncm91cCAuYnRuKy5idG4sIC5idG4tZ3JvdXAgLmJ0bisuYnRuLWdyb3VwLCAuYnRuLWdyb3VwIC5idG4tZ3JvdXArLmJ0biwgLmJ0bi1ncm91cCAuYnRuLWdyb3VwKy5idG4tZ3JvdXAge1xyXG4gIG1hcmdpbi1sZWZ0OiAtMXB4O1xyXG59XHJcbi5idG4tZ3JvdXA+LmJ0bjpsYXN0LWNoaWxkOm5vdCg6Zmlyc3QtY2hpbGQpLCAuYnRuLWdyb3VwPi5kcm9wZG93bi10b2dnbGU6bm90KDpmaXJzdC1jaGlsZCkge1xyXG4gIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDA7XHJcbiAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMDtcclxufVxyXG5bZGF0YS10b2dnbGU9YnV0dG9uc10+LmJ0biBpbnB1dFt0eXBlPWNoZWNrYm94XSwgW2RhdGEtdG9nZ2xlPWJ1dHRvbnNdPi5idG4gaW5wdXRbdHlwZT1yYWRpb10sIFtkYXRhLXRvZ2dsZT1idXR0b25zXT4uYnRuLWdyb3VwPi5idG4gaW5wdXRbdHlwZT1jaGVja2JveF0sIFtkYXRhLXRvZ2dsZT1idXR0b25zXT4uYnRuLWdyb3VwPi5idG4gaW5wdXRbdHlwZT1yYWRpb10ge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBjbGlwOiByZWN0KDAsMCwwLDApO1xyXG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xyXG59XHJcbmlucHV0W3R5cGU9Y2hlY2tib3hdLCBpbnB1dFt0eXBlPXJhZGlvXSB7XHJcbiAgbWFyZ2luOiA0cHggMCAwO1xyXG4gIG1hcmdpbi10b3A6IDFweFxcOTtcclxuICBsaW5lLWhlaWdodDogbm9ybWFsO1xyXG59XHJcblxyXG4udGFibGUtd3JhcHBlciB7XHJcbiAgICB3aWR0aDogODUwcHg7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZmO1xyXG4gICAgcGFkZGluZzogMjBweCAzMHB4IDVweDtcclxuICAgIG1hcmdpbjogMzBweCBhdXRvO1xyXG4gICAgYm94LXNoYWRvdzogMCAwIDFweCAwIHJnYmEoMCwwLDAsLjI1KTtcclxufVxyXG4udGFibGUtdGl0bGUgLmJ0bi1ncm91cCB7XHJcbmZsb2F0OiByaWdodDtcclxufVxyXG4udGFibGUtdGl0bGUgLmJ0biB7XHJcbm1pbi13aWR0aDogNTBweDtcclxuYm9yZGVyLXJhZGl1czogMnB4O1xyXG5ib3JkZXI6IG5vbmU7XHJcbnBhZGRpbmc6IDZweCAxMnB4O1xyXG5mb250LXNpemU6IDk1JTtcclxub3V0bGluZTogbm9uZSAhaW1wb3J0YW50O1xyXG5oZWlnaHQ6IDMwcHg7XHJcbn1cclxuLnRhYmxlLXRpdGxlIHtcclxuYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlOWU5ZTk7XHJcbnBhZGRpbmctYm90dG9tOiAxNXB4O1xyXG5tYXJnaW4tYm90dG9tOiA1cHg7XHJcbmJhY2tncm91bmQ6IHJnYigwLCA1MCwgNzQpO1xyXG5tYXJnaW46IC0yMHB4IC0zMXB4IDEwcHg7XHJcbnBhZGRpbmc6IDE1cHggMzBweDtcclxuY29sb3I6ICNmZmY7XHJcbn1cclxuLnRhYmxlLXRpdGxlIGgyIHtcclxubWFyZ2luOiAycHggMCAwO1xyXG5mb250LXNpemU6IDI0cHg7XHJcbn1cclxudGFibGUudGFibGUgdHIgdGgsIHRhYmxlLnRhYmxlIHRyIHRkIHtcclxuICAgIGJvcmRlci1jb2xvcjogI2U5ZTllOTtcclxucGFkZGluZzogMTJweCAxNXB4O1xyXG52ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG59XHJcbnRhYmxlLnRhYmxlIHRyIHRoOmZpcnN0LWNoaWxkIHtcclxud2lkdGg6IDQwcHg7XHJcbn1cclxudGFibGUudGFibGUgdHIgdGg6bGFzdC1jaGlsZCB7XHJcbndpZHRoOiAxMDBweDtcclxufVxyXG50YWJsZS50YWJsZS1zdHJpcGVkIHRib2R5IHRyOm50aC1vZi10eXBlKG9kZCkge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmY2ZjZmM7XHJcbn1cclxudGFibGUudGFibGUtc3RyaXBlZC50YWJsZS1ob3ZlciB0Ym9keSB0cjpob3ZlciB7XHJcbmJhY2tncm91bmQ6ICNmNWY1ZjU7XHJcbn1cclxudGFibGUudGFibGUgdGQgYSB7XHJcbiAgICBjb2xvcjogIzIxOTZmMztcclxufVxyXG50YWJsZS50YWJsZSB0ZCAuYnRuLm1hbmFnZSB7XHJcbnBhZGRpbmc6IDJweCAxMHB4O1xyXG5iYWNrZ3JvdW5kOiAjMzdCQzlCO1xyXG5jb2xvcjogI2ZmZjtcclxuYm9yZGVyLXJhZGl1czogMnB4O1xyXG59XHJcbnRhYmxlLnRhYmxlIHRkIC5idG4ubWFuYWdlOmhvdmVyIHtcclxuYmFja2dyb3VuZDogIzJlOWM4MTtcdFx0XHJcbn1cclxuLmxhYmVsIHtcclxuICBkaXNwbGF5OiBpbmxpbmU7XHJcbiAgcGFkZGluZzogLjJlbSAuNmVtIC4zZW07XHJcbiAgZm9udC1zaXplOiA3NSU7XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICBsaW5lLWhlaWdodDogMTtcclxuICBjb2xvcjogI2ZmZjtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7XHJcbiAgYm9yZGVyLXJhZGl1czogLjI1ZW07XHJcbn1cclxuXHJcbi5sYWJlbC1zdWNjZXNzIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNWNiODVjO1xyXG59XHJcbi5sYWJlbC1kYW5nZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNkOTUzNGY7XHJcbn1cclxuLmxhYmVsLXdhcm5pbmcge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmMGFkNGU7XHJcbn1cclxuLyoqKioqKioqKioqKioqICAqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLyJdfQ== */");
-
-/***/ }),
-
-/***/ "./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.ts":
-/*!*****************************************************************************!*\
-  !*** ./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.ts ***!
-  \*****************************************************************************/
-/*! exports provided: VoyageCommandesComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoyageCommandesComponent", function() { return VoyageCommandesComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _shared_services_voyage_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/services/voyage.service */ "./src/app/voyage/shared/services/voyage.service.ts");
-
-
-
-let VoyageCommandesComponent = class VoyageCommandesComponent {
-    constructor(voyageService) {
-        this.voyageService = voyageService;
-    }
-    ngOnInit() {
-        this.voyageService.getVoyagesClient(this.client).subscribe((voyages) => {
-            this.voyages = voyages;
-        });
-    }
-};
-VoyageCommandesComponent.ctorParameters = () => [
-    { type: _shared_services_voyage_service__WEBPACK_IMPORTED_MODULE_2__["VoyageService"] }
-];
-VoyageCommandesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-voyage-commandes',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./voyage-commandes.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./voyage-commandes.component.css */ "./src/app/voyage/pages/voyage-commandes/voyage-commandes.component.css")).default]
-    })
-], VoyageCommandesComponent);
-
-
-
-/***/ }),
-
 /***/ "./src/app/voyage/pages/voyage-creation/voyage-creation.component.css":
 /*!****************************************************************************!*\
   !*** ./src/app/voyage/pages/voyage-creation/voyage-creation.component.css ***!
@@ -1556,45 +1481,6 @@ DestinationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         providedIn: 'root'
     })
 ], DestinationService);
-
-
-
-/***/ }),
-
-/***/ "./src/app/voyage/shared/services/voyage.service.ts":
-/*!**********************************************************!*\
-  !*** ./src/app/voyage/shared/services/voyage.service.ts ***!
-  \**********************************************************/
-/*! exports provided: VoyageService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoyageService", function() { return VoyageService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-
-
-
-let VoyageService = class VoyageService {
-    constructor(httpClient) {
-        this.httpClient = httpClient;
-    }
-    getVoyagesClient(client) {
-        client.name = localStorage.getItem('userName');
-        console.log(client);
-        return this.httpClient.post('voyage/client/all', client);
-    }
-};
-VoyageService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
-];
-VoyageService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: 'root'
-    })
-], VoyageService);
 
 
 

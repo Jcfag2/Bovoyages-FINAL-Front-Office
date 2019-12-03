@@ -92,7 +92,7 @@ public class BovoyagesRestController {
 		// récupération du nombre de places disponibles pour les dates de voyage choisie
 		long idDate = v.getDateVoyage().getId();
 		double nbPlaces = dvRepo.findById(idDate).get().getNbPlaces();
-
+		v.setDateVoyage(dvRepo.findById(idDate).get());
 		int nbVoyageurs = v.getVoyageurs().size();
 
 		// Vérification que le nb de places dispo est inférieur au nb de voyageurs
