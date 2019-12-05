@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-navbar></app-navbar>\n<div>\n    <router-outlet></router-outlet>\n</div>\n<app-footer></app-footer>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-navbar></app-navbar>\r\n<div>\r\n    <router-outlet></router-outlet>\r\n</div>\r\n<app-footer></app-footer>");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<header>\n    <div class=\"overlay\"></div>\n    <video playsinline=\"playsinline\" autoplay=\"autoplay\" muted=\"muted\" loop=\"loop\">\n        <source src=\"https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4\" type=\"video/mp4\">\n    </video>\n    <div class=\"container h-100\">\n        <div class=\"d-flex h-100 text-center align-items-center\">\n            <div class=\"w-100 text-white\">\n                <h1 class=\"display-3\">Bienvenue sur BoVoyages</h1>\n                <h3 style=\"color: #ae9f6a;\">Venez voir toutes nos plus belles destinations</h3>\n                <h5 class=\"lead mb-0\" ><a routerLink=\"/voyages\" style=\"color: #ae9f6a;\">Voir toutes les destinations</a><br></h5>\n            </div>\n        </div>\n    </div>\n</header>");
+/* harmony default export */ __webpack_exports__["default"] = ("<header>\r\n    <div class=\"overlay\"></div>\r\n    <video playsinline=\"playsinline\" autoplay=\"autoplay\" muted=\"muted\" loop=\"loop\">\r\n        <source src=\"https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4\" type=\"video/mp4\">\r\n    </video>\r\n    <div class=\"container h-100\">\r\n        <div class=\"d-flex h-100 text-center align-items-center\">\r\n            <div class=\"w-100 text-white\">\r\n                <h1 class=\"display-3\">Bienvenue sur BoVoyages</h1>\r\n                <h3 style=\"color: #ae9f6a;\">Venez voir toutes nos plus belles destinations</h3>\r\n                <h5 class=\"lead mb-0\" ><a routerLink=\"/voyages\" style=\"color: #ae9f6a;\">Voir toutes les destinations</a><br></h5>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</header>");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"margin: 100px;\">\r\n    <!-- <p>Destination {{destination?.id}} {{destination?.region}} {{destination?.images[0]}}\r\n        {{destination?.datesVoyages[0].dateAller}}</p> -->\r\n\r\n    <ngb-carousel #carousel interval=\"3000\">\r\n        <ng-template ngbSlide *ngFor=\"let img of destination?.images\">\r\n            <div class=\"carousel-caption\">\r\n                <h3> Destination {{destination?.region}} </h3>\r\n            </div>\r\n\r\n            <div class=\"picsum-img-wrapper\">\r\n                <img [src]=\"'http://127.0.0.1:8081/'+img\" alt=\"images d'une destination\"\r\n                    style=\"width: 100%; height: 100%;\">\r\n                    \r\n                <!-- <img [src]=\"'http://127.0.0.1:8080/'+img\" alt=\"images d'une destination\"\r\n                style=\"width: 100%; height: 100%;\"> -->\r\n            </div>\r\n\r\n        </ng-template>\r\n    </ngb-carousel>\r\n    <hr>\r\n    <div class=\"row py-5\">\r\n            <div class=\"col-lg-8 mx-auto\">\r\n        \r\n              <div class=\"card mb-4\">\r\n                <div class=\"card-body p-5\">\r\n                  <h4 class=\"mb-4\">Description de la destination</h4>\r\n                  <div class=\"custom-scrollbar-css p-2\">\r\n                    <p class=\"font-italic\">\r\n                        {{destination?.descriptif}} <br>\r\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, soluta, cupiditate. Ad ab, delectus impedit similique voluptate fuga nemo iure, nobis dolorem dolor, quia voluptas aperiam doloremque commodi id? In? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n    </div>\r\n\r\n\r\n    <hr>\r\n\r\n    <div>\r\n        <div class=\"table-wrapper\">\r\n            <div class=\"table-title\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-sm-6\">\r\n                        <h2><b>Trouvez vos dates de voyages :</b></h2>\r\n                    </div>\r\n                    <div class=\"col-sm-6\">\r\n                        <div class=\"btn-group\" data-toggle=\"buttons\">\r\n                            <label class=\"btn btn-info active\">\r\n                                <input type=\"radio\" name=\"status\" value=\"all\" checked=\"checked\"> Tout\r\n                            </label>\r\n                            <label class=\"btn btn-success\">\r\n                                <input type=\"radio\" name=\"status\" value=\"active\"> Actif\r\n                            </label>\r\n                            <label class=\"btn btn-warning\">\r\n                                <input type=\"radio\" name=\"status\" value=\"inactive\"> Quelques places\r\n                            </label>\r\n                            <label class=\"btn btn-danger\">\r\n                                <input type=\"radio\" name=\"status\" value=\"expired\"> Expiré\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <table class=\"table table-striped table-hover\">\r\n                <thead>\r\n                    <tr>\r\n                        <th>#</th>\r\n                        <th>Dates Aller</th>\r\n                        <th>Dates Retour</th>\r\n                        <th>Prix HT</th>\r\n                        <th>Promotion</th>\r\n                        <th>Status</th>\r\n                        <th>Commander</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <!-- <div *ngIf=\"destination$ | async as destination;  else loading\"> -->\r\n                    <!-- <div *ngFor=\"let dv of destination?.datesVoyages\"> -->\r\n                    <tr data-status=\"active\" *ngFor=\"let dv of destination?.datesVoyages; let i = index;\">\r\n                        <td>{{i+1}}</td>\r\n                        <td>Du {{dv?.dateAller | date: 'dd/MM/yyyy'}}</td>\r\n                        <td>Au {{dv?.dateRetour | date: 'dd/MM/yyyy'}}</td>\r\n                        <td>{{dv?.tarifUnitaireHT}} €</td>\r\n                        <td>{{dv?.promotion}}</td>\r\n                        <td><span class=\"label label-success\">Active</span></td>\r\n                        <td><a [routerLink]=\"['/voyage-creation', dv?.id]\" class=\"btn btn-sm manage\">Commander ce voyage</a></td>\r\n                    </tr>\r\n                    <!-- </div> -->\r\n                     <!-- </div> -->\r\n                    <!-- <ng-template #loading>\r\n                            Loading destination...\r\n                    </ng-template> -->\r\n                    <!-- <ng-template #loadingOrError>\r\n                            <div *ngIf=\"errorLoading$ | async; else loading\">\r\n                              Error loading the list of users. Please try again later.\r\n                            </div>\r\n                            <ng-template #loading>\r\n                              Loading users...\r\n                            </ng-template>\r\n                    </ng-template> -->\r\n                    <!-- <tr data-status=\"inactive\">\r\n                        <td>2</td>\r\n                        <td><a href=\"#\">quisquamut.net</a></td>\r\n                        <td>05/08/2014</td>\r\n                        <td><span class=\"label label-warning\">Inactive</span></td>\r\n                        <td>Australia</td>\r\n                        <td><a href=\"#\" class=\"btn btn-sm manage\">Manage</a></td>\r\n                    </tr>\r\n                    <tr data-status=\"active\">\r\n                        <td>3</td>\r\n                        <td><a href=\"#\">convallissed.com</a></td>\r\n                        <td>11/05/2015</td>\r\n                        <td><span class=\"label label-success\">Active</span></td>\r\n                        <td>United Kingdom</td>\r\n                        <td><a href=\"#\" class=\"btn btn-sm manage\">Manage</a></td>\r\n                    </tr>\r\n                    <tr data-status=\"expired\">\r\n                        <td>4</td>\r\n                        <td><a href=\"#\">phasellusri.org</a></td>\r\n                        <td>06/09/2016</td>\r\n                        <td><span class=\"label label-danger\">Expired</span></td>\r\n                        <td>Romania</td>\r\n                        <td><a href=\"#\" class=\"btn btn-sm manage\">Manage</a></td>\r\n                    </tr>\r\n                    <tr data-status=\"inactive\">\r\n                        <td>5</td>\r\n                        <td><a href=\"#\">facilisleo.com</a></td>\r\n                        <td>12/08/2017</td>\r\n                        <td><span class=\"label label-warning\">Inactive</span></td>\r\n                        <td>Germany</td>\r\n                        <td><a href=\"#\" class=\"btn btn-sm manage\">Manage</a></td>\r\n                    </tr> -->\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n\r\n    </div>\r\n\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"margin-top: 100px;\">\r\n    <!-- <p>Destination {{destination?.id}} {{destination?.region}} {{destination?.images[0]}}\r\n        {{destination?.datesVoyages[0].dateAller}}</p> -->\r\n\r\n    <ngb-carousel #carousel interval=\"3000\">\r\n        <ng-template ngbSlide *ngFor=\"let img of destination?.images\">\r\n            <div class=\"carousel-caption\">\r\n                <h3> Destination {{destination?.region}} </h3>\r\n            </div>\r\n\r\n            <div class=\"picsum-img-wrapper\">\r\n                <img [src]=\"'http://127.0.0.1:8081/'+img\" alt=\"images d'une destination\"\r\n                    style=\"width: 100%; height: 100%;\">\r\n                    \r\n                <!-- <img [src]=\"'http://127.0.0.1:8080/'+img\" alt=\"images d'une destination\"\r\n                style=\"width: 100%; height: 100%;\"> -->\r\n            </div>\r\n\r\n        </ng-template>\r\n    </ngb-carousel>\r\n    <hr>\r\n    <div class=\"row py-5\">\r\n            <div class=\"col-lg-10 mx-auto\">\r\n        \r\n              <div class=\"card mb-4\">\r\n                <div class=\"card-body p-5\">\r\n                  <h4 class=\"mb-4\">Description de la destination</h4>\r\n                  <div class=\"custom-scrollbar-css p-2\">\r\n                    <p class=\"font-italic\">\r\n                        {{destination?.descriptif}} <br>\r\n                        </p>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n    </div>\r\n\r\n\r\n    <hr>\r\n\r\n    <div>\r\n        <div class=\"table-wrapper\">\r\n            <div class=\"table-title\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-sm-6\">\r\n                        <h2><b>Trouvez vos dates de voyages :</b></h2>\r\n                    </div>\r\n                    <div class=\"col-sm-6\">\r\n                        <div class=\"btn-group\" data-toggle=\"buttons\">\r\n                            <label class=\"btn btn-info active\">\r\n                                <input type=\"radio\" name=\"status\" value=\"all\" checked=\"checked\"> Tout\r\n                            </label>\r\n                            <label class=\"btn btn-success\">\r\n                                <input type=\"radio\" name=\"status\" value=\"active\"> Actif\r\n                            </label>\r\n                            <label class=\"btn btn-warning\">\r\n                                <input type=\"radio\" name=\"status\" value=\"inactive\"> Quelques places\r\n                            </label>\r\n                            <label class=\"btn btn-danger\">\r\n                                <input type=\"radio\" name=\"status\" value=\"expired\"> Expiré\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <table class=\"table table-striped table-hover\">\r\n                <thead>\r\n                    <tr>\r\n                        <th>#</th>\r\n                        <th>Dates Aller</th>\r\n                        <th>Dates Retour</th>\r\n                        <th>Prix HT</th>\r\n                        <th>Promotion</th>\r\n                        <th>Status</th>\r\n                        <th>Commander</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <!-- <div *ngIf=\"destination$ | async as destination;  else loading\"> -->\r\n                    <!-- <div *ngFor=\"let dv of destination?.datesVoyages\"> -->\r\n                    <tr data-status=\"active\" *ngFor=\"let dv of destination?.datesVoyages; let i = index;\">\r\n                        <td>{{i+1}}</td>\r\n                        <td>Du {{dv?.dateAller | date: 'dd/MM/yyyy'}}</td>\r\n                        <td>Au {{dv?.dateRetour | date: 'dd/MM/yyyy'}}</td>\r\n                        <td>{{dv?.tarifUnitaireHT}} €</td>\r\n                        <td>{{dv?.promotion}}</td>\r\n                        <td><span class=\"label label-success\">Active</span></td>\r\n                        <td><a [routerLink]=\"['/voyage-creation', dv?.id]\" class=\"btn btn-sm manage\">Commander ce voyage</a></td>\r\n                    </tr>\r\n                    <!-- </div> -->\r\n                     <!-- </div> -->\r\n                    <!-- <ng-template #loading>\r\n                            Loading destination...\r\n                    </ng-template> -->\r\n                    <!-- <ng-template #loadingOrError>\r\n                            <div *ngIf=\"errorLoading$ | async; else loading\">\r\n                              Error loading the list of users. Please try again later.\r\n                            </div>\r\n                            <ng-template #loading>\r\n                              Loading users...\r\n                            </ng-template>\r\n                    </ng-template> -->\r\n                    <!-- <tr data-status=\"inactive\">\r\n                        <td>2</td>\r\n                        <td><a href=\"#\">quisquamut.net</a></td>\r\n                        <td>05/08/2014</td>\r\n                        <td><span class=\"label label-warning\">Inactive</span></td>\r\n                        <td>Australia</td>\r\n                        <td><a href=\"#\" class=\"btn btn-sm manage\">Manage</a></td>\r\n                    </tr>\r\n                    <tr data-status=\"active\">\r\n                        <td>3</td>\r\n                        <td><a href=\"#\">convallissed.com</a></td>\r\n                        <td>11/05/2015</td>\r\n                        <td><span class=\"label label-success\">Active</span></td>\r\n                        <td>United Kingdom</td>\r\n                        <td><a href=\"#\" class=\"btn btn-sm manage\">Manage</a></td>\r\n                    </tr>\r\n                    <tr data-status=\"expired\">\r\n                        <td>4</td>\r\n                        <td><a href=\"#\">phasellusri.org</a></td>\r\n                        <td>06/09/2016</td>\r\n                        <td><span class=\"label label-danger\">Expired</span></td>\r\n                        <td>Romania</td>\r\n                        <td><a href=\"#\" class=\"btn btn-sm manage\">Manage</a></td>\r\n                    </tr>\r\n                    <tr data-status=\"inactive\">\r\n                        <td>5</td>\r\n                        <td><a href=\"#\">facilisleo.com</a></td>\r\n                        <td>12/08/2017</td>\r\n                        <td><span class=\"label label-warning\">Inactive</span></td>\r\n                        <td>Germany</td>\r\n                        <td><a href=\"#\" class=\"btn btn-sm manage\">Manage</a></td>\r\n                    </tr> -->\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n\r\n    </div>\r\n\r\n</div>");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- Footer -->\n<footer id=\"sticky-footer\" class=\"page-footer font-small\" style=\"background: #33b5e5;\">\n\n    <!-- Footer Links -->\n    <div class=\"container\">\n  \n      <!-- Grid row-->\n      <div class=\"row text-center d-flex justify-content-center pt-5 mb-3\">\n  \n        <!-- Grid column -->\n        <div class=\"col-md-2 mb-3\">\n          <h6 class=\"text-uppercase font-weight-bold\">\n            <a href=\"#!\">About us</a>\n          </h6>\n        </div>\n        <!-- Grid column -->\n  \n        <!-- Grid column -->\n        <div class=\"col-md-2 mb-3\">\n          <h6 class=\"text-uppercase font-weight-bold\">\n            <a href=\"#!\">Products</a>\n          </h6>\n        </div>\n        <!-- Grid column -->\n  \n        <!-- Grid column -->\n        <div class=\"col-md-2 mb-3\">\n          <h6 class=\"text-uppercase font-weight-bold\">\n            <a href=\"#!\">Awards</a>\n          </h6>\n        </div>\n        <!-- Grid column -->\n  \n        <!-- Grid column -->\n        <div class=\"col-md-2 mb-3\">\n          <h6 class=\"text-uppercase font-weight-bold\">\n            <a href=\"#!\">Help</a>\n          </h6>\n        </div>\n        <!-- Grid column -->\n  \n        <!-- Grid column -->\n        <div class=\"col-md-2 mb-3\">\n          <h6 class=\"text-uppercase font-weight-bold\">\n            <a href=\"#!\">Contact</a>\n          </h6>\n        </div>\n        <!-- Grid column -->\n  \n      </div>\n      <!-- Grid row-->\n      <hr class=\"rgba-white-light\" style=\"margin: 0 15%;\">\n  \n      <!-- Grid row-->\n      <div class=\"row d-flex text-center justify-content-center mb-md-0 mb-4\">\n  \n        <!-- Grid column -->\n        <div class=\"col-md-8 col-12 mt-5\">\n          <p style=\"line-height: 1.7rem\">Sed ut perspiciatis unde omnis iste natus error sit voluptatem\n            accusantium doloremque laudantium, totam rem\n            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt\n            explicabo.\n            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>\n        </div>\n        <!-- Grid column -->\n  \n      </div>\n      <!-- Grid row-->\n      <hr class=\"clearfix d-md-none rgba-white-light\" style=\"margin: 10% 15% 5%;\">\n  \n      <!-- Grid row-->\n      <div class=\"row pb-3\">\n  \n        <!-- Grid column -->\n        <div class=\"col-md-12\">\n  \n            <div class=\"col-12 social padding\">\n                <a href=\"#\"><i class=\"fa fa-facebook-official fa-3x\" aria-hidden=\"true\"></i></a>\n                <a href=\"#\"><i class=\"fa fa-instagram fa-3x\" aria-hidden=\"true\"></i></a>\n                <a href=\"#\"><i class=\"fa fa-twitter fa-3x\" aria-hidden=\"true\"></i></a>\n                <a href=\"#\"><i class=\"fa fa-google-plus fa-3x\" aria-hidden=\"true\"></i></a>\n                <a href=\"#\"><i class=\"fa fa-envelope fa-3x\" aria-hidden=\"true\"></i></a>\n            </div>\n  \n        </div>\n        <!-- Grid column -->\n  \n      </div>\n      <!-- Grid row-->\n  \n    </div>\n    <!-- Footer Links -->\n  \n    <!-- Copyright -->\n    <div class=\"footer-copyright text-center py-3\">© 2019 Copyright :\n      <a href=\"#\"> Bovoyages.gtm.fr</a>\n    </div>\n    <!-- Copyright -->\n  \n  </footer>\n  <!-- Footer -->\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Footer -->\r\n<footer id=\"sticky-footer\" class=\"page-footer font-small\" style=\"background: #33b5e5;\">\r\n\r\n    <!-- Footer Links -->\r\n    <div class=\"container\">\r\n  \r\n      <!-- Grid row-->\r\n      <div class=\"row text-center d-flex justify-content-center pt-5 mb-3\">\r\n  \r\n        <!-- Grid column -->\r\n        <div class=\"col-md-2 mb-3\">\r\n          <h6 class=\"text-uppercase font-weight-bold\">\r\n            <a href=\"#!\">About us</a>\r\n          </h6>\r\n        </div>\r\n        <!-- Grid column -->\r\n  \r\n        <!-- Grid column -->\r\n        <div class=\"col-md-2 mb-3\">\r\n          <h6 class=\"text-uppercase font-weight-bold\">\r\n            <a href=\"#!\">Products</a>\r\n          </h6>\r\n        </div>\r\n        <!-- Grid column -->\r\n  \r\n        <!-- Grid column -->\r\n        <div class=\"col-md-2 mb-3\">\r\n          <h6 class=\"text-uppercase font-weight-bold\">\r\n            <a href=\"#!\">Awards</a>\r\n          </h6>\r\n        </div>\r\n        <!-- Grid column -->\r\n  \r\n        <!-- Grid column -->\r\n        <div class=\"col-md-2 mb-3\">\r\n          <h6 class=\"text-uppercase font-weight-bold\">\r\n            <a href=\"#!\">Help</a>\r\n          </h6>\r\n        </div>\r\n        <!-- Grid column -->\r\n  \r\n        <!-- Grid column -->\r\n        <div class=\"col-md-2 mb-3\">\r\n          <h6 class=\"text-uppercase font-weight-bold\">\r\n            <a href=\"#!\">Contact</a>\r\n          </h6>\r\n        </div>\r\n        <!-- Grid column -->\r\n  \r\n      </div>\r\n      <!-- Grid row-->\r\n      <hr class=\"rgba-white-light\" style=\"margin: 0 15%;\">\r\n  \r\n      <!-- Grid row-->\r\n      <div class=\"row d-flex text-center justify-content-center mb-md-0 mb-4\">\r\n  \r\n        <!-- Grid column -->\r\n        <div class=\"col-md-8 col-12 mt-5\">\r\n          <p style=\"line-height: 1.7rem\">Suivez nous sur les réseaux sociaux et soyez informés en direct des toutes dernières promotion</p>\r\n        </div>\r\n        <!-- Grid column -->\r\n  \r\n      </div>\r\n      <!-- Grid row-->\r\n      <hr class=\"clearfix d-md-none rgba-white-light\" style=\"margin: 10% 15% 5%;\">\r\n  \r\n      <!-- Grid row-->\r\n      <div class=\"row pb-3\">\r\n  \r\n        <!-- Grid column -->\r\n        <div class=\"col-md-12\">\r\n  \r\n            <div class=\"col-12 social padding\">\r\n                <a href=\"#\"><i class=\"fa fa-facebook-official fa-3x\" aria-hidden=\"true\"></i></a>\r\n                <a href=\"#\"><i class=\"fa fa-instagram fa-3x\" aria-hidden=\"true\"></i></a>\r\n                <a href=\"#\"><i class=\"fa fa-twitter fa-3x\" aria-hidden=\"true\"></i></a>\r\n                <a href=\"#\"><i class=\"fa fa-google-plus fa-3x\" aria-hidden=\"true\"></i></a>\r\n                <a href=\"#\"><i class=\"fa fa-envelope fa-3x\" aria-hidden=\"true\"></i></a>\r\n            </div>\r\n  \r\n        </div>\r\n        <!-- Grid column -->\r\n  \r\n      </div>\r\n      <!-- Grid row-->\r\n  \r\n    </div>\r\n    <!-- Footer Links -->\r\n  \r\n    <!-- Copyright -->\r\n    <div class=\"footer-copyright text-center py-3\">© 2019 Copyright :\r\n      <a href=\"#\"> https://europadigital.com </a>\r\n    </div>\r\n    <!-- Copyright -->\r\n  \r\n  </footer>\r\n  <!-- Footer -->\r\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- Navigation -->\r\n<nav class=\"navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar\" style=\"background: #33b5e5;\">\r\n\r\n  <a class=\"navbar-brand\" routerLink=\"/home\">Bienvenue sur BoVoyages</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor01\"\r\n    aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"\r\n    (click)=\"isMenuCollapsed = !isMenuCollapsed\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div [ngbCollapse]=\"isMenuCollapsed\" class=\"collapse navbar-collapse\" id=\"navbarColor01\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\" routerLink=\"/home\" (click)=\"isMenuCollapsed = true\">Accueil<span\r\n            class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"/voyages\" (click)=\"isMenuCollapsed = true\">Nos voyages </a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"/commandes\" (click)=\"isMenuCollapsed = true\">Vos commandes</a>\r\n      </li>\r\n    </ul>\r\n  <button type=\"button\" class=\"btn btn-light\" (click)=\"onLogOut()\">{{LogInOut}}</button>\r\n  <!-- *ngIf=\"isAuth\" -->\r\n  <span class=\"badge badge-warning\">{{userName}}</span>\r\n    <!-- <p class=\"my-2 my-sm-0\">{{user.nom}}</p> -->\r\n    <!-- Si isAuth est != de false => login -->\r\n    <!-- <button class=\"btn btn-primary\" type=\"button\" (click)=\"onLogIn()\" *ngIf=\"!isAuth\">Log in</button>  -->\r\n    <!-- <button class=\"btn btn-primary\" type=\"button\" (click)=\"onLogOut()\" *ngIf=\"isAuth\">Log out</button> -->\r\n\r\n    <!-- <form class=\"form-inline my-2 my-lg-0\">\r\n        <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">\r\n        <button class=\"btn btn-secondary my-2 my-sm-0\" type=\"submit\">Search</button>\r\n      </form> -->\r\n\r\n  </div>\r\n  <!-- <app-user-component></app-user-component> -->\r\n</nav>\r\n\r\n<!-- Navbar End -->");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Navigation -->\r\n<nav class=\"navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar\" style=\"background: #33b5e5;\">\r\n\r\n  <a class=\"navbar-brand\" routerLink=\"/home\">Bienvenue sur BoVoyages</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor01\"\r\n    aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"\r\n    (click)=\"isMenuCollapsed = !isMenuCollapsed\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div [ngbCollapse]=\"isMenuCollapsed\" class=\"collapse navbar-collapse\" id=\"navbarColor01\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\" routerLink=\"/home\" (click)=\"isMenuCollapsed = true\">Accueil<span\r\n            class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"/voyages\" (click)=\"isMenuCollapsed = true\">Nos voyages </a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"/voyages-commandes\" (click)=\"isMenuCollapsed = true\">Vos commandes</a>\r\n      </li>\r\n    </ul>\r\n  <button type=\"button\" class=\"btn btn-light\" (click)=\"onLogOut()\">{{LogInOut}}</button>\r\n  <!-- *ngIf=\"isAuth\" -->\r\n  <span class=\"badge badge-warning\">{{userName}}</span>\r\n    <!-- <p class=\"my-2 my-sm-0\">{{user.nom}}</p> -->\r\n    <!-- Si isAuth est != de false => login -->\r\n    <!-- <button class=\"btn btn-primary\" type=\"button\" (click)=\"onLogIn()\" *ngIf=\"!isAuth\">Log in</button>  -->\r\n    <!-- <button class=\"btn btn-primary\" type=\"button\" (click)=\"onLogOut()\" *ngIf=\"isAuth\">Log out</button> -->\r\n\r\n    <!-- <form class=\"form-inline my-2 my-lg-0\">\r\n        <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">\r\n        <button class=\"btn btn-secondary my-2 my-sm-0\" type=\"submit\">Search</button>\r\n      </form> -->\r\n\r\n  </div>\r\n  <!-- <app-user-component></app-user-component> -->\r\n</nav>\r\n\r\n<!-- Navbar End -->");
 
 /***/ }),
 
@@ -123,7 +123,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<br><br><br><br>\n<div class=\"centrer\"><h2>Création d'un compte utilisateur:</h2></div>\n<br>\n<div class=\"container form-group\">\n    <form #userForm=\"ngForm\" (ngSubmit)=\"onFormSubmit(userForm)\">\n        <label>Nom d'utilisateur:</label>\n        <input type=\"text\" ngModel name=\"nom\" id =\"nom\" class=\"form-control\">\n        <label>Mot de passe:</label>\n        <input type=\"password\" ngModel name=\"password\" id =\"password\" class=\"form-control\">\n        <label>Retapez votre mot de passe:</label>\n        <input type=\"password\" id =\"password2\" class=\"form-control\">\n        <br>\n        <button class=\"btn btn-primary\" type=\"submit\">Créer le compte</button>\n    </form>\n</div>\n<br><br><br>");
+/* harmony default export */ __webpack_exports__["default"] = ("<br><br><br><br>\r\n<div class=\"centrer\"><h2>Création d'un compte utilisateur:</h2></div>\r\n<br>\r\n<div class=\"container form-group\">\r\n    <form #userForm=\"ngForm\" (ngSubmit)=\"onFormSubmit(userForm)\">\r\n        <label>Nom d'utilisateur:</label>\r\n        <input type=\"text\" ngModel name=\"nom\" id =\"nom\" class=\"form-control\" placeholder=\"Nom d'utilisateur\" required>\r\n       <br>\r\n        <div ngModelGroup=\"passwords\" #passwords=\"ngModelGroup\" appCheckPassword>\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"exampleInputPassword1\">Mot de passe:</label>\r\n\t\t\t\t<input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Mot de passe\" #passwordA=\"ngModel\" name=\"passwordA\"\r\n\t\t\t\t required id=\"passwordA\" [(ngModel)]=\"password1\">\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-group mt-1\">\r\n\t\t\t\t<label for=\"exampleInputPassword2\">Retapez votre mot de passe:</label>\r\n\t\t\t\t<input type=\"password\" class=\"form-control\" id=\"exampleInputPassword2\" placeholder=\"Retapez votre mot de passe\" #passwordB=\"ngModel\" name=\"passwordB\"\r\n\t\t\t\t required id=\"passwordB\" [(ngModel)]=\"password2\">\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div *ngIf=\"passwordB.invalid && (passwordA.dirty || passwordA.touched)\" class=\"alert alert-danger\">\r\n\t\t\tVeuillez confirmer votre mot de passe.\r\n\t\t</div>\r\n\t\t<div *ngIf=\"passwords.errors?.passwordCheck && (passwordB.dirty || passwordB.touched)\" class=\"alert alert-danger\">\r\n\t\t\tLes mots de passe sont différents.\r\n\t\t</div>\r\n        \r\n        <br>\r\n        <p *ngIf=\"error\">{{error}}</p>\r\n        <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"passwords.invalid\">Créer le compte</button>\r\n    </form>\r\n</div>\r\n<br><br><br>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.html":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.html ***!
+  \*********************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"margin-top: 100px;\">\n    <div\n        style=\"display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: 'Lato', Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;\">\n        We're thrilled to have you here! Get ready to dive into your new account. </div>\n    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n        <!-- LOGO -->\n        <tr>\n            <td bgcolor=\"#33b5e5\" align=\"center\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width: 600px;\">\n                    <tr>\n                        <td align=\"center\" valign=\"top\" style=\"padding: 40px 10px 40px 10px;\"> </td>\n                    </tr>\n                </table>\n            </td>\n        </tr>\n        <tr>\n            <td bgcolor=\"#33b5e5\" align=\"center\" style=\"padding: 0px 10px 0px 10px;\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width: 600px;\">\n                    <tr>\n                        <td bgcolor=\"#ffffff\" align=\"center\" valign=\"top\"\n                            style=\"padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;\">\n                            <h1 style=\"font-size: 48px; font-weight: 400; margin: 2;\">Félicitations!</h1> <img\n                                src=\"assets/success.jpg\" width=\"500\" height=\"120\"\n                                style=\"display: block; border: 0px;\" />\n                        </td>\n                    </tr>\n                </table>\n            </td>\n        </tr>\n        <tr>\n            <td bgcolor=\"#f4f4f4\" align=\"center\" style=\"padding: 0px 10px 0px 10px;\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width: 600px;\">\n                    <tr>\n                        <td bgcolor=\"#ffffff\" align=\"left\"\n                            style=\"padding: 20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;\">\n                            <p style=\"margin: 0;\"><b>Nous avons le plaisir de vous confirmer la validation de votre voyage ! <br> Vous allez recevoir un courriel de confirmation sous peu.</b>\n                            </p>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td bgcolor=\"#ffffff\" align=\"left\"\n                            style=\"padding: 0px 30px 0px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;\">\n                            <p style=\"margin: 0;\">En cas de non réception de la confirmation de votre voyage par email, vous pouvez nous contacter a cette adresse : </p>\n                        </td>\n                    </tr> <!-- COPY -->\n                    <tr>\n                        <td bgcolor=\"#ffffff\" align=\"left\"\n                            style=\"padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;\">\n                            <p style=\"margin: 0;\"><a href=\"#\" target=\"_blank\"\n                                    style=\"color: #33b5e5;\">https://bovoyages/contact.com</a></p>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td bgcolor=\"#ffffff\" align=\"left\"\n                            style=\"padding: 0px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;\">\n                            <p style=\"margin: 0;\">N'hésitez pas à nous contacter si vous avez la moindre question, nous serons ravis de vous répondre !</p>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td bgcolor=\"#ffffff\" align=\"left\"\n                            style=\"padding: 0px 30px 40px 30px; border-radius: 0px 0px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;\">\n                            <p style=\"margin: 0;\">Au plaisir de vous retrouver,<br>BoVoyages</p>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td bgcolor=\"#ffffff\" align=\"left\">\n                            <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n                                <tr>\n                                    <td bgcolor=\"#ffffff\" align=\"center\" style=\"padding: 20px 30px 60px 30px;\">\n                                        <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n                                            <tr>\n                                                <td align=\"center\" style=\"border-radius: 3px;\" bgcolor=\"#33b5e5\"><a\n                                                    [routerLink]=\"['/home']\"\n                                                        style=\"font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; border-radius: 2px; border: 1px solid #33b5e5; display: inline-block;\">Accueil</a></td>\n                                            </tr>\n                                        </table>\n                                    </td>\n                                </tr>\n                            </table>\n                        </td>\n                    </tr> <!-- COPY -->\n                </table>\n            </td>\n        </tr>\n        <tr>\n            <td bgcolor=\"#f4f4f4\" align=\"center\" style=\"padding: 30px 10px 0px 10px;\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width: 600px; margin-bottom: 50px;\">\n                    <tr>\n                        <td bgcolor=\"#b3e5fc\" align=\"center\"\n                            style=\"padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;\">\n                            <h2 style=\"font-size: 20px; font-weight: 400; color: #111111; margin: 0;\">Une erreur dans la réalisation de votre voyage ?\n                            </h2>\n                            <p style=\"margin: 0;\"><a [routerLink]=\"['/voyages-commandes']\" style=\"color: #111111;\">Vous pouvez le modifier en cliquant ici.</a></p>\n                        </td>\n                    </tr>\n                </table>\n            </td>\n        </tr>\n        <!-- <tr>\n            <td bgcolor=\"#f4f4f4\" align=\"center\" style=\"padding: 0px 10px 0px 10px;\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width: 600px;\">\n                    <tr>\n                        <td bgcolor=\"#f4f4f4\" align=\"left\"\n                            style=\"padding: 0px 30px 30px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;\">\n                            <br>\n                            <p style=\"margin: 0;\">If these emails get annoying, please feel free to <a href=\"#\"\n                                    target=\"_blank\" style=\"color: #111111; font-weight: 700;\">unsubscribe</a>.</p>\n                        </td>\n                    </tr>\n                </table>\n            </td>\n        </tr> -->\n    </table>\n</div>");
 
 /***/ }),
 
@@ -136,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"margin-top: 100px;\">\r\n\r\n    <div class=\"mb-4\">\r\n        <h6 class=\"flex-container text-uppercase\"><i class=\"fa fa-calendar-o fa-2x\" aria-hidden=\"true\"></i>\r\n            <span class=\"date-right\"> Départ le {{datesVoyages?.dateAller | date: 'dd/MM/yyyy'}} </span> au {{datesVoyages?.dateRetour | date: 'dd/MM/yyyy'}}</h6>\r\n        <!-- Gradient divider -->\r\n        <hr data-content=\"ET\" class=\"hr-text\">\r\n    </div>\r\n\r\n    <!-- <form [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\" class=\"form-group\">\r\n        \r\n    </form> -->\r\n    <h4>Ajouter un participant</h4>\r\n    <div class=\"row\">\r\n        <div class=\"input-group\" style=\"width:25%\">\r\n            <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-white btn-minuse btn-default\" type=\"button\"  [disabled]=\"\">-</button>\r\n            </span>\r\n            <input type=\"text\" class=\"form-control no-padding add-color text-center height-25\" maxlength=\"3\" value=\"0\">\r\n            <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-red btn-pluss btn-default\" type=\"button\">+</button>\r\n            </span>\r\n        </div>\r\n    </div>\r\n\r\n    <table class=\"table table-striped\">\r\n        <tbody>\r\n            <tr>\r\n                <td colspan=\"1\">\r\n                    <form class=\"form-horizontal\" method=\"post\">\r\n                    <!-- <form class=\"form-horizontal\" method=\"post\" #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\"> -->\r\n                        <fieldset>\r\n                            <legend>Entrez les informations du participant</legend>\r\n                            <div class=\"form-group\">\r\n                                <label class=\"col-md-4 control-label\">Civilité</label>\r\n                                <div class=\"col-md-8 inputGroupContainer\">\r\n                                    <div class=\"input-group\">\r\n                                        <span style=\"margin-right: 10px;\"><i class=\"fa fa-user fa-2x\"\r\n                                        aria-hidden=\"true\"></i></span>\r\n                                        <select class=\"selectpicker form-control\" required ngModel>\r\n                                            <option value=\"Mme\">Mme</option>\r\n                                            <option value=\"Mlle\">Mlle</option>\r\n                                            <option value=\"M\">M</option>\r\n                                        </select>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                    <label class=\"col-md-4 control-label\">Prénom </label>\r\n                                    <div class=\"col-md-8 inputGroupContainer\">\r\n                                        <div class=\"input-group\">\r\n                                            <span style=\"margin-right: 10px;\">\r\n                                                    <i class=\"fa fa-user fa-2x\" aria-hidden=\"true\"></i></span>\r\n                                                    <input id=\"prenom\" name=\"prenom\"\r\n                                                placeholder=\"Prénom\" class=\"form-control\" required=\"true\" value=\"\"\r\n                                                type=\"text\" required ngModel>\r\n                                        </div>\r\n                                    </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group\">\r\n                                <label class=\"col-md-4 control-label\">Nom </label>\r\n                                <div class=\"col-md-8 inputGroupContainer\">\r\n                                    <div class=\"input-group\">\r\n                                        <span style=\"margin-right: 10px;\">\r\n                                                <i class=\"fa fa-user fa-2x\" aria-hidden=\"true\"></i></span>\r\n                                                <input id=\"nom\" name=\"nom\"\r\n                                            placeholder=\"Nom\" class=\"form-control\" required=\"true\" value=\"\"\r\n                                            type=\"text\" required ngModel>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        \r\n                            <div class=\"form-group\">\r\n                                <label class=\"col-md-4 control-label\">Date de naissance</label>\r\n                                <div class=\"col-md-8 inputGroupContainer\">\r\n                                    <div class=\"input-group\"><span style=\"margin-right: 10px;\"><i\r\n                                                class=\"fa fa-birthday-cake fa-2x\" aria-hidden=\"true\"></i></span>\r\n                                                <input id=\"dateNaissance\"\r\n                                            name=\"dateNaissance\" placeholder=\"Date de naissance\" class=\"form-control\"\r\n                                            required=\"true\" type=\"date\" value=\"\" required ngModel></div>\r\n                                </div>\r\n                                \r\n                            </div>\r\n                            <div class=\"col-sm-10\">\r\n                                <button type=\"submit\" class=\"btn btn-primary\">Ajouter un participant</button>\r\n                                \r\n                            </div>\r\n                            \r\n                            <button [disabled]=\"form.invalid\" class=\"btn btn-primary pull-right\" type=\"submit\">Commander le voyage</button>\r\n                        </fieldset>\r\n                    </form>\r\n                </td>\r\n\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"margin-top: 100px;\">\r\n\r\n    <div class=\"mb-4\">\r\n        <h6 class=\"flex-container text-uppercase\">\r\n            <div class=\"displayDate\">\r\n                <div><i class=\"fa fa-calendar-o fa-2x\" aria-hidden=\"true\"></i> Départ le {{datesVoyages?.dateAller | date: 'dd/MM/yyyy'}}</div>\r\n                <div> au {{datesVoyages?.dateRetour | date: 'dd/MM/yyyy'}}</div>\r\n            </div>\r\n        </h6>\r\n        <!-- Gradient divider -->\r\n        <hr data-content=\"ET\" class=\"hr-text\">\r\n    </div>\r\n    <div>\r\n        <!-- <p *ngIf=\"addParticipants()\"><label> Civilité : </label><span style=\"margin-right: 10px;\" [innerHTML]=\"displayCivilite\"></span><label>Nom : </label><span style=\"margin-right: 10px;\" [innerHTML]=\"displayNom\"></span><label> Prénom : </label> <span style=\"margin-right: 10px;\" [innerHTML]=\"displayPrenom\"></span><label> Date de naissance : </label><span style=\"margin-right: 10px;\" [innerHTML]=\"displayDateNaissance\"></span></p> -->\r\n        <!-- <section class=\"main\" *ngIf=\"voyageurs.length > 0\"> -->\r\n        <!-- <p *ngFor=\"let voyageur of voyageurs\">\r\n                <li><label>Civilité : </label><span style=\"margin-right: 10px;\">{{voyageur.civilite}}</span><label>Nom : </label><span style=\"margin-right: 10px;\">{{voyageur.nom}}</span><label>Prénom : </label><span style=\"margin-right: 10px;\">{{voyageur.prenom}}</span><label>Date de naissance : </label><span style=\"margin-right: 10px;\">{{voyageur.dateNaissance}}</span></li>\r\n            </p> -->\r\n        <!-- </section> -->\r\n    </div>\r\n\r\n    <div>\r\n        <div class=\"table-wrapper\">\r\n            <div class=\"table-title\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-sm-6\">\r\n                        <h2><b>Participants du voyage :</b></h2>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <table class=\"table table-striped table-hover\">\r\n                <thead>\r\n                    <tr>\r\n                        <th>#</th>\r\n                        <th>Civilité</th>\r\n                        <th>Nom</th>\r\n                        <th>Prénom</th>\r\n                        <th>Date de naissance</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <tr *ngFor=\"let voyageur of voyageurs; let i = index;\">\r\n                        <td>{{i+1}}</td>\r\n                        <td>{{voyageur.civilite}}</td>\r\n                        <td>{{voyageur.nom}}</td>\r\n                        <td>{{voyageur.prenom}}</td>\r\n                        <td>{{voyageur.dateNaissance}}</td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n    </div>\r\n\r\n\r\n    <!-- <form [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\" class=\"form-group\">\r\n        \r\n    </form> -->\r\n    <!-- <h4>Ajouter un participant</h4>\r\n    <div class=\"row\">\r\n        <div class=\"input-group\" style=\"width:25%\">\r\n            <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-white btn-minuse btn-default\" type=\"button\"  [disabled]=\"\">-</button>\r\n            </span>\r\n            <input type=\"text\" class=\"form-control no-padding add-color text-center height-25\" maxlength=\"3\" value=\"0\">\r\n            <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-red btn-pluss btn-default\" type=\"button\">+</button>\r\n            </span>\r\n        </div>\r\n    </div> -->\r\n    <div class=container>\r\n    <div class=\"\">\r\n    <div class=\"\">\r\n    <table class=\"table table-striped\">\r\n        <tbody>\r\n            <tr>\r\n                <td colspan=\"1\">\r\n                    <!-- <form class=\"form-horizontal\" method=\"post\" > -->\r\n                    <form [formGroup]=\"form\" class=\"form-horizontal\" method=\"post\" #f=\"ngForm\"\r\n                        (ngSubmit)=\"onSubmit(form)\">\r\n                        <fieldset>\r\n                            <legend>Entrez les informations du participant</legend>\r\n                            <!-- <div formArrayName=\"participants\"> -->\r\n                            <!-- <div *ngFor=\"let control of participants?.controls; let i=index;\"> -->\r\n                            <!-- <div [formGroupName] = \"i\"> -->\r\n                            <div class=\"form-group\">\r\n                                <label class=\"col-md-4 control-label\">Civilité</label>\r\n                                <div class=\"\">\r\n                                    <div class=\"input-group\">\r\n                                        <span style=\"margin-right: 10px;\">\r\n                                            <i class=\"fa fa-user fa-2x\" aria-hidden=\"true\"></i></span>\r\n                                        <select [(ngModel)]=\"voyageur.civilite\" formControlName=\"civilite\"\r\n                                            class=\"form-control\" required ngModel>\r\n                                            <option value=\"\">Veuillez choisir une civilité</option>\r\n                                            <option *ngFor=\"let opt of civilites\" [value]=\"opt\">{{ opt }}\r\n                                            </option>\r\n                                        </select>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label class=\"col-md-4 control-label\">Prénom </label>\r\n                                <div class=\"\">\r\n                                    <div class=\"input-group\">\r\n                                        <span style=\"margin-right: 10px;\">\r\n                                            <i class=\"fa fa-user fa-2x\" aria-hidden=\"true\"></i></span>\r\n                                        <input [(ngModel)]=\"voyageur.prenom\" formControlName=\"prenom\" id=\"prenom\"\r\n                                            name=\"prenom\" placeholder=\"Prénom\" class=\"form-control\" required=\"true\"\r\n                                            value=\"\" type=\"text\" required ngModel>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group\">\r\n                                <label class=\"col-md-4 control-label\">Nom </label>\r\n                                <div class=\"\">\r\n                                    <div class=\"input-group\">\r\n                                        <span style=\"margin-right: 10px;\">\r\n                                            <i class=\"fa fa-user fa-2x\" aria-hidden=\"true\"></i></span>\r\n                                        <input [(ngModel)]=\"voyageur.nom\" formControlName=\"nom\" id=\"nom\" name=\"nom\"\r\n                                            placeholder=\"Nom\" class=\"form-control\" required=\"true\" value=\"\" type=\"text\"\r\n                                            required ngModel>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group\">\r\n                                <label class=\"col-md-4 control-label\">Date de naissance</label>\r\n                                <div class=\"\">\r\n                                    <div class=\"input-group\"><span style=\"margin-right: 10px;\"><i\r\n                                                class=\"fa fa-birthday-cake fa-2x\" aria-hidden=\"true\"></i></span>\r\n                                        <input [(ngModel)]=\"voyageur.dateNaissance\" formControlName=\"dateNaissance\"\r\n                                            id=\"dateNaissance\" name=\"dateNaissance\" placeholder=\"Date de naissance\"\r\n                                            class=\"form-control\" required=\"true\" type=\"date\" value=\"\" required ngModel>\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </div>\r\n                            <!-- </div> -->\r\n                            <!-- </div>\r\n                            </div> -->\r\n                            <button (click)=\"addParticipants()\" type=\"button\" class=\"btn btn-primary\">Ajouter un\r\n                                participant</button>\r\n                            <button class=\"btn btn-primary pull-right\"\r\n                                type=\"submit\">Commander le voyage</button>\r\n                        </fieldset>\r\n                    </form>\r\n                    <div class=\"col-sm-10\">\r\n\r\n                    </div>\r\n                </td>\r\n\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n    </div>\r\n</div>\r\n</div>\r\n</div>");
 
 /***/ }),
 
@@ -149,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container py-5\" style=\"margin-top:5%;\">\n    <!-- For Demo Purpose -->\n    <header class=\"text-center\">\n        <h2 class=\"display-8 font-weight-bold\">Nos destinations</h2>\n        <h5 class=\"font-italic text-muted mb-0\">Idées de vacances et destinations populaires</h5>\n    </header>\n\n   \n\n    <!-- VOYAGE -->\n    <div class=\"py-5\">\n        <h3 class=\"font-weight-bold mb-0\">Consulter nos voyages</h3>\n        <p class=\"font-italic text-muted mb-4\">Idées de séjours, vacances ...</p>\n    \n     <!-- BAR DE RECHERCHE -->\n\n     <!-- <select id=\"boot-multiselect-demo\" multiple=\"multiple\">\n            <option value=\"jQuery\">jQuery Tutorials</option>\n            <option value=\"Bootstrap\">Bootstrap Framework</option>\n            <option value=\"HTML\">HTML</option>\n            <option value=\"CSS\" >CSS</option>\n            <option value=\"Angular\">Angular</option>\n            <option value=\"Angular\">javascript</option>\n            <option value=\"Java\">Java</option>\n            <option value=\"Python\">Python</option>\n            <option value=\"MySQL\">MySQL</option>\n            <option value=\"Oracle\">Oracle</option>\n    </select> -->\n    \n        <!-- / -->\n\n        <div class=\"row\">\n            <!-- IMAGE-->\n            <div *ngFor=\"let dateVoyage of datesVoyages; let i = index;\" class=\"col-lg-6 mb-3 mb-lg-0 separation\">\n                <div  class=\"hover hover-1 text-white rounded\">\n                    <a [routerLink]=\"['/destination-details', dateVoyage.fk_destination]\" style=\"color: #fafafa;\">\n                        <!-- <a [routerLink]=\"[]\" style=\"color:  #fafafa;\"> -->\n                    \n                    <img *ngIf=\"dateVoyage.imageURL\" [src]=\"'http://127.0.0.1:8081/'+ dateVoyage.imageURL\">\n                    <img *ngIf=\"!dateVoyage.imageURL\" src=\"http://127.0.0.1:8081/default-image.png\">\n                    <!-- <img *ngIf=\"dateVoyage.imageURL\" [src]=\"'http://192.168.1.46:8080/'+ dateVoyage.imageURL\">\n                    <img *ngIf=\"!dateVoyage.imageURL\" src=\"http://192.168.1.46:8080/default-image.png\"> -->\n                        <div class=\"hover-overlay\"></div>\n                        <div class=\"hover-1-content px-5 py-4\">\n                            <h3 class=\"hover-1-title text-uppercase font-weight-bold mb-0\" style=\"text-shadow: 1px 1px 1px #424242\"> <span\n                                    class=\"font-weight-light\"> Destination </span>{{dateVoyage.nmDestination}}</h3>\n                            <p style=\"text-shadow: 1px 1px 1px #424242;\" class=\"hover-1-description font-weight-light mb-0\">Trouvez vite nos voyages à partir de : {{dateVoyage.tarifUnitaireHT}} € !</p>\n                        </div>\n                    </a>\n                    </div>\n                \n            </div>\n            <!-- DEMO 1 Item-->\n            <div class=\"col-lg-6\">\n                <div class=\"hover hover-1 text-white rounded\"><img\n                        src=\"https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg\" alt=\"\">\n                    <div class=\"hover-overlay\"></div>\n                    <div class=\"hover-1-content px-5 py-4\">\n                        <h3 class=\"hover-1-title text-uppercase font-weight-bold mb-0\"> <span\n                                class=\"font-weight-light\">Image </span>Caption</h3>\n                        <p class=\"hover-1-description font-weight-light mb-0\">Lorem ipsum dolor sit amet, consectetur\n                            adipisicing elit.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n  \n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container py-5\" style=\"margin-top:5%;\">\r\n    <!-- For Demo Purpose -->\r\n    <header class=\"text-center\">\r\n        <h2 class=\"display-8 font-weight-bold\">Nos destinations</h2>\r\n        <h5 class=\"font-italic text-muted mb-0\">Idées de vacances et destinations populaires</h5>\r\n    </header>\r\n\r\n   \r\n\r\n    <!-- VOYAGE -->\r\n    <div class=\"py-5\">\r\n        <h3 class=\"font-weight-bold mb-0\">Consulter nos voyages</h3>\r\n        <p class=\"font-italic text-muted mb-4\">Idées de séjours, vacances ...</p>\r\n    \r\n     <!-- BAR DE RECHERCHE -->\r\n\r\n     <!-- <select id=\"boot-multiselect-demo\" multiple=\"multiple\">\r\n            <option value=\"jQuery\">jQuery Tutorials</option>\r\n            <option value=\"Bootstrap\">Bootstrap Framework</option>\r\n            <option value=\"HTML\">HTML</option>\r\n            <option value=\"CSS\" >CSS</option>\r\n            <option value=\"Angular\">Angular</option>\r\n            <option value=\"Angular\">javascript</option>\r\n            <option value=\"Java\">Java</option>\r\n            <option value=\"Python\">Python</option>\r\n            <option value=\"MySQL\">MySQL</option>\r\n            <option value=\"Oracle\">Oracle</option>\r\n    </select> -->\r\n    \r\n        <!-- / -->\r\n\r\n        <div class=\"row\">\r\n            <!-- IMAGE-->\r\n            <div *ngFor=\"let dateVoyage of datesVoyages; let i = index;\" class=\"col-lg-6 mb-3 mb-lg-0 separation\">\r\n                <div  class=\"hover hover-1 text-white rounded\">\r\n                    <a [routerLink]=\"['/destination-details', dateVoyage.fk_destination]\" style=\"color: #fafafa;\">\r\n                        <!-- <a [routerLink]=\"[]\" style=\"color:  #fafafa;\"> -->\r\n                    \r\n                    <img *ngIf=\"dateVoyage.imageURL\" [src]=\"'http://127.0.0.1:8081/'+ dateVoyage.imageURL\">\r\n                    <img *ngIf=\"!dateVoyage.imageURL\" src=\"http://127.0.0.1:8081/default-image.png\">\r\n                    <!-- <img *ngIf=\"dateVoyage.imageURL\" [src]=\"'http://192.168.1.46:8080/'+ dateVoyage.imageURL\">\r\n                    <img *ngIf=\"!dateVoyage.imageURL\" src=\"http://192.168.1.46:8080/default-image.png\"> -->\r\n                        <div class=\"hover-overlay\"></div>\r\n                        <div class=\"hover-1-content px-5 py-4\">\r\n                            <h3 class=\"hover-1-title text-uppercase font-weight-bold mb-0\" style=\"text-shadow: 1px 1px 1px #424242\"> <span\r\n                                    class=\"font-weight-light\"> Destination </span>{{dateVoyage.nmDestination}}</h3>\r\n                            <p style=\"text-shadow: 1px 1px 1px #424242;\" class=\"hover-1-description font-weight-light mb-0\">Trouvez vite nos voyages à partir de : {{dateVoyage.tarifUnitaireHT}} € !</p>\r\n                        </div>\r\n                    </a>\r\n                    </div>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n  \r\n\r\n</div>");
 
 /***/ }),
 
@@ -162,7 +175,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-voyage-liste></app-voyage-liste>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-voyage-liste></app-voyage-liste>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.html":
+/*!*************************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.html ***!
+  \*************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<br>\r\n<br>\r\n<br>\r\n<table class=\"table table-striped table-hover\">\r\n        <thead>\r\n            <tr>\r\n                <th>region</th>\r\n                <th>dateAller</th>\r\n                <th>dateRetour</th>\r\n                <th>prixTotalHT</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr>\r\n                <td>{{voyage?.region}}</td>\r\n                <td>{{voyage?.dateVoyage.dateAller | date : 'short'}}</td>\r\n                <td>{{voyage?.dateVoyage.dateRetour | date : 'short'}}</td>\r\n                <td>{{voyage?.prixTotalHT}}€</td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n    <table class=\"table table-striped table-hover\">\r\n        <thead>\r\n            <tr>\r\n                <th>civilite</th>\r\n                <th>nom</th>\r\n                <th>prenom</th>\r\n                <th>dateNaissance</th>\r\n                <th>             </th>\r\n            </tr>\r\n        </thead>\r\n        </table>\r\n        <div *ngFor=\"let voyageur of voyage?.voyageurs; let i = index;\">\r\n        <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\r\n            <table class=\"table table-striped table-hover\">\r\n                <tbody>\r\n                    <tr>\r\n                        <td>\r\n                            <input id=\"index\" name=\"index\"\r\n                                        class=\"form-control\" [(ngModel)]=\"i\"\r\n                                        type=\"hidden\" required ngModel>\r\n                        </td>\r\n                        <td>\r\n                            <input id=\"id\" name=\"id\"\r\n                                class=\"form-control\" [(ngModel)]=\"voyageur.id\"\r\n                                type=\"hidden\" required ngModel>\r\n                        </td>\r\n                        <td>\r\n                            <input id=\"civilite\" name=\"civilite\"\r\n                                class=\"form-control\" required=\"true\" [(ngModel)]=\"voyageur.civilite\"\r\n                                type=\"text\" required ngModel>\r\n                        </td>\r\n                        <td>\r\n                        <input id=\"nom\" name=\"nom\"\r\n                                    class=\"form-control\" required=\"true\" [(ngModel)]=\"voyageur.nom\"\r\n                                    type=\"text\" required ngModel>\r\n                        </td>\r\n                        <td>\r\n                        <input id=\"prenom\" name=\"prenom\"\r\n                                            class=\"form-control\" required=\"true\" [(ngModel)]=\"voyageur.prenom\"\r\n                                            type=\"text\" required ngModel>\r\n                        </td>\r\n                        <td>\r\n                        <input id=\"dateNaissance\" name=\"dateNaissance\"\r\n                                            class=\"form-control\" required=\"true\" [ngModel] =\"voyageur.dateNaissance | date:'yyyy-MM-dd'\" type=\"date\" required ngModel>\r\n                        </td>\r\n                        <td>\r\n                            <button type=\"submit\" class=\"btn btn-primary btn-lg btn-block\">modifier</button>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </form>\r\n    </div>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.html":
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.html ***!
+  \***********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<br>\r\n<br>\r\n<br>\r\n<table class=\"table table-striped table-hover\">\r\n    <thead>\r\n        <tr>\r\n            <th>#</th>\r\n            <th>region</th>\r\n            <th>dateAller</th>\r\n            <th>dateRetour</th>\r\n            <th>prixTotalHT</th>\r\n            <th>detail du voyage</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let voyage of voyages; let i = index;\">\r\n            <td>{{i+1}}</td>\r\n            <td>{{voyage?.region}}</td>\r\n            <td>{{voyage?.dateVoyage.dateAller | date : 'short'}}</td>\r\n            <td>{{voyage?.dateVoyage.dateRetour | date : 'short'}}</td>\r\n            <td>{{voyage?.prixTotalHT}}€</td>\r\n            <td><a class=\"btn btn-primary btn-lg btn-block\" [routerLink]=\"['/voyages-commandes-detail', voyage?.id]\">Modifier</a></td>\r\n        </tr>\r\n    </tbody>\r\n</table>");
 
 /***/ }),
 
@@ -414,7 +453,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./voyage/pages/voyage-creation/voyage-creation.component */ "./src/app/voyage/pages/voyage-creation/voyage-creation.component.ts");
 /* harmony import */ var _auth_guard_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth-guard.service */ "./src/app/auth-guard.service.ts");
 /* harmony import */ var _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./voyage/pages/login/login.component */ "./src/app/voyage/pages/login/login.component.ts");
-/* harmony import */ var _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./voyage/pages/signup/signup.component */ "./src/app/voyage/pages/signup/signup.component.ts");
+/* harmony import */ var _voyage_pages_voyages_commandes_voyages_commandes_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./voyage/pages/voyages-commandes/voyages-commandes.component */ "./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.ts");
+/* harmony import */ var _voyage_pages_voyages_commandes_detail_voyages_commandes_detail_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component */ "./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.ts");
+/* harmony import */ var _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./voyage/pages/signup/signup.component */ "./src/app/voyage/pages/signup/signup.component.ts");
+/* harmony import */ var _voyage_pages_voyage_confirmation_commande_voyage_confirmation_commande_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component */ "./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.ts");
+
+
+
 
 
 
@@ -442,7 +487,16 @@ const routes = [
         path: 'voyage-creation/:id', component: _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_6__["VoyageCreationComponent"], canActivate: [_auth_guard_service__WEBPACK_IMPORTED_MODULE_7__["AuthGuardService"]]
     },
     {
-        path: 'signup', component: _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_9__["SignupComponent"],
+        path: 'voyage-confirmation', component: _voyage_pages_voyage_confirmation_commande_voyage_confirmation_commande_component__WEBPACK_IMPORTED_MODULE_12__["VoyageConfirmationCommandeComponent"]
+    },
+    {
+        path: 'voyages-commandes', component: _voyage_pages_voyages_commandes_voyages_commandes_component__WEBPACK_IMPORTED_MODULE_9__["VoyagesCommandesComponent"]
+    },
+    {
+        path: 'voyages-commandes-detail/:id', component: _voyage_pages_voyages_commandes_detail_voyages_commandes_detail_component__WEBPACK_IMPORTED_MODULE_10__["VoyagesCommandesDetailComponent"]
+    },
+    {
+        path: 'signup', component: _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_11__["SignupComponent"],
     },
     {
         path: '**', redirectTo: 'home' //ou 'page-not-found'
@@ -535,7 +589,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng2_validation__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng2-validation */ "./node_modules/ng2-validation/dist/index.js");
 /* harmony import */ var ng2_validation__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(ng2_validation__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./voyage/pages/login/login.component */ "./src/app/voyage/pages/login/login.component.ts");
-/* harmony import */ var _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./voyage/pages/signup/signup.component */ "./src/app/voyage/pages/signup/signup.component.ts");
+/* harmony import */ var _voyage_pages_voyages_commandes_voyages_commandes_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./voyage/pages/voyages-commandes/voyages-commandes.component */ "./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.ts");
+/* harmony import */ var _voyage_pages_voyages_commandes_detail_voyages_commandes_detail_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component */ "./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.ts");
+/* harmony import */ var _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./voyage/pages/signup/signup.component */ "./src/app/voyage/pages/signup/signup.component.ts");
+/* harmony import */ var _voyage_pages_signup_check_password_directive__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./voyage/pages/signup/check-password.directive */ "./src/app/voyage/pages/signup/check-password.directive.ts");
+/* harmony import */ var _voyage_pages_voyage_confirmation_commande_voyage_confirmation_commande_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component */ "./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.ts");
+
+
+
+
 
 
 
@@ -574,7 +636,11 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _voyage_components_destination_details_destination_details_component__WEBPACK_IMPORTED_MODULE_13__["DestinationDetailsComponent"],
             _voyage_pages_voyage_creation_voyage_creation_component__WEBPACK_IMPORTED_MODULE_16__["VoyageCreationComponent"],
             _voyage_pages_login_login_component__WEBPACK_IMPORTED_MODULE_18__["LoginComponent"],
-            _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_19__["SignupComponent"],
+            _voyage_pages_voyages_commandes_voyages_commandes_component__WEBPACK_IMPORTED_MODULE_19__["VoyagesCommandesComponent"],
+            _voyage_pages_voyages_commandes_detail_voyages_commandes_detail_component__WEBPACK_IMPORTED_MODULE_20__["VoyagesCommandesDetailComponent"],
+            _voyage_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_21__["SignupComponent"],
+            _voyage_pages_signup_check_password_directive__WEBPACK_IMPORTED_MODULE_22__["CheckPasswordDirective"],
+            _voyage_pages_voyage_confirmation_commande_voyage_confirmation_commande_component__WEBPACK_IMPORTED_MODULE_23__["VoyageConfirmationCommandeComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -583,7 +649,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common_http__WEBPACK_IMPORTED_MODULE_14__["HttpClientModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ReactiveFormsModule"],
-            ng2_validation__WEBPACK_IMPORTED_MODULE_17__["CustomFormsModule"]
+            ng2_validation__WEBPACK_IMPORTED_MODULE_17__["CustomFormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ReactiveFormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"]
             //   HttpClientInMemoryWebApiModule.forRoot(
             //     InMemoryDataServiceService, {dataEncapsulation:false} 
             // ),
@@ -689,6 +757,32 @@ let AuthService = class AuthService {
     isLoggedIn() {
         this.isAuth = JSON.parse(localStorage.getItem('auth'));
         return this.isAuth;
+    }
+    signUp(user, cb) {
+        const params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpParams"]()
+            .set('nom', user.nom)
+            .set('password', user.passwords.passwordA);
+        this.httpClient.post('user/new', params).subscribe((status) => {
+            if (status) {
+                this.httpClient.post('connexion', params).subscribe((status) => {
+                    if (status) {
+                        this.isAuth = true;
+                        this.router.navigate([this.redirectUrl]);
+                        localStorage.setItem('auth', 'true');
+                        localStorage.setItem('userName', user.nom);
+                        localStorage.setItem('LogInOut', 'LogOut');
+                        this.getLoggedInName.emit(user.nom);
+                        this.getLoggedInOut.emit('LogOut');
+                    }
+                    else {
+                        cb("Identifiants incorrects");
+                    }
+                }, (err) => cb("Identifiants incorrects"));
+            }
+            else {
+                cb("Le nom d'utilisateur choisi est déjà pris, merci de renseigner un autre nom d'utilisateur.");
+            }
+        }, (err) => cb("Le nom d'utilisateur choisi est déjà pris, merci de renseigner un autre nom d'utilisateur."));
     }
     logIn(user, cb) {
         console.log(user.nom, user.password);
@@ -837,7 +931,7 @@ UserService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/* \nbody{\n\tmargin-top: 65px; \n}\n.container{\n\tmargin-top: 65px; \n} */\nheader {\n  position: relative;\n  background-color: black;\n  height: 75vh;\n  min-height: 25rem;\n  width: 100%;\n  overflow: hidden;\n}\nheader video {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  min-width: 100%;\n  min-height: 100%;\n  width: auto;\n  height: auto;\n  z-index: 0;\n  transform: translateX(-50%) translateY(-50%);\n}\nheader .container {\n  position: relative;\n  z-index: 2;\n}\nheader .overlay {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  background-color: black;\n  opacity: 0.5;\n  z-index: 1;\n}\n@media (pointer: coarse) and (hover: none) {\n  header {\n    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;\n  }\n  header video {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL2NvbXBvbmVudHMvY2Fyb3VzZWwvY2Fyb3VzZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O0dBTUc7QUFDSDtFQUNFLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsZ0JBQWdCO0FBQ2xCO0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLFdBQVc7RUFDWCxZQUFZO0VBQ1osVUFBVTtFQUlWLDRDQUE0QztBQUM5QztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFVBQVU7QUFDWjtBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsWUFBWTtFQUNaLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUVBO0VBQ0U7SUFDRSx3R0FBd0c7RUFDMUc7RUFDQTtJQUNFLGFBQWE7RUFDZjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvdm95YWdlL2NvbXBvbmVudHMvY2Fyb3VzZWwvY2Fyb3VzZWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFxuYm9keXtcblx0bWFyZ2luLXRvcDogNjVweDsgXG59XG4uY29udGFpbmVye1xuXHRtYXJnaW4tdG9wOiA2NXB4OyBcbn0gKi9cbmhlYWRlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gIGhlaWdodDogNzV2aDtcbiAgbWluLWhlaWdodDogMjVyZW07XG4gIHdpZHRoOiAxMDAlO1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuXG5oZWFkZXIgdmlkZW8ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTAlO1xuICBsZWZ0OiA1MCU7XG4gIG1pbi13aWR0aDogMTAwJTtcbiAgbWluLWhlaWdodDogMTAwJTtcbiAgd2lkdGg6IGF1dG87XG4gIGhlaWdodDogYXV0bztcbiAgei1pbmRleDogMDtcbiAgLW1zLXRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNTAlKSB0cmFuc2xhdGVZKC01MCUpO1xuICAtbW96LXRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNTAlKSB0cmFuc2xhdGVZKC01MCUpO1xuICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNTAlKSB0cmFuc2xhdGVZKC01MCUpO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoLTUwJSkgdHJhbnNsYXRlWSgtNTAlKTtcbn1cblxuaGVhZGVyIC5jb250YWluZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IDI7XG59XG5cbmhlYWRlciAub3ZlcmxheSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgb3BhY2l0eTogMC41O1xuICB6LWluZGV4OiAxO1xufVxuXG5AbWVkaWEgKHBvaW50ZXI6IGNvYXJzZSkgYW5kIChob3Zlcjogbm9uZSkge1xuICBoZWFkZXIge1xuICAgIGJhY2tncm91bmQ6IHVybCgnaHR0cHM6Ly9zb3VyY2UudW5zcGxhc2guY29tL1hUNU9JbmFFbE13LzE2MDB4OTAwJykgYmxhY2sgbm8tcmVwZWF0IGNlbnRlciBjZW50ZXIgc2Nyb2xsO1xuICB9XG4gIGhlYWRlciB2aWRlbyB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("/* \r\nbody{\r\n\tmargin-top: 65px; \r\n}\r\n.container{\r\n\tmargin-top: 65px; \r\n} */\r\nheader {\r\n  position: relative;\r\n  background-color: black;\r\n  height: 75vh;\r\n  min-height: 25rem;\r\n  width: 100%;\r\n  overflow: hidden;\r\n}\r\nheader video {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  min-width: 100%;\r\n  min-height: 100%;\r\n  width: auto;\r\n  height: auto;\r\n  z-index: 0;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\nheader .container {\r\n  position: relative;\r\n  z-index: 2;\r\n}\r\nheader .overlay {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  background-color: black;\r\n  opacity: 0.5;\r\n  z-index: 1;\r\n}\r\n@media (pointer: coarse) and (hover: none) {\r\n  header {\r\n    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;\r\n  }\r\n  header video {\r\n    display: none;\r\n  }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL2NvbXBvbmVudHMvY2Fyb3VzZWwvY2Fyb3VzZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O0dBTUc7QUFDSDtFQUNFLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsZ0JBQWdCO0FBQ2xCO0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLFdBQVc7RUFDWCxZQUFZO0VBQ1osVUFBVTtFQUlWLDRDQUE0QztBQUM5QztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFVBQVU7QUFDWjtBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsWUFBWTtFQUNaLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUVBO0VBQ0U7SUFDRSx3R0FBd0c7RUFDMUc7RUFDQTtJQUNFLGFBQWE7RUFDZjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvdm95YWdlL2NvbXBvbmVudHMvY2Fyb3VzZWwvY2Fyb3VzZWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFxyXG5ib2R5e1xyXG5cdG1hcmdpbi10b3A6IDY1cHg7IFxyXG59XHJcbi5jb250YWluZXJ7XHJcblx0bWFyZ2luLXRvcDogNjVweDsgXHJcbn0gKi9cclxuaGVhZGVyIHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XHJcbiAgaGVpZ2h0OiA3NXZoO1xyXG4gIG1pbi1oZWlnaHQ6IDI1cmVtO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbn1cclxuXHJcbmhlYWRlciB2aWRlbyB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogNTAlO1xyXG4gIGxlZnQ6IDUwJTtcclxuICBtaW4td2lkdGg6IDEwMCU7XHJcbiAgbWluLWhlaWdodDogMTAwJTtcclxuICB3aWR0aDogYXV0bztcclxuICBoZWlnaHQ6IGF1dG87XHJcbiAgei1pbmRleDogMDtcclxuICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGVYKC01MCUpIHRyYW5zbGF0ZVkoLTUwJSk7XHJcbiAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZVgoLTUwJSkgdHJhbnNsYXRlWSgtNTAlKTtcclxuICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNTAlKSB0cmFuc2xhdGVZKC01MCUpO1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNTAlKSB0cmFuc2xhdGVZKC01MCUpO1xyXG59XHJcblxyXG5oZWFkZXIgLmNvbnRhaW5lciB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gIHotaW5kZXg6IDI7XHJcbn1cclxuXHJcbmhlYWRlciAub3ZlcmxheSB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogMDtcclxuICBsZWZ0OiAwO1xyXG4gIGhlaWdodDogMTAwJTtcclxuICB3aWR0aDogMTAwJTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICBvcGFjaXR5OiAwLjU7XHJcbiAgei1pbmRleDogMTtcclxufVxyXG5cclxuQG1lZGlhIChwb2ludGVyOiBjb2Fyc2UpIGFuZCAoaG92ZXI6IG5vbmUpIHtcclxuICBoZWFkZXIge1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCdodHRwczovL3NvdXJjZS51bnNwbGFzaC5jb20vWFQ1T0luYUVsTXcvMTYwMHg5MDAnKSBibGFjayBuby1yZXBlYXQgY2VudGVyIGNlbnRlciBzY3JvbGw7XHJcbiAgfVxyXG4gIGhlYWRlciB2aWRlbyB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufSJdfQ== */");
 
 /***/ }),
 
@@ -957,7 +1051,7 @@ DestinationDetailsComponent.ctorParameters = () => [
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
 ], DestinationDetailsComponent.prototype, "destination", void 0);
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('carousel', { static: true })
@@ -983,7 +1077,7 @@ DestinationDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("#sticky-footer {\n    /* flex-shrink: none; */\n    /* position: fixed; */\n   left: 0;\n   bottom: 0;\n   width: 100%;\n   color: white;\n   text-align: center;\n}\n\n.fa{\n    margin-right: 5%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHFCQUFxQjtHQUN0QixPQUFPO0dBQ1AsU0FBUztHQUNULFdBQVc7R0FDWCxZQUFZO0dBQ1osa0JBQWtCO0FBQ3JCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvdm95YWdlL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI3N0aWNreS1mb290ZXIge1xuICAgIC8qIGZsZXgtc2hyaW5rOiBub25lOyAqL1xuICAgIC8qIHBvc2l0aW9uOiBmaXhlZDsgKi9cbiAgIGxlZnQ6IDA7XG4gICBib3R0b206IDA7XG4gICB3aWR0aDogMTAwJTtcbiAgIGNvbG9yOiB3aGl0ZTtcbiAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmZhe1xuICAgIG1hcmdpbi1yaWdodDogNSU7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("#sticky-footer {\r\n    /* flex-shrink: none; */\r\n    /* position: fixed; */\r\n   left: 0;\r\n   bottom: 0;\r\n   width: 100%;\r\n   color: white;\r\n   text-align: center;\r\n}\r\n\r\n.fa{\r\n    margin-right: 5%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHFCQUFxQjtHQUN0QixPQUFPO0dBQ1AsU0FBUztHQUNULFdBQVc7R0FDWCxZQUFZO0dBQ1osa0JBQWtCO0FBQ3JCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvdm95YWdlL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI3N0aWNreS1mb290ZXIge1xyXG4gICAgLyogZmxleC1zaHJpbms6IG5vbmU7ICovXHJcbiAgICAvKiBwb3NpdGlvbjogZml4ZWQ7ICovXHJcbiAgIGxlZnQ6IDA7XHJcbiAgIGJvdHRvbTogMDtcclxuICAgd2lkdGg6IDEwMCU7XHJcbiAgIGNvbG9yOiB3aGl0ZTtcclxuICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4uZmF7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDUlO1xyXG59Il19 */");
 
 /***/ }),
 
@@ -1206,6 +1300,59 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/voyage/pages/signup/check-password.directive.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/voyage/pages/signup/check-password.directive.ts ***!
+  \*****************************************************************/
+/*! exports provided: CheckPasswordDirective */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckPasswordDirective", function() { return CheckPasswordDirective; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+var CheckPasswordDirective_1;
+
+
+
+function validatePassword() {
+    return (control) => {
+        let isValid = false;
+        if (control && control instanceof _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]) {
+            let group = control;
+            if (group.controls['passwordA'] && group.controls['passwordB']) {
+                isValid = group.controls['passwordA'].value == group.controls['passwordB'].value;
+            }
+        }
+        if (isValid) {
+            return null;
+        }
+        else {
+            return { 'passwordCheck': 'failed' };
+        }
+    };
+}
+let CheckPasswordDirective = CheckPasswordDirective_1 = class CheckPasswordDirective {
+    constructor() {
+        this.valFn = validatePassword();
+    }
+    validate(c) {
+        return this.valFn(c);
+    }
+};
+CheckPasswordDirective = CheckPasswordDirective_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"])({
+        selector: '[appCheckPassword]',
+        providers: [{ provide: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NG_VALIDATORS"], useExisting: CheckPasswordDirective_1, multi: true }]
+    })
+], CheckPasswordDirective);
+
+
+
+/***/ }),
+
 /***/ "./src/app/voyage/pages/signup/signup.component.css":
 /*!**********************************************************!*\
   !*** ./src/app/voyage/pages/signup/signup.component.css ***!
@@ -1231,20 +1378,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function() { return SignupComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/auth.service */ "./src/app/auth.service.ts");
+
 
 
 let SignupComponent = class SignupComponent {
-    constructor() { }
+    constructor(authService) {
+        this.authService = authService;
+    }
     ngOnInit() {
     }
     onFormSubmit(userForm) {
-        console.log(userForm);
-        console.log(userForm.value);
+        // console.log(userForm.value);
+        this.authService.signUp(userForm.value, (error) => this.error = error);
     }
     resetUserForm(userForm) {
         userForm.resetForm();
     }
 };
+SignupComponent.ctorParameters = () => [
+    { type: src_app_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
+];
 SignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-signup',
@@ -1252,6 +1406,50 @@ SignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./signup.component.css */ "./src/app/voyage/pages/signup/signup.component.css")).default]
     })
 ], SignupComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.css":
+/*!******************************************************************************************************!*\
+  !*** ./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.css ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("@media screen {\r\n    @font-face {\r\n        font-family: 'Lato';\r\n        font-style: normal;\r\n        font-weight: 400;\r\n        src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');\r\n    }\r\n\r\n    @font-face {\r\n        font-family: 'Lato';\r\n        font-style: normal;\r\n        font-weight: 700;\r\n        src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');\r\n    }\r\n\r\n    @font-face {\r\n        font-family: 'Lato';\r\n        font-style: italic;\r\n        font-weight: 400;\r\n        src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');\r\n    }\r\n\r\n    @font-face {\r\n        font-family: 'Lato';\r\n        font-style: italic;\r\n        font-weight: 700;\r\n        src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');\r\n    }\r\n}\r\n\r\n/* CLIENT-SPECIFIC STYLES */\r\n\r\nbody,\r\ntable,\r\ntd,\r\na {\r\n    -webkit-text-size-adjust: 100%;\r\n    -ms-text-size-adjust: 100%;\r\n}\r\n\r\ntable,\r\ntd {\r\n    mso-table-lspace: 0pt;\r\n    mso-table-rspace: 0pt;\r\n}\r\n\r\nimg {\r\n    -ms-interpolation-mode: bicubic;\r\n}\r\n\r\n/* RESET STYLES */\r\n\r\nimg {\r\n    border: 0;\r\n    height: auto;\r\n    line-height: 100%;\r\n    outline: none;\r\n    text-decoration: none;\r\n}\r\n\r\ntable {\r\n    border-collapse: collapse !important;\r\n}\r\n\r\nbody {\r\n    height: 100% !important;\r\n    margin: 0 !important;\r\n    padding: 0 !important;\r\n    width: 100% !important;\r\n}\r\n\r\n/* iOS BLUE LINKS */\r\n\r\na[x-apple-data-detectors] {\r\n    color: inherit !important;\r\n    text-decoration: none !important;\r\n    font-size: inherit !important;\r\n    font-family: inherit !important;\r\n    font-weight: inherit !important;\r\n    line-height: inherit !important;\r\n}\r\n\r\n/* MOBILE STYLES */\r\n\r\n@media screen and (max-width:600px) {\r\n    h1 {\r\n        font-size: 32px !important;\r\n        line-height: 32px !important;\r\n    }\r\n}\r\n\r\n/* ANDROID CENTER FIX */\r\n\r\ndiv[style*=\"margin: 16px 0;\"] {\r\n    margin: 0 !important;\r\n}                \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL3BhZ2VzL3ZveWFnZS1jb25maXJtYXRpb24tY29tbWFuZGUvdm95YWdlLWNvbmZpcm1hdGlvbi1jb21tYW5kZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0k7UUFDSSxtQkFBbUI7UUFDbkIsa0JBQWtCO1FBQ2xCLGdCQUFnQjtRQUNoQiw0SkFBNEo7SUFDaEs7O0lBRUE7UUFDSSxtQkFBbUI7UUFDbkIsa0JBQWtCO1FBQ2xCLGdCQUFnQjtRQUNoQixzSkFBc0o7SUFDMUo7O0lBRUE7UUFDSSxtQkFBbUI7UUFDbkIsa0JBQWtCO1FBQ2xCLGdCQUFnQjtRQUNoQiwwSkFBMEo7SUFDOUo7O0lBRUE7UUFDSSxtQkFBbUI7UUFDbkIsa0JBQWtCO1FBQ2xCLGdCQUFnQjtRQUNoQixtS0FBbUs7SUFDdks7QUFDSjs7QUFFQSwyQkFBMkI7O0FBQzNCOzs7O0lBSUksOEJBQThCO0lBQzlCLDBCQUEwQjtBQUM5Qjs7QUFFQTs7SUFFSSxxQkFBcUI7SUFDckIscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksK0JBQStCO0FBQ25DOztBQUVBLGlCQUFpQjs7QUFDakI7SUFDSSxTQUFTO0lBQ1QsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2IscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksb0NBQW9DO0FBQ3hDOztBQUVBO0lBQ0ksdUJBQXVCO0lBQ3ZCLG9CQUFvQjtJQUNwQixxQkFBcUI7SUFDckIsc0JBQXNCO0FBQzFCOztBQUVBLG1CQUFtQjs7QUFDbkI7SUFDSSx5QkFBeUI7SUFDekIsZ0NBQWdDO0lBQ2hDLDZCQUE2QjtJQUM3QiwrQkFBK0I7SUFDL0IsK0JBQStCO0lBQy9CLCtCQUErQjtBQUNuQzs7QUFFQSxrQkFBa0I7O0FBQ2xCO0lBQ0k7UUFDSSwwQkFBMEI7UUFDMUIsNEJBQTRCO0lBQ2hDO0FBQ0o7O0FBRUEsdUJBQXVCOztBQUN2QjtJQUNJLG9CQUFvQjtBQUN4QiIsImZpbGUiOiJzcmMvYXBwL3ZveWFnZS9wYWdlcy92b3lhZ2UtY29uZmlybWF0aW9uLWNvbW1hbmRlL3ZveWFnZS1jb25maXJtYXRpb24tY29tbWFuZGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSBzY3JlZW4ge1xyXG4gICAgQGZvbnQtZmFjZSB7XHJcbiAgICAgICAgZm9udC1mYW1pbHk6ICdMYXRvJztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgICAgICBzcmM6IGxvY2FsKCdMYXRvIFJlZ3VsYXInKSwgbG9jYWwoJ0xhdG8tUmVndWxhcicpLCB1cmwoaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL2xhdG8vdjExL3FJSVlSVS1vUk9rSWs4dmZ2eHc2UXZlc1pXMnhPUS14c05xTzQ3bTU1REEud29mZikgZm9ybWF0KCd3b2ZmJyk7XHJcbiAgICB9XHJcblxyXG4gICAgQGZvbnQtZmFjZSB7XHJcbiAgICAgICAgZm9udC1mYW1pbHk6ICdMYXRvJztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICAgICAgICBzcmM6IGxvY2FsKCdMYXRvIEJvbGQnKSwgbG9jYWwoJ0xhdG8tQm9sZCcpLCB1cmwoaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL2xhdG8vdjExL3FkZ1VHNFUwOUhuSndoWUktdUsxOHdMVXVFcFR5b1VzdHFFbTVBTWxKbzQud29mZikgZm9ybWF0KCd3b2ZmJyk7XHJcbiAgICB9XHJcblxyXG4gICAgQGZvbnQtZmFjZSB7XHJcbiAgICAgICAgZm9udC1mYW1pbHk6ICdMYXRvJztcclxuICAgICAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgICAgICBzcmM6IGxvY2FsKCdMYXRvIEl0YWxpYycpLCBsb2NhbCgnTGF0by1JdGFsaWMnKSwgdXJsKGh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9sYXRvL3YxMS9SWXlaTm9lRmdiMGw3VzNWdTFhU1dPdnZEaW4xcEs4YUt0ZUxwZVo1YzBBLndvZmYpIGZvcm1hdCgnd29mZicpO1xyXG4gICAgfVxyXG5cclxuICAgIEBmb250LWZhY2Uge1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiAnTGF0byc7XHJcbiAgICAgICAgZm9udC1zdHlsZTogaXRhbGljO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbiAgICAgICAgc3JjOiBsb2NhbCgnTGF0byBCb2xkIEl0YWxpYycpLCBsb2NhbCgnTGF0by1Cb2xkSXRhbGljJyksIHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3MvbGF0by92MTEvSGtGX3FJMXhfbm94bHhocmhNUVlFTE8zTGRjQVpZV2w5U2k2dnZ4TC1xVS53b2ZmKSBmb3JtYXQoJ3dvZmYnKTtcclxuICAgIH1cclxufVxyXG5cclxuLyogQ0xJRU5ULVNQRUNJRklDIFNUWUxFUyAqL1xyXG5ib2R5LFxyXG50YWJsZSxcclxudGQsXHJcbmEge1xyXG4gICAgLXdlYmtpdC10ZXh0LXNpemUtYWRqdXN0OiAxMDAlO1xyXG4gICAgLW1zLXRleHQtc2l6ZS1hZGp1c3Q6IDEwMCU7XHJcbn1cclxuXHJcbnRhYmxlLFxyXG50ZCB7XHJcbiAgICBtc28tdGFibGUtbHNwYWNlOiAwcHQ7XHJcbiAgICBtc28tdGFibGUtcnNwYWNlOiAwcHQ7XHJcbn1cclxuXHJcbmltZyB7XHJcbiAgICAtbXMtaW50ZXJwb2xhdGlvbi1tb2RlOiBiaWN1YmljO1xyXG59XHJcblxyXG4vKiBSRVNFVCBTVFlMRVMgKi9cclxuaW1nIHtcclxuICAgIGJvcmRlcjogMDtcclxuICAgIGhlaWdodDogYXV0bztcclxuICAgIGxpbmUtaGVpZ2h0OiAxMDAlO1xyXG4gICAgb3V0bGluZTogbm9uZTtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxudGFibGUge1xyXG4gICAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZSAhaW1wb3J0YW50O1xyXG59XHJcblxyXG5ib2R5IHtcclxuICAgIGhlaWdodDogMTAwJSAhaW1wb3J0YW50O1xyXG4gICAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XHJcbiAgICB3aWR0aDogMTAwJSAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4vKiBpT1MgQkxVRSBMSU5LUyAqL1xyXG5hW3gtYXBwbGUtZGF0YS1kZXRlY3RvcnNdIHtcclxuICAgIGNvbG9yOiBpbmhlcml0ICFpbXBvcnRhbnQ7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmUgIWltcG9ydGFudDtcclxuICAgIGZvbnQtc2l6ZTogaW5oZXJpdCAhaW1wb3J0YW50O1xyXG4gICAgZm9udC1mYW1pbHk6IGluaGVyaXQgIWltcG9ydGFudDtcclxuICAgIGZvbnQtd2VpZ2h0OiBpbmhlcml0ICFpbXBvcnRhbnQ7XHJcbiAgICBsaW5lLWhlaWdodDogaW5oZXJpdCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4vKiBNT0JJTEUgU1RZTEVTICovXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NjAwcHgpIHtcclxuICAgIGgxIHtcclxuICAgICAgICBmb250LXNpemU6IDMycHggIWltcG9ydGFudDtcclxuICAgICAgICBsaW5lLWhlaWdodDogMzJweCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG59XHJcblxyXG4vKiBBTkRST0lEIENFTlRFUiBGSVggKi9cclxuZGl2W3N0eWxlKj1cIm1hcmdpbjogMTZweCAwO1wiXSB7XHJcbiAgICBtYXJnaW46IDAgIWltcG9ydGFudDtcclxufSAgICAgICAgICAgICAgICAiXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.ts":
+/*!*****************************************************************************************************!*\
+  !*** ./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.ts ***!
+  \*****************************************************************************************************/
+/*! exports provided: VoyageConfirmationCommandeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoyageConfirmationCommandeComponent", function() { return VoyageConfirmationCommandeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let VoyageConfirmationCommandeComponent = class VoyageConfirmationCommandeComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+VoyageConfirmationCommandeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-voyage-confirmation-commande',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./voyage-confirmation-commande.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./voyage-confirmation-commande.component.css */ "./src/app/voyage/pages/voyage-confirmation-commande/voyage-confirmation-commande.component.css")).default]
+    })
+], VoyageConfirmationCommandeComponent);
 
 
 
@@ -1266,7 +1464,7 @@ SignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("hr.hr-text {\r\n    position: relative;\r\n    border: none;\r\n    height: 1px;\r\n    background: #999;\r\n}\r\n\r\nhr.hr-text::before {\r\n    content: attr(data-content);\r\n    display: inline-block;\r\n    background: #fff;\r\n    font-weight: bold;\r\n    font-size: 0.85rem;\r\n    color: #999;\r\n    border-radius: 30rem;\r\n    padding: 0.2rem 2rem;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n}\r\n\r\n.date-right {\r\n    margin-right: 800px;\r\n}\r\n\r\n/*************** Bouton + - *******************/\r\n\r\n.btn-default {\r\n    color: #333;\r\n    background-color: #fff;\r\n    border-color: #ccc;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL3BhZ2VzL3ZveWFnZS1jcmVhdGlvbi92b3lhZ2UtY3JlYXRpb24uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osV0FBVztJQUNYLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLDJCQUEyQjtJQUMzQixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsV0FBVztJQUNYLG9CQUFvQjtJQUNwQixvQkFBb0I7SUFDcEIsa0JBQWtCO0lBQ2xCLFFBQVE7SUFDUixTQUFTO0lBQ1QsZ0NBQWdDO0FBQ3BDOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUdBLCtDQUErQzs7QUFFL0M7SUFDSSxXQUFXO0lBQ1gsc0JBQXNCO0lBQ3RCLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL3ZveWFnZS9wYWdlcy92b3lhZ2UtY3JlYXRpb24vdm95YWdlLWNyZWF0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoci5oci10ZXh0IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGhlaWdodDogMXB4O1xyXG4gICAgYmFja2dyb3VuZDogIzk5OTtcclxufVxyXG5cclxuaHIuaHItdGV4dDo6YmVmb3JlIHtcclxuICAgIGNvbnRlbnQ6IGF0dHIoZGF0YS1jb250ZW50KTtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIGJhY2tncm91bmQ6ICNmZmY7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGZvbnQtc2l6ZTogMC44NXJlbTtcclxuICAgIGNvbG9yOiAjOTk5O1xyXG4gICAgYm9yZGVyLXJhZGl1czogMzByZW07XHJcbiAgICBwYWRkaW5nOiAwLjJyZW0gMnJlbTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgbGVmdDogNTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbn1cclxuXHJcbi5kYXRlLXJpZ2h0IHtcclxuICAgIG1hcmdpbi1yaWdodDogODAwcHg7XHJcbn1cclxuICBcclxuXHJcbi8qKioqKioqKioqKioqKiogQm91dG9uICsgLSAqKioqKioqKioqKioqKioqKioqL1xyXG5cclxuLmJ0bi1kZWZhdWx0IHtcclxuICAgIGNvbG9yOiAjMzMzO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcclxuICAgIGJvcmRlci1jb2xvcjogI2NjYztcclxufVxyXG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".displayDate{\r\n    display: flex;\r\n    justify-content: space-between;\r\n  }\r\n  \r\n  /****************  ******************************/\r\n  \r\n  hr.hr-text {\r\n    position: relative;\r\n    border: none;\r\n    height: 1px;\r\n    background: #999;\r\n}\r\n  \r\n  hr.hr-text::before {\r\n    content: attr(data-content);\r\n    display: inline-block;\r\n    background: #fff;\r\n    font-weight: bold;\r\n    font-size: 0.85rem;\r\n    color: #999;\r\n    border-radius: 30rem;\r\n    padding: 0.2rem 2rem;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n}\r\n  \r\n  .date-right {\r\n    margin-right: 500px;\r\n}\r\n  \r\n  /*************** Bouton + - *******************/\r\n  \r\n  .btn-default {\r\n    color: #333;\r\n    background-color: #fff;\r\n    border-color: #ccc;\r\n}\r\n  \r\n  /********************** tableau  *********************/\r\n  \r\n  .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {\r\n    border-top-right-radius: 0;\r\n    border-bottom-right-radius: 0;\r\n}\r\n  \r\n  .btn-group>.btn:first-child {\r\n  margin-left: 0;\r\n}\r\n  \r\n  .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {\r\n  border-radius: 0;\r\n}\r\n  \r\n  .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {\r\n  margin-left: -1px;\r\n}\r\n  \r\n  .btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child) {\r\n  border-top-left-radius: 0;\r\n  border-bottom-left-radius: 0;\r\n}\r\n  \r\n  [data-toggle=buttons]>.btn input[type=checkbox], [data-toggle=buttons]>.btn input[type=radio], [data-toggle=buttons]>.btn-group>.btn input[type=checkbox], [data-toggle=buttons]>.btn-group>.btn input[type=radio] {\r\n  position: absolute;\r\n  clip: rect(0,0,0,0);\r\n  pointer-events: none;\r\n}\r\n  \r\n  input[type=checkbox], input[type=radio] {\r\n  margin: 4px 0 0;\r\n  margin-top: 1px\\9;\r\n  line-height: normal;\r\n}\r\n  \r\n  .table-wrapper {\r\n    width: 850px;\r\n    background: #fff;\r\n    padding: 20px 30px 5px;\r\n    margin: 30px auto;\r\n    box-shadow: 0 0 1px 0 rgba(0,0,0,.25);\r\n}\r\n  \r\n  .table-title .btn-group {\r\nfloat: right;\r\n}\r\n  \r\n  .table-title .btn {\r\nmin-width: 50px;\r\nborder-radius: 2px;\r\nborder: none;\r\npadding: 6px 12px;\r\nfont-size: 95%;\r\noutline: none !important;\r\nheight: 30px;\r\n}\r\n  \r\n  .table-title {\r\nborder-bottom: 1px solid #e9e9e9;\r\npadding-bottom: 15px;\r\nmargin-bottom: 5px;\r\nbackground: rgb(0, 50, 74);\r\nmargin: -20px -31px 10px;\r\npadding: 15px 30px;\r\ncolor: #fff;\r\n}\r\n  \r\n  .table-title h2 {\r\nmargin: 2px 0 0;\r\nfont-size: 24px;\r\n}\r\n  \r\n  table.table tr th, table.table tr td {\r\n    border-color: #e9e9e9;\r\npadding: 12px 15px;\r\nvertical-align: middle;\r\n}\r\n  \r\n  table.table tr th:first-child {\r\nwidth: 40px;\r\n}\r\n  \r\n  table.table tr th:last-child {\r\nwidth: 100px;\r\n}\r\n  \r\n  table.table-striped tbody tr:nth-of-type(odd) {\r\n  background-color: #fcfcfc;\r\n}\r\n  \r\n  table.table-striped.table-hover tbody tr:hover {\r\nbackground: #f5f5f5;\r\n}\r\n  \r\n  table.table td a {\r\n    color: #2196f3;\r\n}\r\n  \r\n  table.table td .btn.manage {\r\npadding: 2px 10px;\r\nbackground: #37BC9B;\r\ncolor: #fff;\r\nborder-radius: 2px;\r\n}\r\n  \r\n  table.table td .btn.manage:hover {\r\nbackground: #2e9c81;\t\t\r\n}\r\n  \r\n  .label {\r\n  display: inline;\r\n  padding: .2em .6em .3em;\r\n  font-size: 75%;\r\n  font-weight: 700;\r\n  line-height: 1;\r\n  color: #fff;\r\n  text-align: center;\r\n  white-space: nowrap;\r\n  vertical-align: baseline;\r\n  border-radius: .25em;\r\n}\r\n  \r\n  .label-success {\r\n  background-color: #5cb85c;\r\n}\r\n  \r\n  .label-danger {\r\n  background-color: #d9534f;\r\n}\r\n  \r\n  .label-warning {\r\n  background-color: #f0ad4e;\r\n}\r\n  \r\n  /**************  *************************************/\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL3BhZ2VzL3ZveWFnZS1jcmVhdGlvbi92b3lhZ2UtY3JlYXRpb24uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7RUFDaEM7O0VBRUEsaURBQWlEOztFQUVuRDtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osV0FBVztJQUNYLGdCQUFnQjtBQUNwQjs7RUFFQTtJQUNJLDJCQUEyQjtJQUMzQixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsV0FBVztJQUNYLG9CQUFvQjtJQUNwQixvQkFBb0I7SUFDcEIsa0JBQWtCO0lBQ2xCLFFBQVE7SUFDUixTQUFTO0lBQ1QsZ0NBQWdDO0FBQ3BDOztFQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztFQUdBLCtDQUErQzs7RUFFL0M7SUFDSSxXQUFXO0lBQ1gsc0JBQXNCO0lBQ3RCLGtCQUFrQjtBQUN0Qjs7RUFFQSxzREFBc0Q7O0VBQ3JEO0lBQ0csMEJBQTBCO0lBQzFCLDZCQUE2QjtBQUNqQzs7RUFDQTtFQUNFLGNBQWM7QUFDaEI7O0VBQ0E7RUFDRSxnQkFBZ0I7QUFDbEI7O0VBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7O0VBQ0E7RUFDRSx5QkFBeUI7RUFDekIsNEJBQTRCO0FBQzlCOztFQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixvQkFBb0I7QUFDdEI7O0VBQ0E7RUFDRSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLG1CQUFtQjtBQUNyQjs7RUFFQTtJQUNJLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsc0JBQXNCO0lBQ3RCLGlCQUFpQjtJQUNqQixxQ0FBcUM7QUFDekM7O0VBQ0E7QUFDQSxZQUFZO0FBQ1o7O0VBQ0E7QUFDQSxlQUFlO0FBQ2Ysa0JBQWtCO0FBQ2xCLFlBQVk7QUFDWixpQkFBaUI7QUFDakIsY0FBYztBQUNkLHdCQUF3QjtBQUN4QixZQUFZO0FBQ1o7O0VBQ0E7QUFDQSxnQ0FBZ0M7QUFDaEMsb0JBQW9CO0FBQ3BCLGtCQUFrQjtBQUNsQiwwQkFBMEI7QUFDMUIsd0JBQXdCO0FBQ3hCLGtCQUFrQjtBQUNsQixXQUFXO0FBQ1g7O0VBQ0E7QUFDQSxlQUFlO0FBQ2YsZUFBZTtBQUNmOztFQUNBO0lBQ0kscUJBQXFCO0FBQ3pCLGtCQUFrQjtBQUNsQixzQkFBc0I7QUFDdEI7O0VBQ0E7QUFDQSxXQUFXO0FBQ1g7O0VBQ0E7QUFDQSxZQUFZO0FBQ1o7O0VBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7O0VBQ0E7QUFDQSxtQkFBbUI7QUFDbkI7O0VBQ0E7SUFDSSxjQUFjO0FBQ2xCOztFQUNBO0FBQ0EsaUJBQWlCO0FBQ2pCLG1CQUFtQjtBQUNuQixXQUFXO0FBQ1gsa0JBQWtCO0FBQ2xCOztFQUNBO0FBQ0EsbUJBQW1CO0FBQ25COztFQUNBO0VBQ0UsZUFBZTtFQUNmLHVCQUF1QjtFQUN2QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQix3QkFBd0I7RUFDeEIsb0JBQW9CO0FBQ3RCOztFQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztFQUNBO0VBQ0UseUJBQXlCO0FBQzNCOztFQUNBO0VBQ0UseUJBQXlCO0FBQzNCOztFQUNBLHNEQUFzRCIsImZpbGUiOiJzcmMvYXBwL3ZveWFnZS9wYWdlcy92b3lhZ2UtY3JlYXRpb24vdm95YWdlLWNyZWF0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZGlzcGxheURhdGV7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gIH1cclxuICBcclxuICAvKioqKioqKioqKioqKioqKiAgKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xyXG5cclxuaHIuaHItdGV4dCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBoZWlnaHQ6IDFweDtcclxuICAgIGJhY2tncm91bmQ6ICM5OTk7XHJcbn1cclxuXHJcbmhyLmhyLXRleHQ6OmJlZm9yZSB7XHJcbiAgICBjb250ZW50OiBhdHRyKGRhdGEtY29udGVudCk7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZmO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LXNpemU6IDAuODVyZW07XHJcbiAgICBjb2xvcjogIzk5OTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDMwcmVtO1xyXG4gICAgcGFkZGluZzogMC4ycmVtIDJyZW07XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDUwJTtcclxuICAgIGxlZnQ6IDUwJTtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xyXG59XHJcblxyXG4uZGF0ZS1yaWdodCB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDUwMHB4O1xyXG59XHJcbiAgXHJcblxyXG4vKioqKioqKioqKioqKioqIEJvdXRvbiArIC0gKioqKioqKioqKioqKioqKioqKi9cclxuXHJcbi5idG4tZGVmYXVsdCB7XHJcbiAgICBjb2xvcjogIzMzMztcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XHJcbiAgICBib3JkZXItY29sb3I6ICNjY2M7XHJcbn1cclxuXHJcbi8qKioqKioqKioqKioqKioqKioqKioqIHRhYmxlYXUgICoqKioqKioqKioqKioqKioqKioqKi9cclxuIC5idG4tZ3JvdXA+LmJ0bjpmaXJzdC1jaGlsZDpub3QoOmxhc3QtY2hpbGQpOm5vdCguZHJvcGRvd24tdG9nZ2xlKSB7XHJcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMDtcclxuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAwO1xyXG59XHJcbi5idG4tZ3JvdXA+LmJ0bjpmaXJzdC1jaGlsZCB7XHJcbiAgbWFyZ2luLWxlZnQ6IDA7XHJcbn1cclxuLmJ0bi1ncm91cD4uYnRuOm5vdCg6Zmlyc3QtY2hpbGQpOm5vdCg6bGFzdC1jaGlsZCk6bm90KC5kcm9wZG93bi10b2dnbGUpIHtcclxuICBib3JkZXItcmFkaXVzOiAwO1xyXG59XHJcbi5idG4tZ3JvdXAgLmJ0bisuYnRuLCAuYnRuLWdyb3VwIC5idG4rLmJ0bi1ncm91cCwgLmJ0bi1ncm91cCAuYnRuLWdyb3VwKy5idG4sIC5idG4tZ3JvdXAgLmJ0bi1ncm91cCsuYnRuLWdyb3VwIHtcclxuICBtYXJnaW4tbGVmdDogLTFweDtcclxufVxyXG4uYnRuLWdyb3VwPi5idG46bGFzdC1jaGlsZDpub3QoOmZpcnN0LWNoaWxkKSwgLmJ0bi1ncm91cD4uZHJvcGRvd24tdG9nZ2xlOm5vdCg6Zmlyc3QtY2hpbGQpIHtcclxuICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAwO1xyXG4gIGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDA7XHJcbn1cclxuW2RhdGEtdG9nZ2xlPWJ1dHRvbnNdPi5idG4gaW5wdXRbdHlwZT1jaGVja2JveF0sIFtkYXRhLXRvZ2dsZT1idXR0b25zXT4uYnRuIGlucHV0W3R5cGU9cmFkaW9dLCBbZGF0YS10b2dnbGU9YnV0dG9uc10+LmJ0bi1ncm91cD4uYnRuIGlucHV0W3R5cGU9Y2hlY2tib3hdLCBbZGF0YS10b2dnbGU9YnV0dG9uc10+LmJ0bi1ncm91cD4uYnRuIGlucHV0W3R5cGU9cmFkaW9dIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgY2xpcDogcmVjdCgwLDAsMCwwKTtcclxuICBwb2ludGVyLWV2ZW50czogbm9uZTtcclxufVxyXG5pbnB1dFt0eXBlPWNoZWNrYm94XSwgaW5wdXRbdHlwZT1yYWRpb10ge1xyXG4gIG1hcmdpbjogNHB4IDAgMDtcclxuICBtYXJnaW4tdG9wOiAxcHhcXDk7XHJcbiAgbGluZS1oZWlnaHQ6IG5vcm1hbDtcclxufVxyXG5cclxuLnRhYmxlLXdyYXBwZXIge1xyXG4gICAgd2lkdGg6IDg1MHB4O1xyXG4gICAgYmFja2dyb3VuZDogI2ZmZjtcclxuICAgIHBhZGRpbmc6IDIwcHggMzBweCA1cHg7XHJcbiAgICBtYXJnaW46IDMwcHggYXV0bztcclxuICAgIGJveC1zaGFkb3c6IDAgMCAxcHggMCByZ2JhKDAsMCwwLC4yNSk7XHJcbn1cclxuLnRhYmxlLXRpdGxlIC5idG4tZ3JvdXAge1xyXG5mbG9hdDogcmlnaHQ7XHJcbn1cclxuLnRhYmxlLXRpdGxlIC5idG4ge1xyXG5taW4td2lkdGg6IDUwcHg7XHJcbmJvcmRlci1yYWRpdXM6IDJweDtcclxuYm9yZGVyOiBub25lO1xyXG5wYWRkaW5nOiA2cHggMTJweDtcclxuZm9udC1zaXplOiA5NSU7XHJcbm91dGxpbmU6IG5vbmUgIWltcG9ydGFudDtcclxuaGVpZ2h0OiAzMHB4O1xyXG59XHJcbi50YWJsZS10aXRsZSB7XHJcbmJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZTllOWU5O1xyXG5wYWRkaW5nLWJvdHRvbTogMTVweDtcclxubWFyZ2luLWJvdHRvbTogNXB4O1xyXG5iYWNrZ3JvdW5kOiByZ2IoMCwgNTAsIDc0KTtcclxubWFyZ2luOiAtMjBweCAtMzFweCAxMHB4O1xyXG5wYWRkaW5nOiAxNXB4IDMwcHg7XHJcbmNvbG9yOiAjZmZmO1xyXG59XHJcbi50YWJsZS10aXRsZSBoMiB7XHJcbm1hcmdpbjogMnB4IDAgMDtcclxuZm9udC1zaXplOiAyNHB4O1xyXG59XHJcbnRhYmxlLnRhYmxlIHRyIHRoLCB0YWJsZS50YWJsZSB0ciB0ZCB7XHJcbiAgICBib3JkZXItY29sb3I6ICNlOWU5ZTk7XHJcbnBhZGRpbmc6IDEycHggMTVweDtcclxudmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxufVxyXG50YWJsZS50YWJsZSB0ciB0aDpmaXJzdC1jaGlsZCB7XHJcbndpZHRoOiA0MHB4O1xyXG59XHJcbnRhYmxlLnRhYmxlIHRyIHRoOmxhc3QtY2hpbGQge1xyXG53aWR0aDogMTAwcHg7XHJcbn1cclxudGFibGUudGFibGUtc3RyaXBlZCB0Ym9keSB0cjpudGgtb2YtdHlwZShvZGQpIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmNmY2ZjO1xyXG59XHJcbnRhYmxlLnRhYmxlLXN0cmlwZWQudGFibGUtaG92ZXIgdGJvZHkgdHI6aG92ZXIge1xyXG5iYWNrZ3JvdW5kOiAjZjVmNWY1O1xyXG59XHJcbnRhYmxlLnRhYmxlIHRkIGEge1xyXG4gICAgY29sb3I6ICMyMTk2ZjM7XHJcbn1cclxudGFibGUudGFibGUgdGQgLmJ0bi5tYW5hZ2Uge1xyXG5wYWRkaW5nOiAycHggMTBweDtcclxuYmFja2dyb3VuZDogIzM3QkM5QjtcclxuY29sb3I6ICNmZmY7XHJcbmJvcmRlci1yYWRpdXM6IDJweDtcclxufVxyXG50YWJsZS50YWJsZSB0ZCAuYnRuLm1hbmFnZTpob3ZlciB7XHJcbmJhY2tncm91bmQ6ICMyZTljODE7XHRcdFxyXG59XHJcbi5sYWJlbCB7XHJcbiAgZGlzcGxheTogaW5saW5lO1xyXG4gIHBhZGRpbmc6IC4yZW0gLjZlbSAuM2VtO1xyXG4gIGZvbnQtc2l6ZTogNzUlO1xyXG4gIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbiAgbGluZS1oZWlnaHQ6IDE7XHJcbiAgY29sb3I6ICNmZmY7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XHJcbiAgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lO1xyXG4gIGJvcmRlci1yYWRpdXM6IC4yNWVtO1xyXG59XHJcblxyXG4ubGFiZWwtc3VjY2VzcyB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzVjYjg1YztcclxufVxyXG4ubGFiZWwtZGFuZ2VyIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZDk1MzRmO1xyXG59XHJcbi5sYWJlbC13YXJuaW5nIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjBhZDRlO1xyXG59XHJcbi8qKioqKioqKioqKioqKiAgKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cclxuIl19 */");
 
 /***/ }),
 
@@ -1285,78 +1483,116 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _shared_services_destination_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/services/destination.service */ "./src/app/voyage/shared/services/destination.service.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _shared_services_voyage_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../shared/services/voyage.service */ "./src/app/voyage/shared/services/voyage.service.ts");
+/* harmony import */ var _shared_entities_voyageurs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/entities/voyageurs */ "./src/app/voyage/shared/entities/voyageurs.ts");
+/* harmony import */ var _shared_services_client_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/services/client.service */ "./src/app/voyage/shared/services/client.service.ts");
+
+
+
 
 
 
 
 
 let VoyageCreationComponent = class VoyageCreationComponent {
-    constructor(destinationService, activatedRoute, router) {
+    constructor(destinationService, activatedRoute, router, voyageService, clientService) {
         this.destinationService = destinationService;
         this.activatedRoute = activatedRoute;
         this.router = router;
+        this.voyageService = voyageService;
+        this.clientService = clientService;
+        this.voyageurs = [];
+        this.voyageur = new _shared_entities_voyageurs__WEBPACK_IMPORTED_MODULE_6__["Voyageur"]();
+        this.civilites = [
+            'Mlle',
+            'Mme',
+            'M'
+        ];
     }
+    ;
+    // get participants():FormArray{
+    //   return this.form.get('participants') as FormArray
+    // }
     ngOnInit() {
         this.activatedRoute.paramMap.subscribe((map) => {
             const id = +map.get('id');
             this.destinationService.getdatesVoyages(id).subscribe(datesVoyages => {
                 this.datesVoyages = datesVoyages;
                 console.log(this.datesVoyages);
+                this.destinationService.getDestinationById(this.datesVoyages.fk_destination).subscribe((destination) => { this.destination = destination; });
             }, error => console.log(" Error is : " + error), () => console.log("finished"));
         });
-        this.form = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormGroup"]({});
-        $('.btn-minuse').on('click', function () {
-            $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) - 1);
-        });
-        $('.btn-pluss').on('click', function () {
-            $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) + 1);
-        });
+        this.createFormControls();
+        this.createForm();
+        this.clientService.getClientByNom(localStorage.getItem('userName')).subscribe((client) => { this.client = client; });
     }
-    // $('.btn-number').click(function(e){
-    //   e.preventDefault();
-    //   var fieldName = $(this).attr('data-field');
-    //   var type      = $(this).attr('data-type');
-    //   var input = $("input[name='"+fieldName+"']");
-    //   var reverseInput = $("button[data-field='" + fieldName + "'][data-type!='" + type + "']");
-    //   var currentVal = parseInt(input.val());
-    //   if (!isNaN(currentVal)) {
-    //     if(type == 'minus') {
-    //       $(reverseInput).attr('disabled', false);
-    //       var minValue = parseInt(input.attr('min')); 
-    //       if(!minValue) minValue = 1;
-    //       if(currentVal > minValue) {
-    //         input.val(currentVal - 1).change();
-    //       } 
-    //       if(parseInt(input.val()) == minValue) {
-    //         $(this).attr('disabled', true);
-    //       }
-    //     } else if(type == 'plus') {
-    //       $(reverseInput).attr('disabled', false);
-    //       var maxValue = parseInt(input.attr('max'));
-    //       if(!maxValue) maxValue = 9;
-    //       if(currentVal < maxValue) {
-    //         input.val(currentVal + 1).change();
-    //       }
-    //       if(parseInt(input.val()) == maxValue) {
-    //         $(this).attr('disabled', true);
-    //       }
-    //     }
-    //   } else {
-    //     input.val(0);
-    //   }
-    // });
-    onSubmit(f) {
-        console.log(f);
+    createFormControls() {
+        // this.form = new FormGroup({
+        // 'participants' : new FormArray([
+        // new FormControl({
+        this.civilite = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required),
+            this.nom = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required),
+            this.prenom = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required),
+            this.dateNaissance = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required);
+        // })
+        // ])
+        // })
+    }
+    createForm() {
+        this.form = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormGroup"]({
+            nom: this.nom,
+            prenom: this.prenom,
+            dateNaissance: this.dateNaissance,
+            civilite: this.civilite
+        });
+        // this.voyageurs.push();
+    }
+    onSubmit() {
+        // if(this.form.valid){
+        console.warn("voyageurs : " + JSON.stringify(this.voyageurs));
+        console.log("Console, oh belle console, dis moi quelle est ma destination! " + JSON.stringify(this.destination));
+        // this.voyageService.createVoyageObject(this.voyageurs, this.client, this.datesVoyages);
+        // console.log("ce que je demande de créer : "+JSON.stringify(this.voyageService.createVoyageObject(this.voyageService.createVoyageObject(this.voyageurs, this.client, this.datesVoyages, this.destination.descriptif, this.destination.region));
+        this.voyageService.createVoyage(this.voyageService.createVoyageObject(this.voyageurs, this.client, this.datesVoyages, this.destination.descriptif, this.destination.region));
+        console.log("formulaire envoyé !");
+        this.router.navigate(['/voyage-confirmation']);
+        // this.destination.descriptif, this.destination.region
+        // }
+    }
+    addParticipants() {
+        // console.log(form.value);
+        // this.voyageurs.push(voyageurs);
+        // return this;
+        // this.displayNom = this.nom.value;
+        // this.displayPrenom = this.prenom.value;
+        // this.displayCivilite = this.civilites.value;
+        // this.displayDateNaissance = this.dateNaissance.value;
+        // for(let i=0; i<voyageur.size; i++){
+        //   voyageur[i].nom = this.form.get('nom').value;
+        //   voyageur[i].prenom = this.form.get('prenom').value;
+        //   voyageur[i].dateNaissance = this.form.get('dateNaissance').value;
+        // }
+        // this.voyageService.createVoyageur(form.value);
+        // (error) => this.error = error
+        this.voyageurs.push(this.voyageur);
+        // this.form.reset();
+        this.voyageur = new _shared_entities_voyageurs__WEBPACK_IMPORTED_MODULE_6__["Voyageur"]();
+        console.log(this.voyageurs);
     }
 };
 VoyageCreationComponent.ctorParameters = () => [
     { type: _shared_services_destination_service__WEBPACK_IMPORTED_MODULE_3__["DestinationService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: _shared_services_voyage_service__WEBPACK_IMPORTED_MODULE_5__["VoyageService"] },
+    { type: _shared_services_client_service__WEBPACK_IMPORTED_MODULE_7__["ClientService"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
 ], VoyageCreationComponent.prototype, "datesVoyages", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], VoyageCreationComponent.prototype, "destination", void 0);
 VoyageCreationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-voyage-creation',
@@ -1378,7 +1614,7 @@ VoyageCreationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".separation{\n  padding-bottom: 100px !important; \n  padding-right: 30px !important;\n}\n\n.hover {\n    overflow: hidden;\n    position: relative;\n    padding-bottom: 60%;\n  }\n\n.hover-overlay {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 90;\n    transition: all 0.4s;\n  }\n\n.hover img {\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transition: all 0.3s;\n  }\n\n.hover-content {\n    position: relative;\n    z-index: 99;\n  }\n\n/* DEMO 1 ============================== */\n\n.hover-1 img {\n    width: 105%;\n    position: absolute;\n    top: 0;\n    left: -5%;\n    transition: all 0.3s;\n  }\n\n.hover-1-content {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    z-index: 99;\n    transition: all 0.4s;\n  }\n\n.hover-1 .hover-overlay {\n    background: rgba(0, 0, 0, 0.5);\n  }\n\n.hover-1-description {\n    transform: translateY(0.5rem);\n    transition: all 0.4s;\n    opacity: 0;\n  }\n\n.hover-1:hover .hover-1-content {\n    bottom: 2rem;\n  }\n\n.hover-1:hover .hover-1-description {\n    opacity: 1;\n    transform: none;\n  }\n\n.hover-1:hover img {\n    left: 0;\n  }\n\n.hover-1:hover .hover-overlay {\n    opacity: 0;\n  }\n\n/* DEMO 2 ============================== */\n\n.hover-2 .hover-overlay {\n    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));\n  }\n\n.hover-2-title {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    text-align: center;\n    width: 100%;\n    z-index: 99;\n    transition: all 0.3s;\n  }\n\n.hover-2-description {\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    opacity: 0;\n    left: 0;\n    text-align: center;\n    z-index: 99;\n    transition: all 0.3s;\n  }\n\n.hover-2:hover .hover-2-title {\n    transform: translateY(-1.5rem);\n  }\n\n.hover-2:hover .hover-2-description {\n    bottom: 0.5rem;\n    opacity: 1;\n  }\n\n.hover-2:hover .hover-overlay {\n    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));\n  }\n\n/* DEMO 3 ============================== */\n\n.hover-3::after {\n    content: '';\n    width: calc(100% - 3rem);\n    height: calc(100% - 3rem);\n    border: 1px solid #fff;\n    position: absolute;\n    top: 1.5rem;\n    left: 1.5rem;\n    z-index: 90;\n    transition: all 0.3s;\n    transform: scale(1.1);\n    opacity: 0;\n    display: block;\n    opacity: 0;\n  }\n\n.hover-3-content {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    width: 100%;\n    transform: translateY(-50%);\n    text-align: center;\n    z-index: 99;\n  }\n\n.hover-3-description {\n    opacity: 0;\n    transform: scale(1.3);\n    transition: all 0.3s;\n  }\n\n.hover-3 img {\n    width: 110%;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n.hover-3 .hover-overlay {\n    background: rgba(0, 0, 0, 0.2);\n  }\n\n.hover-3:hover img {\n    width: 100%;\n  }\n\n.hover-3:hover::after {\n    opacity: 1;\n    transform: none;\n  }\n\n.hover-3:hover .hover-3-description {\n    opacity: 1;\n    transform: none;\n  }\n\n.hover-3:hover .hover-overlay {\n    background: rgba(0, 0, 0, 0.8);\n  }\n\n/* DEMO 4 ============================== */\n\n.hover-4 img {\n    width: 110%;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n.hover-4 .hover-overlay {\n    background: rgba(0, 0, 0, 0.4);\n    z-index: 90;\n  }\n\n.hover-4-title {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    padding: 3rem;\n    z-index: 99;\n  }\n\n.hover-4-description {\n    position: absolute;\n    top: 2rem;\n    left: 2rem;\n    text-align: right;\n    border-right: 3px solid #fff;\n    padding: 0 1rem;\n    z-index: 99;\n    transform: translateX(-1.5rem);\n    opacity: 0;\n    transition: all 0.3s;\n  }\n\n@media (min-width: 992px) {\n    .hover-4-description {\n      width: 50%;\n    }\n  }\n\n.hover-4:hover img {\n    width: 100%;\n  }\n\n.hover-4:hover::after {\n    opacity: 1;\n    transform: none;\n  }\n\n.hover-4:hover .hover-4-description {\n    opacity: 1;\n    transform: none;\n  }\n\n.hover-4:hover .hover-overlay {\n    background: rgba(0, 0, 0, 0.8);\n  }\n\n/* DEMO 5 ============================== */\n\n.hover-5::after {\n    content: '';\n    width: 100%;\n    height: 10px;\n    background: #47c650;\n    position: absolute;\n    bottom: -10px;\n    left: 0;\n    display: block;\n    transition: all 0.3s;\n    z-index: 999;\n  }\n\n.hover-5 .hover-overlay {\n    background: rgba(0, 0, 0, 0.4);\n  }\n\n.hover-5-title {\n    position: absolute;\n    bottom: 1rem;\n    left: 0;\n    transition: all 0.3s;\n    padding: 2rem 3rem;\n    z-index: 99;\n  }\n\n.hover-5-title span {\n    transition: all 0.4s;\n    opacity: 0;\n    color: #47c650;\n  }\n\n.hover-5:hover .hover-overlay {\n    background: rgba(0, 0, 0, 0.8);\n  }\n\n.hover-5:hover .hover-5-title {\n    bottom: 0;\n  }\n\n.hover-5:hover .hover-5-title span {\n    opacity: 1;\n  }\n\n.hover-5:hover::after {\n    bottom: 0;\n  }\n\n/*\n  *\n  * ==========================================\n  * FOR DEMO PURPOSES\n  * ==========================================\n  *\n  */\n\nbody {\n    min-height: 100vh;\n    background-color: #fafafa;\n  }\n\n/* .bootstrap-select .bs-ok-default::after {\n    width: 0.3em;\n    height: 0.6em;\n    border-width: 0 0.1em 0.1em 0;\n    transform: rotate(45deg) translateY(0.5rem);\n}\n\n.btn.dropdown-toggle:focus {\n    outline: none !important;\n} */\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL3BhZ2VzL3ZveWFnZS1saXN0ZS92b3lhZ2UtbGlzdGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdDQUFnQztFQUNoQyw4QkFBOEI7QUFDaEM7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLG1CQUFtQjtFQUNyQjs7QUFFQTtJQUNFLFdBQVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsV0FBVztJQUNYLG9CQUFvQjtFQUN0Qjs7QUFFQTtJQUNFLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsTUFBTTtJQUNOLE9BQU87SUFDUCxvQkFBb0I7RUFDdEI7O0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsV0FBVztFQUNiOztBQUdBLDBDQUEwQzs7QUFDMUM7SUFDRSxXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixTQUFTO0lBQ1Qsb0JBQW9CO0VBQ3RCOztBQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxPQUFPO0lBQ1AsV0FBVztJQUNYLG9CQUFvQjtFQUN0Qjs7QUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLDZCQUE2QjtJQUM3QixvQkFBb0I7SUFDcEIsVUFBVTtFQUNaOztBQUVBO0lBQ0UsWUFBWTtFQUNkOztBQUVBO0lBQ0UsVUFBVTtJQUNWLGVBQWU7RUFDakI7O0FBRUE7SUFDRSxPQUFPO0VBQ1Q7O0FBRUE7SUFDRSxVQUFVO0VBQ1o7O0FBR0EsMENBQTBDOztBQUMxQztJQUNFLDJFQUEyRTtFQUM3RTs7QUFFQTtJQUNFLGtCQUFrQjtJQUNsQixRQUFRO0lBQ1IsT0FBTztJQUNQLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsV0FBVztJQUNYLG9CQUFvQjtFQUN0Qjs7QUFFQTtJQUNFLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsU0FBUztJQUNULFVBQVU7SUFDVixPQUFPO0lBQ1Asa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxvQkFBb0I7RUFDdEI7O0FBRUE7SUFDRSw4QkFBOEI7RUFDaEM7O0FBRUE7SUFDRSxjQUFjO0lBQ2QsVUFBVTtFQUNaOztBQUVBO0lBQ0UsMkVBQTJFO0VBQzdFOztBQUdBLDBDQUEwQzs7QUFDMUM7SUFDRSxXQUFXO0lBQ1gsd0JBQXdCO0lBQ3hCLHlCQUF5QjtJQUN6QixzQkFBc0I7SUFDdEIsa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBQ1osV0FBVztJQUNYLG9CQUFvQjtJQUNwQixxQkFBcUI7SUFDckIsVUFBVTtJQUNWLGNBQWM7SUFDZCxVQUFVO0VBQ1o7O0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLE9BQU87SUFDUCxXQUFXO0lBQ1gsMkJBQTJCO0lBQzNCLGtCQUFrQjtJQUNsQixXQUFXO0VBQ2I7O0FBRUE7SUFDRSxVQUFVO0lBQ1YscUJBQXFCO0lBQ3JCLG9CQUFvQjtFQUN0Qjs7QUFFQTtJQUNFLFdBQVc7SUFDWCxRQUFRO0lBQ1IsU0FBUztJQUNULGdDQUFnQztFQUNsQzs7QUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLFdBQVc7RUFDYjs7QUFFQTtJQUNFLFVBQVU7SUFDVixlQUFlO0VBQ2pCOztBQUVBO0lBQ0UsVUFBVTtJQUNWLGVBQWU7RUFDakI7O0FBRUE7SUFDRSw4QkFBOEI7RUFDaEM7O0FBR0EsMENBQTBDOztBQUMxQztJQUNFLFdBQVc7SUFDWCxRQUFRO0lBQ1IsU0FBUztJQUNULGdDQUFnQztFQUNsQzs7QUFFQTtJQUNFLDhCQUE4QjtJQUM5QixXQUFXO0VBQ2I7O0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsU0FBUztJQUNULFFBQVE7SUFDUixhQUFhO0lBQ2IsV0FBVztFQUNiOztBQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxVQUFVO0lBQ1YsaUJBQWlCO0lBQ2pCLDRCQUE0QjtJQUM1QixlQUFlO0lBQ2YsV0FBVztJQUNYLDhCQUE4QjtJQUM5QixVQUFVO0lBQ1Ysb0JBQW9CO0VBQ3RCOztBQUVBO0lBQ0U7TUFDRSxVQUFVO0lBQ1o7RUFDRjs7QUFFQTtJQUNFLFdBQVc7RUFDYjs7QUFFQTtJQUNFLFVBQVU7SUFDVixlQUFlO0VBQ2pCOztBQUVBO0lBQ0UsVUFBVTtJQUNWLGVBQWU7RUFDakI7O0FBRUE7SUFDRSw4QkFBOEI7RUFDaEM7O0FBR0EsMENBQTBDOztBQUMxQztJQUNFLFdBQVc7SUFDWCxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsYUFBYTtJQUNiLE9BQU87SUFDUCxjQUFjO0lBQ2Qsb0JBQW9CO0lBQ3BCLFlBQVk7RUFDZDs7QUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osT0FBTztJQUNQLG9CQUFvQjtJQUNwQixrQkFBa0I7SUFDbEIsV0FBVztFQUNiOztBQUVBO0lBQ0Usb0JBQW9CO0lBQ3BCLFVBQVU7SUFDVixjQUFjO0VBQ2hCOztBQUVBO0lBQ0UsOEJBQThCO0VBQ2hDOztBQUVBO0lBQ0UsU0FBUztFQUNYOztBQUVBO0lBQ0UsVUFBVTtFQUNaOztBQUVBO0lBQ0UsU0FBUztFQUNYOztBQUVBOzs7Ozs7R0FNQzs7QUFDRDtJQUNFLGlCQUFpQjtJQUNqQix5QkFBeUI7RUFDM0I7O0FBRUE7Ozs7Ozs7OztHQVNDIiwiZmlsZSI6InNyYy9hcHAvdm95YWdlL3BhZ2VzL3ZveWFnZS1saXN0ZS92b3lhZ2UtbGlzdGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zZXBhcmF0aW9ue1xuICBwYWRkaW5nLWJvdHRvbTogMTAwcHggIWltcG9ydGFudDsgXG4gIHBhZGRpbmctcmlnaHQ6IDMwcHggIWltcG9ydGFudDtcbn1cblxuLmhvdmVyIHtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBwYWRkaW5nLWJvdHRvbTogNjAlO1xuICB9XG4gIFxuICAuaG92ZXItb3ZlcmxheSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICB6LWluZGV4OiA5MDtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgfVxuICBcbiAgLmhvdmVyIGltZyB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzO1xuICB9XG4gIFxuICAuaG92ZXItY29udGVudCB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHotaW5kZXg6IDk5O1xuICB9XG4gIFxuICBcbiAgLyogREVNTyAxID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuICAuaG92ZXItMSBpbWcge1xuICAgIHdpZHRoOiAxMDUlO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogLTUlO1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzO1xuICB9XG4gIFxuICAuaG92ZXItMS1jb250ZW50IHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgYm90dG9tOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgei1pbmRleDogOTk7XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIH1cbiAgXG4gIC5ob3Zlci0xIC5ob3Zlci1vdmVybGF5IHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG4gIH1cbiAgXG4gIC5ob3Zlci0xLWRlc2NyaXB0aW9uIHtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMC41cmVtKTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICBvcGFjaXR5OiAwO1xuICB9XG4gIFxuICAuaG92ZXItMTpob3ZlciAuaG92ZXItMS1jb250ZW50IHtcbiAgICBib3R0b206IDJyZW07XG4gIH1cbiAgXG4gIC5ob3Zlci0xOmhvdmVyIC5ob3Zlci0xLWRlc2NyaXB0aW9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zZm9ybTogbm9uZTtcbiAgfVxuICBcbiAgLmhvdmVyLTE6aG92ZXIgaW1nIHtcbiAgICBsZWZ0OiAwO1xuICB9XG4gIFxuICAuaG92ZXItMTpob3ZlciAuaG92ZXItb3ZlcmxheSB7XG4gICAgb3BhY2l0eTogMDtcbiAgfVxuICBcbiAgXG4gIC8qIERFTU8gMiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi9cbiAgLmhvdmVyLTIgLmhvdmVyLW92ZXJsYXkge1xuICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCh0byB0b3AsIHJnYmEoMCwgMCwgMCwgMC40KSwgcmdiYSgwLCAwLCAwLCAwLjEpKTtcbiAgfVxuICBcbiAgLmhvdmVyLTItdGl0bGUge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiAwO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB3aWR0aDogMTAwJTtcbiAgICB6LWluZGV4OiA5OTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcbiAgfVxuICBcbiAgLmhvdmVyLTItZGVzY3JpcHRpb24ge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBib3R0b206IDA7XG4gICAgb3BhY2l0eTogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB6LWluZGV4OiA5OTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcbiAgfVxuICBcbiAgLmhvdmVyLTI6aG92ZXIgLmhvdmVyLTItdGl0bGUge1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtMS41cmVtKTtcbiAgfVxuICBcbiAgLmhvdmVyLTI6aG92ZXIgLmhvdmVyLTItZGVzY3JpcHRpb24ge1xuICAgIGJvdHRvbTogMC41cmVtO1xuICAgIG9wYWNpdHk6IDE7XG4gIH1cbiAgXG4gIC5ob3Zlci0yOmhvdmVyIC5ob3Zlci1vdmVybGF5IHtcbiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQodG8gdG9wLCByZ2JhKDAsIDAsIDAsIDAuOSksIHJnYmEoMCwgMCwgMCwgMC4xKSk7XG4gIH1cbiAgXG4gIFxuICAvKiBERU1PIDMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG4gIC5ob3Zlci0zOjphZnRlciB7XG4gICAgY29udGVudDogJyc7XG4gICAgd2lkdGg6IGNhbGMoMTAwJSAtIDNyZW0pO1xuICAgIGhlaWdodDogY2FsYygxMDAlIC0gM3JlbSk7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2ZmZjtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAxLjVyZW07XG4gICAgbGVmdDogMS41cmVtO1xuICAgIHotaW5kZXg6IDkwO1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzO1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4xKTtcbiAgICBvcGFjaXR5OiAwO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIG9wYWNpdHk6IDA7XG4gIH1cbiAgXG4gIC5ob3Zlci0zLWNvbnRlbnQge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiAwO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgei1pbmRleDogOTk7XG4gIH1cbiAgXG4gIC5ob3Zlci0zLWRlc2NyaXB0aW9uIHtcbiAgICBvcGFjaXR5OiAwO1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4zKTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcbiAgfVxuICBcbiAgLmhvdmVyLTMgaW1nIHtcbiAgICB3aWR0aDogMTEwJTtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gIH1cbiAgXG4gIC5ob3Zlci0zIC5ob3Zlci1vdmVybGF5IHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuMik7XG4gIH1cbiAgXG4gIC5ob3Zlci0zOmhvdmVyIGltZyB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbiAgXG4gIC5ob3Zlci0zOmhvdmVyOjphZnRlciB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2Zvcm06IG5vbmU7XG4gIH1cbiAgXG4gIC5ob3Zlci0zOmhvdmVyIC5ob3Zlci0zLWRlc2NyaXB0aW9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zZm9ybTogbm9uZTtcbiAgfVxuICBcbiAgLmhvdmVyLTM6aG92ZXIgLmhvdmVyLW92ZXJsYXkge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC44KTtcbiAgfVxuICBcbiAgXG4gIC8qIERFTU8gNCA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi9cbiAgLmhvdmVyLTQgaW1nIHtcbiAgICB3aWR0aDogMTEwJTtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gIH1cbiAgXG4gIC5ob3Zlci00IC5ob3Zlci1vdmVybGF5IHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNCk7XG4gICAgei1pbmRleDogOTA7XG4gIH1cbiAgXG4gIC5ob3Zlci00LXRpdGxlIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgYm90dG9tOiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIHBhZGRpbmc6IDNyZW07XG4gICAgei1pbmRleDogOTk7XG4gIH1cbiAgXG4gIC5ob3Zlci00LWRlc2NyaXB0aW9uIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAycmVtO1xuICAgIGxlZnQ6IDJyZW07XG4gICAgdGV4dC1hbGlnbjogcmlnaHQ7XG4gICAgYm9yZGVyLXJpZ2h0OiAzcHggc29saWQgI2ZmZjtcbiAgICBwYWRkaW5nOiAwIDFyZW07XG4gICAgei1pbmRleDogOTk7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKC0xLjVyZW0pO1xuICAgIG9wYWNpdHk6IDA7XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3M7XG4gIH1cbiAgXG4gIEBtZWRpYSAobWluLXdpZHRoOiA5OTJweCkge1xuICAgIC5ob3Zlci00LWRlc2NyaXB0aW9uIHtcbiAgICAgIHdpZHRoOiA1MCU7XG4gICAgfVxuICB9XG4gIFxuICAuaG92ZXItNDpob3ZlciBpbWcge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG4gIFxuICAuaG92ZXItNDpob3Zlcjo6YWZ0ZXIge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNmb3JtOiBub25lO1xuICB9XG4gIFxuICAuaG92ZXItNDpob3ZlciAuaG92ZXItNC1kZXNjcmlwdGlvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2Zvcm06IG5vbmU7XG4gIH1cbiAgXG4gIC5ob3Zlci00OmhvdmVyIC5ob3Zlci1vdmVybGF5IHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuOCk7XG4gIH1cbiAgXG4gIFxuICAvKiBERU1PIDUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG4gIC5ob3Zlci01OjphZnRlciB7XG4gICAgY29udGVudDogJyc7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMHB4O1xuICAgIGJhY2tncm91bmQ6ICM0N2M2NTA7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGJvdHRvbTogLTEwcHg7XG4gICAgbGVmdDogMDtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcbiAgICB6LWluZGV4OiA5OTk7XG4gIH1cbiAgXG4gIC5ob3Zlci01IC5ob3Zlci1vdmVybGF5IHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNCk7XG4gIH1cbiAgXG4gIC5ob3Zlci01LXRpdGxlIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgYm90dG9tOiAxcmVtO1xuICAgIGxlZnQ6IDA7XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3M7XG4gICAgcGFkZGluZzogMnJlbSAzcmVtO1xuICAgIHotaW5kZXg6IDk5O1xuICB9XG4gIFxuICAuaG92ZXItNS10aXRsZSBzcGFuIHtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICBvcGFjaXR5OiAwO1xuICAgIGNvbG9yOiAjNDdjNjUwO1xuICB9XG4gIFxuICAuaG92ZXItNTpob3ZlciAuaG92ZXItb3ZlcmxheSB7XG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjgpO1xuICB9XG4gIFxuICAuaG92ZXItNTpob3ZlciAuaG92ZXItNS10aXRsZSB7XG4gICAgYm90dG9tOiAwO1xuICB9XG4gIFxuICAuaG92ZXItNTpob3ZlciAuaG92ZXItNS10aXRsZSBzcGFuIHtcbiAgICBvcGFjaXR5OiAxO1xuICB9XG4gIFxuICAuaG92ZXItNTpob3Zlcjo6YWZ0ZXIge1xuICAgIGJvdHRvbTogMDtcbiAgfVxuICBcbiAgLypcbiAgKlxuICAqID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuICAqIEZPUiBERU1PIFBVUlBPU0VTXG4gICogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gICpcbiAgKi9cbiAgYm9keSB7XG4gICAgbWluLWhlaWdodDogMTAwdmg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZhZmFmYTtcbiAgfVxuXG4gIC8qIC5ib290c3RyYXAtc2VsZWN0IC5icy1vay1kZWZhdWx0OjphZnRlciB7XG4gICAgd2lkdGg6IDAuM2VtO1xuICAgIGhlaWdodDogMC42ZW07XG4gICAgYm9yZGVyLXdpZHRoOiAwIDAuMWVtIDAuMWVtIDA7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoNDVkZWcpIHRyYW5zbGF0ZVkoMC41cmVtKTtcbn1cblxuLmJ0bi5kcm9wZG93bi10b2dnbGU6Zm9jdXMge1xuICAgIG91dGxpbmU6IG5vbmUgIWltcG9ydGFudDtcbn0gKi9cbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".separation{\r\n  padding-bottom: 100px !important; \r\n  padding-right: 30px !important;\r\n}\r\n\r\n.hover {\r\n    overflow: hidden;\r\n    position: relative;\r\n    padding-bottom: 60%;\r\n  }\r\n\r\n.hover-overlay {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 90;\r\n    transition: all 0.4s;\r\n  }\r\n\r\n.hover img {\r\n    width: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    transition: all 0.3s;\r\n  }\r\n\r\n.hover-content {\r\n    position: relative;\r\n    z-index: 99;\r\n  }\r\n\r\n/* DEMO 1 ============================== */\r\n\r\n.hover-1 img {\r\n    width: 105%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: -5%;\r\n    transition: all 0.3s;\r\n  }\r\n\r\n.hover-1-content {\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 0;\r\n    z-index: 99;\r\n    transition: all 0.4s;\r\n  }\r\n\r\n.hover-1 .hover-overlay {\r\n    background: rgba(0, 0, 0, 0.5);\r\n  }\r\n\r\n.hover-1-description {\r\n    transform: translateY(0.5rem);\r\n    transition: all 0.4s;\r\n    opacity: 0;\r\n  }\r\n\r\n.hover-1:hover .hover-1-content {\r\n    bottom: 2rem;\r\n  }\r\n\r\n.hover-1:hover .hover-1-description {\r\n    opacity: 1;\r\n    transform: none;\r\n  }\r\n\r\n.hover-1:hover img {\r\n    left: 0;\r\n  }\r\n\r\n.hover-1:hover .hover-overlay {\r\n    opacity: 0;\r\n  }\r\n\r\n/* DEMO 2 ============================== */\r\n\r\n.hover-2 .hover-overlay {\r\n    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));\r\n  }\r\n\r\n.hover-2-title {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 0;\r\n    text-align: center;\r\n    width: 100%;\r\n    z-index: 99;\r\n    transition: all 0.3s;\r\n  }\r\n\r\n.hover-2-description {\r\n    width: 100%;\r\n    position: absolute;\r\n    bottom: 0;\r\n    opacity: 0;\r\n    left: 0;\r\n    text-align: center;\r\n    z-index: 99;\r\n    transition: all 0.3s;\r\n  }\r\n\r\n.hover-2:hover .hover-2-title {\r\n    transform: translateY(-1.5rem);\r\n  }\r\n\r\n.hover-2:hover .hover-2-description {\r\n    bottom: 0.5rem;\r\n    opacity: 1;\r\n  }\r\n\r\n.hover-2:hover .hover-overlay {\r\n    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));\r\n  }\r\n\r\n/* DEMO 3 ============================== */\r\n\r\n.hover-3::after {\r\n    content: '';\r\n    width: calc(100% - 3rem);\r\n    height: calc(100% - 3rem);\r\n    border: 1px solid #fff;\r\n    position: absolute;\r\n    top: 1.5rem;\r\n    left: 1.5rem;\r\n    z-index: 90;\r\n    transition: all 0.3s;\r\n    transform: scale(1.1);\r\n    opacity: 0;\r\n    display: block;\r\n    opacity: 0;\r\n  }\r\n\r\n.hover-3-content {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 0;\r\n    width: 100%;\r\n    transform: translateY(-50%);\r\n    text-align: center;\r\n    z-index: 99;\r\n  }\r\n\r\n.hover-3-description {\r\n    opacity: 0;\r\n    transform: scale(1.3);\r\n    transition: all 0.3s;\r\n  }\r\n\r\n.hover-3 img {\r\n    width: 110%;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n  }\r\n\r\n.hover-3 .hover-overlay {\r\n    background: rgba(0, 0, 0, 0.2);\r\n  }\r\n\r\n.hover-3:hover img {\r\n    width: 100%;\r\n  }\r\n\r\n.hover-3:hover::after {\r\n    opacity: 1;\r\n    transform: none;\r\n  }\r\n\r\n.hover-3:hover .hover-3-description {\r\n    opacity: 1;\r\n    transform: none;\r\n  }\r\n\r\n.hover-3:hover .hover-overlay {\r\n    background: rgba(0, 0, 0, 0.8);\r\n  }\r\n\r\n/* DEMO 4 ============================== */\r\n\r\n.hover-4 img {\r\n    width: 110%;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n  }\r\n\r\n.hover-4 .hover-overlay {\r\n    background: rgba(0, 0, 0, 0.4);\r\n    z-index: 90;\r\n  }\r\n\r\n.hover-4-title {\r\n    position: absolute;\r\n    bottom: 0;\r\n    right: 0;\r\n    padding: 3rem;\r\n    z-index: 99;\r\n  }\r\n\r\n.hover-4-description {\r\n    position: absolute;\r\n    top: 2rem;\r\n    left: 2rem;\r\n    text-align: right;\r\n    border-right: 3px solid #fff;\r\n    padding: 0 1rem;\r\n    z-index: 99;\r\n    transform: translateX(-1.5rem);\r\n    opacity: 0;\r\n    transition: all 0.3s;\r\n  }\r\n\r\n@media (min-width: 992px) {\r\n    .hover-4-description {\r\n      width: 50%;\r\n    }\r\n  }\r\n\r\n.hover-4:hover img {\r\n    width: 100%;\r\n  }\r\n\r\n.hover-4:hover::after {\r\n    opacity: 1;\r\n    transform: none;\r\n  }\r\n\r\n.hover-4:hover .hover-4-description {\r\n    opacity: 1;\r\n    transform: none;\r\n  }\r\n\r\n.hover-4:hover .hover-overlay {\r\n    background: rgba(0, 0, 0, 0.8);\r\n  }\r\n\r\n/* DEMO 5 ============================== */\r\n\r\n.hover-5::after {\r\n    content: '';\r\n    width: 100%;\r\n    height: 10px;\r\n    background: #47c650;\r\n    position: absolute;\r\n    bottom: -10px;\r\n    left: 0;\r\n    display: block;\r\n    transition: all 0.3s;\r\n    z-index: 999;\r\n  }\r\n\r\n.hover-5 .hover-overlay {\r\n    background: rgba(0, 0, 0, 0.4);\r\n  }\r\n\r\n.hover-5-title {\r\n    position: absolute;\r\n    bottom: 1rem;\r\n    left: 0;\r\n    transition: all 0.3s;\r\n    padding: 2rem 3rem;\r\n    z-index: 99;\r\n  }\r\n\r\n.hover-5-title span {\r\n    transition: all 0.4s;\r\n    opacity: 0;\r\n    color: #47c650;\r\n  }\r\n\r\n.hover-5:hover .hover-overlay {\r\n    background: rgba(0, 0, 0, 0.8);\r\n  }\r\n\r\n.hover-5:hover .hover-5-title {\r\n    bottom: 0;\r\n  }\r\n\r\n.hover-5:hover .hover-5-title span {\r\n    opacity: 1;\r\n  }\r\n\r\n.hover-5:hover::after {\r\n    bottom: 0;\r\n  }\r\n\r\n/*\r\n  *\r\n  * ==========================================\r\n  * FOR DEMO PURPOSES\r\n  * ==========================================\r\n  *\r\n  */\r\n\r\nbody {\r\n    min-height: 100vh;\r\n    background-color: #fafafa;\r\n  }\r\n\r\n/* .bootstrap-select .bs-ok-default::after {\r\n    width: 0.3em;\r\n    height: 0.6em;\r\n    border-width: 0 0.1em 0.1em 0;\r\n    transform: rotate(45deg) translateY(0.5rem);\r\n}\r\n\r\n.btn.dropdown-toggle:focus {\r\n    outline: none !important;\r\n} */\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdm95YWdlL3BhZ2VzL3ZveWFnZS1saXN0ZS92b3lhZ2UtbGlzdGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdDQUFnQztFQUNoQyw4QkFBOEI7QUFDaEM7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLG1CQUFtQjtFQUNyQjs7QUFFQTtJQUNFLFdBQVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsV0FBVztJQUNYLG9CQUFvQjtFQUN0Qjs7QUFFQTtJQUNFLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsTUFBTTtJQUNOLE9BQU87SUFDUCxvQkFBb0I7RUFDdEI7O0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsV0FBVztFQUNiOztBQUdBLDBDQUEwQzs7QUFDMUM7SUFDRSxXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixTQUFTO0lBQ1Qsb0JBQW9CO0VBQ3RCOztBQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxPQUFPO0lBQ1AsV0FBVztJQUNYLG9CQUFvQjtFQUN0Qjs7QUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLDZCQUE2QjtJQUM3QixvQkFBb0I7SUFDcEIsVUFBVTtFQUNaOztBQUVBO0lBQ0UsWUFBWTtFQUNkOztBQUVBO0lBQ0UsVUFBVTtJQUNWLGVBQWU7RUFDakI7O0FBRUE7SUFDRSxPQUFPO0VBQ1Q7O0FBRUE7SUFDRSxVQUFVO0VBQ1o7O0FBR0EsMENBQTBDOztBQUMxQztJQUNFLDJFQUEyRTtFQUM3RTs7QUFFQTtJQUNFLGtCQUFrQjtJQUNsQixRQUFRO0lBQ1IsT0FBTztJQUNQLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsV0FBVztJQUNYLG9CQUFvQjtFQUN0Qjs7QUFFQTtJQUNFLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsU0FBUztJQUNULFVBQVU7SUFDVixPQUFPO0lBQ1Asa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxvQkFBb0I7RUFDdEI7O0FBRUE7SUFDRSw4QkFBOEI7RUFDaEM7O0FBRUE7SUFDRSxjQUFjO0lBQ2QsVUFBVTtFQUNaOztBQUVBO0lBQ0UsMkVBQTJFO0VBQzdFOztBQUdBLDBDQUEwQzs7QUFDMUM7SUFDRSxXQUFXO0lBQ1gsd0JBQXdCO0lBQ3hCLHlCQUF5QjtJQUN6QixzQkFBc0I7SUFDdEIsa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBQ1osV0FBVztJQUNYLG9CQUFvQjtJQUNwQixxQkFBcUI7SUFDckIsVUFBVTtJQUNWLGNBQWM7SUFDZCxVQUFVO0VBQ1o7O0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLE9BQU87SUFDUCxXQUFXO0lBQ1gsMkJBQTJCO0lBQzNCLGtCQUFrQjtJQUNsQixXQUFXO0VBQ2I7O0FBRUE7SUFDRSxVQUFVO0lBQ1YscUJBQXFCO0lBQ3JCLG9CQUFvQjtFQUN0Qjs7QUFFQTtJQUNFLFdBQVc7SUFDWCxRQUFRO0lBQ1IsU0FBUztJQUNULGdDQUFnQztFQUNsQzs7QUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLFdBQVc7RUFDYjs7QUFFQTtJQUNFLFVBQVU7SUFDVixlQUFlO0VBQ2pCOztBQUVBO0lBQ0UsVUFBVTtJQUNWLGVBQWU7RUFDakI7O0FBRUE7SUFDRSw4QkFBOEI7RUFDaEM7O0FBR0EsMENBQTBDOztBQUMxQztJQUNFLFdBQVc7SUFDWCxRQUFRO0lBQ1IsU0FBUztJQUNULGdDQUFnQztFQUNsQzs7QUFFQTtJQUNFLDhCQUE4QjtJQUM5QixXQUFXO0VBQ2I7O0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsU0FBUztJQUNULFFBQVE7SUFDUixhQUFhO0lBQ2IsV0FBVztFQUNiOztBQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxVQUFVO0lBQ1YsaUJBQWlCO0lBQ2pCLDRCQUE0QjtJQUM1QixlQUFlO0lBQ2YsV0FBVztJQUNYLDhCQUE4QjtJQUM5QixVQUFVO0lBQ1Ysb0JBQW9CO0VBQ3RCOztBQUVBO0lBQ0U7TUFDRSxVQUFVO0lBQ1o7RUFDRjs7QUFFQTtJQUNFLFdBQVc7RUFDYjs7QUFFQTtJQUNFLFVBQVU7SUFDVixlQUFlO0VBQ2pCOztBQUVBO0lBQ0UsVUFBVTtJQUNWLGVBQWU7RUFDakI7O0FBRUE7SUFDRSw4QkFBOEI7RUFDaEM7O0FBR0EsMENBQTBDOztBQUMxQztJQUNFLFdBQVc7SUFDWCxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsYUFBYTtJQUNiLE9BQU87SUFDUCxjQUFjO0lBQ2Qsb0JBQW9CO0lBQ3BCLFlBQVk7RUFDZDs7QUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osT0FBTztJQUNQLG9CQUFvQjtJQUNwQixrQkFBa0I7SUFDbEIsV0FBVztFQUNiOztBQUVBO0lBQ0Usb0JBQW9CO0lBQ3BCLFVBQVU7SUFDVixjQUFjO0VBQ2hCOztBQUVBO0lBQ0UsOEJBQThCO0VBQ2hDOztBQUVBO0lBQ0UsU0FBUztFQUNYOztBQUVBO0lBQ0UsVUFBVTtFQUNaOztBQUVBO0lBQ0UsU0FBUztFQUNYOztBQUVBOzs7Ozs7R0FNQzs7QUFDRDtJQUNFLGlCQUFpQjtJQUNqQix5QkFBeUI7RUFDM0I7O0FBRUE7Ozs7Ozs7OztHQVNDIiwiZmlsZSI6InNyYy9hcHAvdm95YWdlL3BhZ2VzL3ZveWFnZS1saXN0ZS92b3lhZ2UtbGlzdGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zZXBhcmF0aW9ue1xyXG4gIHBhZGRpbmctYm90dG9tOiAxMDBweCAhaW1wb3J0YW50OyBcclxuICBwYWRkaW5nLXJpZ2h0OiAzMHB4ICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi5ob3ZlciB7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgcGFkZGluZy1ib3R0b206IDYwJTtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLW92ZXJsYXkge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDA7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgei1pbmRleDogOTA7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyIGltZyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMDtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLWNvbnRlbnQge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgei1pbmRleDogOTk7XHJcbiAgfVxyXG4gIFxyXG4gIFxyXG4gIC8qIERFTU8gMSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi9cclxuICAuaG92ZXItMSBpbWcge1xyXG4gICAgd2lkdGg6IDEwNSU7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDA7XHJcbiAgICBsZWZ0OiAtNSU7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTEtY29udGVudCB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBib3R0b206IDA7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgei1pbmRleDogOTk7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTEgLmhvdmVyLW92ZXJsYXkge1xyXG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItMS1kZXNjcmlwdGlvbiB7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMC41cmVtKTtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjRzO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTE6aG92ZXIgLmhvdmVyLTEtY29udGVudCB7XHJcbiAgICBib3R0b206IDJyZW07XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci0xOmhvdmVyIC5ob3Zlci0xLWRlc2NyaXB0aW9uIHtcclxuICAgIG9wYWNpdHk6IDE7XHJcbiAgICB0cmFuc2Zvcm06IG5vbmU7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci0xOmhvdmVyIGltZyB7XHJcbiAgICBsZWZ0OiAwO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItMTpob3ZlciAuaG92ZXItb3ZlcmxheSB7XHJcbiAgICBvcGFjaXR5OiAwO1xyXG4gIH1cclxuICBcclxuICBcclxuICAvKiBERU1PIDIgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXHJcbiAgLmhvdmVyLTIgLmhvdmVyLW92ZXJsYXkge1xyXG4gICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIHRvcCwgcmdiYSgwLCAwLCAwLCAwLjQpLCByZ2JhKDAsIDAsIDAsIDAuMSkpO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItMi10aXRsZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDUwJTtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHotaW5kZXg6IDk5O1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3M7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci0yLWRlc2NyaXB0aW9uIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYm90dG9tOiAwO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICB6LWluZGV4OiA5OTtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItMjpob3ZlciAuaG92ZXItMi10aXRsZSB7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTEuNXJlbSk7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci0yOmhvdmVyIC5ob3Zlci0yLWRlc2NyaXB0aW9uIHtcclxuICAgIGJvdHRvbTogMC41cmVtO1xyXG4gICAgb3BhY2l0eTogMTtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTI6aG92ZXIgLmhvdmVyLW92ZXJsYXkge1xyXG4gICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIHRvcCwgcmdiYSgwLCAwLCAwLCAwLjkpLCByZ2JhKDAsIDAsIDAsIDAuMSkpO1xyXG4gIH1cclxuICBcclxuICBcclxuICAvKiBERU1PIDMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXHJcbiAgLmhvdmVyLTM6OmFmdGVyIHtcclxuICAgIGNvbnRlbnQ6ICcnO1xyXG4gICAgd2lkdGg6IGNhbGMoMTAwJSAtIDNyZW0pO1xyXG4gICAgaGVpZ2h0OiBjYWxjKDEwMCUgLSAzcmVtKTtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNmZmY7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDEuNXJlbTtcclxuICAgIGxlZnQ6IDEuNXJlbTtcclxuICAgIHotaW5kZXg6IDkwO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3M7XHJcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMSk7XHJcbiAgICBvcGFjaXR5OiAwO1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBvcGFjaXR5OiAwO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItMy1jb250ZW50IHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgei1pbmRleDogOTk7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci0zLWRlc2NyaXB0aW9uIHtcclxuICAgIG9wYWNpdHk6IDA7XHJcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMyk7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTMgaW1nIHtcclxuICAgIHdpZHRoOiAxMTAlO1xyXG4gICAgdG9wOiA1MCU7XHJcbiAgICBsZWZ0OiA1MCU7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTMgLmhvdmVyLW92ZXJsYXkge1xyXG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjIpO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItMzpob3ZlciBpbWcge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci0zOmhvdmVyOjphZnRlciB7XHJcbiAgICBvcGFjaXR5OiAxO1xyXG4gICAgdHJhbnNmb3JtOiBub25lO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItMzpob3ZlciAuaG92ZXItMy1kZXNjcmlwdGlvbiB7XHJcbiAgICBvcGFjaXR5OiAxO1xyXG4gICAgdHJhbnNmb3JtOiBub25lO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItMzpob3ZlciAuaG92ZXItb3ZlcmxheSB7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuOCk7XHJcbiAgfVxyXG4gIFxyXG4gIFxyXG4gIC8qIERFTU8gNCA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi9cclxuICAuaG92ZXItNCBpbWcge1xyXG4gICAgd2lkdGg6IDExMCU7XHJcbiAgICB0b3A6IDUwJTtcclxuICAgIGxlZnQ6IDUwJTtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItNCAuaG92ZXItb3ZlcmxheSB7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNCk7XHJcbiAgICB6LWluZGV4OiA5MDtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTQtdGl0bGUge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYm90dG9tOiAwO1xyXG4gICAgcmlnaHQ6IDA7XHJcbiAgICBwYWRkaW5nOiAzcmVtO1xyXG4gICAgei1pbmRleDogOTk7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci00LWRlc2NyaXB0aW9uIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMnJlbTtcclxuICAgIGxlZnQ6IDJyZW07XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIGJvcmRlci1yaWdodDogM3B4IHNvbGlkICNmZmY7XHJcbiAgICBwYWRkaW5nOiAwIDFyZW07XHJcbiAgICB6LWluZGV4OiA5OTtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtMS41cmVtKTtcclxuICAgIG9wYWNpdHk6IDA7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcclxuICB9XHJcbiAgXHJcbiAgQG1lZGlhIChtaW4td2lkdGg6IDk5MnB4KSB7XHJcbiAgICAuaG92ZXItNC1kZXNjcmlwdGlvbiB7XHJcbiAgICAgIHdpZHRoOiA1MCU7XHJcbiAgICB9XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci00OmhvdmVyIGltZyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTQ6aG92ZXI6OmFmdGVyIHtcclxuICAgIG9wYWNpdHk6IDE7XHJcbiAgICB0cmFuc2Zvcm06IG5vbmU7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci00OmhvdmVyIC5ob3Zlci00LWRlc2NyaXB0aW9uIHtcclxuICAgIG9wYWNpdHk6IDE7XHJcbiAgICB0cmFuc2Zvcm06IG5vbmU7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci00OmhvdmVyIC5ob3Zlci1vdmVybGF5IHtcclxuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC44KTtcclxuICB9XHJcbiAgXHJcbiAgXHJcbiAgLyogREVNTyA1ID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xyXG4gIC5ob3Zlci01OjphZnRlciB7XHJcbiAgICBjb250ZW50OiAnJztcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMHB4O1xyXG4gICAgYmFja2dyb3VuZDogIzQ3YzY1MDtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGJvdHRvbTogLTEwcHg7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcztcclxuICAgIHotaW5kZXg6IDk5OTtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTUgLmhvdmVyLW92ZXJsYXkge1xyXG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjQpO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItNS10aXRsZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBib3R0b206IDFyZW07XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3M7XHJcbiAgICBwYWRkaW5nOiAycmVtIDNyZW07XHJcbiAgICB6LWluZGV4OiA5OTtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTUtdGl0bGUgc3BhbiB7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcclxuICAgIG9wYWNpdHk6IDA7XHJcbiAgICBjb2xvcjogIzQ3YzY1MDtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTU6aG92ZXIgLmhvdmVyLW92ZXJsYXkge1xyXG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjgpO1xyXG4gIH1cclxuICBcclxuICAuaG92ZXItNTpob3ZlciAuaG92ZXItNS10aXRsZSB7XHJcbiAgICBib3R0b206IDA7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3Zlci01OmhvdmVyIC5ob3Zlci01LXRpdGxlIHNwYW4ge1xyXG4gICAgb3BhY2l0eTogMTtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyLTU6aG92ZXI6OmFmdGVyIHtcclxuICAgIGJvdHRvbTogMDtcclxuICB9XHJcbiAgXHJcbiAgLypcclxuICAqXHJcbiAgKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cclxuICAqIEZPUiBERU1PIFBVUlBPU0VTXHJcbiAgKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cclxuICAqXHJcbiAgKi9cclxuICBib2R5IHtcclxuICAgIG1pbi1oZWlnaHQ6IDEwMHZoO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZhZmFmYTtcclxuICB9XHJcblxyXG4gIC8qIC5ib290c3RyYXAtc2VsZWN0IC5icy1vay1kZWZhdWx0OjphZnRlciB7XHJcbiAgICB3aWR0aDogMC4zZW07XHJcbiAgICBoZWlnaHQ6IDAuNmVtO1xyXG4gICAgYm9yZGVyLXdpZHRoOiAwIDAuMWVtIDAuMWVtIDA7XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZykgdHJhbnNsYXRlWSgwLjVyZW0pO1xyXG59XHJcblxyXG4uYnRuLmRyb3Bkb3duLXRvZ2dsZTpmb2N1cyB7XHJcbiAgICBvdXRsaW5lOiBub25lICFpbXBvcnRhbnQ7XHJcbn0gKi9cclxuIl19 */");
 
 /***/ }),
 
@@ -1484,6 +1720,288 @@ VoyageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.css":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.css ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZveWFnZS9wYWdlcy92b3lhZ2VzLWNvbW1hbmRlcy1kZXRhaWwvdm95YWdlcy1jb21tYW5kZXMtZGV0YWlsLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.ts":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.ts ***!
+  \*********************************************************************************************/
+/*! exports provided: VoyagesCommandesDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoyagesCommandesDetailComponent", function() { return VoyagesCommandesDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _shared_services_voyage_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../shared/services/voyage.service */ "./src/app/voyage/shared/services/voyage.service.ts");
+
+
+
+
+
+let VoyagesCommandesDetailComponent = class VoyagesCommandesDetailComponent {
+    constructor(authService, route, voyageService) {
+        this.authService = authService;
+        this.route = route;
+        this.voyageService = voyageService;
+        this.userName = localStorage.getItem('userName');
+        this.LogInOut = localStorage.getItem('LogInOut');
+        authService.getLoggedInName.subscribe(name => this.changeName(name));
+        authService.getLoggedInOut.subscribe(loginout => this.changeLogger(loginout));
+    }
+    ngOnInit() {
+        this.voyageService.getVoyageById(this.route.snapshot.params['id']).subscribe(voyage => {
+            this.voyage = voyage;
+            // Object.assign({}, [this.destination]);
+            // JSON.stringify(this.destination)
+            // this.subscriptions = this.destination;
+            console.log(this.voyage);
+        }, error => console.log(" Error of voyage : " + error), () => console.log("voyage finished"));
+    }
+    changeName(name) {
+        this.userName = name;
+    }
+    changeLogger(loginout) {
+        this.LogInOut = loginout;
+    }
+    onSubmit(f) {
+        this.voyage.voyageurs[f.value.index].civilite = f.value.civilite;
+        this.voyage.voyageurs[f.value.index].nom = f.value.nom;
+        this.voyage.voyageurs[f.value.index].prenom = f.value.prenom;
+        this.voyage.voyageurs[f.value.index].dateNaissance = f.value.dateNaissance;
+        this.voyageService.updateVoyage(this.voyage).subscribe(voyage => {
+            this.voyage = voyage;
+            console.log(this.voyage);
+        }, error => console.log(" Error of voyage : " + error));
+    }
+};
+VoyagesCommandesDetailComponent.ctorParameters = () => [
+    { type: src_app_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+    { type: _shared_services_voyage_service__WEBPACK_IMPORTED_MODULE_4__["VoyageService"] }
+];
+VoyagesCommandesDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-voyages-commandes-detail',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./voyages-commandes-detail.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./voyages-commandes-detail.component.css */ "./src/app/voyage/pages/voyages-commandes-detail/voyages-commandes-detail.component.css")).default]
+    })
+], VoyagesCommandesDetailComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.css":
+/*!********************************************************************************!*\
+  !*** ./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.css ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZveWFnZS9wYWdlcy92b3lhZ2VzLWNvbW1hbmRlcy92b3lhZ2VzLWNvbW1hbmRlcy5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.ts ***!
+  \*******************************************************************************/
+/*! exports provided: VoyagesCommandesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoyagesCommandesComponent", function() { return VoyagesCommandesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var src_app_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/user.service */ "./src/app/user.service.ts");
+/* harmony import */ var _shared_services_voyage_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../shared/services/voyage.service */ "./src/app/voyage/shared/services/voyage.service.ts");
+/* harmony import */ var _shared_services_client_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../shared/services/client.service */ "./src/app/voyage/shared/services/client.service.ts");
+/* harmony import */ var _shared_entities_client__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/entities/client */ "./src/app/voyage/shared/entities/client.ts");
+
+
+
+
+
+
+
+let VoyagesCommandesComponent = class VoyagesCommandesComponent {
+    constructor(userService, authService, voyageService, clientService) {
+        this.userService = userService;
+        this.authService = authService;
+        this.voyageService = voyageService;
+        this.clientService = clientService;
+        this.userName = localStorage.getItem('userName');
+        this.LogInOut = localStorage.getItem('LogInOut');
+        authService.getLoggedInName.subscribe(name => this.changeName(name));
+        authService.getLoggedInOut.subscribe(loginout => this.changeLogger(loginout));
+    }
+    ngOnInit() {
+        this.clientService.getClientByNom(this.userName).subscribe(client => {
+            this.client = new _shared_entities_client__WEBPACK_IMPORTED_MODULE_6__["Client"](client.id, this.userName);
+            // Object.assign({}, [this.destination]);
+            // JSON.stringify(this.destination)
+            // this.subscriptions = this.destination;
+            console.log(this.client.name);
+        }, error => console.log(" Error of client is : " + error), () => this.voyageService.getVoyagesClient(this.client).subscribe(voyage => {
+            this.voyages = voyage;
+            // Object.assign({}, [this.destination]);
+            // JSON.stringify(this.destination)
+            // this.subscriptions = this.destination;
+            console.log(this.voyages);
+        }, error => console.log(" Error of voyages : " + error), () => console.log("voyages finished")));
+    }
+    changeName(name) {
+        this.userName = name;
+    }
+    changeLogger(loginout) {
+        this.LogInOut = loginout;
+    }
+};
+VoyagesCommandesComponent.ctorParameters = () => [
+    { type: src_app_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: src_app_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
+    { type: _shared_services_voyage_service__WEBPACK_IMPORTED_MODULE_4__["VoyageService"] },
+    { type: _shared_services_client_service__WEBPACK_IMPORTED_MODULE_5__["ClientService"] }
+];
+VoyagesCommandesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-voyages-commandes',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./voyages-commandes.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./voyages-commandes.component.css */ "./src/app/voyage/pages/voyages-commandes/voyages-commandes.component.css")).default]
+    })
+], VoyagesCommandesComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/voyage/shared/entities/client.ts":
+/*!**************************************************!*\
+  !*** ./src/app/voyage/shared/entities/client.ts ***!
+  \**************************************************/
+/*! exports provided: Client */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Client", function() { return Client; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class Client {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/app/voyage/shared/entities/voyage.ts":
+/*!**************************************************!*\
+  !*** ./src/app/voyage/shared/entities/voyage.ts ***!
+  \**************************************************/
+/*! exports provided: Voyage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Voyage", function() { return Voyage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class Voyage {
+    constructor(values = {}) {
+        Object.assign(this, values);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/app/voyage/shared/entities/voyageurs.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/voyage/shared/entities/voyageurs.ts ***!
+  \*****************************************************/
+/*! exports provided: Voyageur */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Voyageur", function() { return Voyageur; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class Voyageur {
+    // constructor(id:number, civilite:string, prenom:string, nom:string, dateNaissance:Date){
+    //     this.id = id;
+    //     this.civilite = civilite;
+    //     this.prenom = prenom;
+    //     this.nom = nom;
+    //     this.dateNaissance = dateNaissance;
+    // }
+    constructor(values = {}) {
+        Object.assign(this, values);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/app/voyage/shared/services/client.service.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/voyage/shared/services/client.service.ts ***!
+  \**********************************************************/
+/*! exports provided: ClientService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClientService", function() { return ClientService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let ClientService = class ClientService {
+    constructor(httpClient) {
+        this.httpClient = httpClient;
+    }
+    getClientByNom(nom) {
+        return this.httpClient.get('/client/' + nom);
+    }
+};
+ClientService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+ClientService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ClientService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/voyage/shared/services/destination.service.ts":
 /*!***************************************************************!*\
   !*** ./src/app/voyage/shared/services/destination.service.ts ***!
@@ -1510,7 +2028,6 @@ let DestinationService = class DestinationService {
     // ];
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.url = "";
     }
     // client = new Client(client.id, client.name);
     //=> GET localhost:4200/
@@ -1533,7 +2050,7 @@ let DestinationService = class DestinationService {
     // }
     getAllDestinationsMoinsCher() {
         // return of(this.datesVoyages);
-        return this.httpClient.get('destinations/uniques');
+        return this.httpClient.get('/destinations/uniques');
     }
     // getAllDestinationsMoinsCher(){
     //   return this.httpClient.get<DatesVoyages[]>('destinations/uniques').map((res: Response) => res.json())
@@ -1553,6 +2070,87 @@ DestinationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         providedIn: 'root'
     })
 ], DestinationService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/voyage/shared/services/voyage.service.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/voyage/shared/services/voyage.service.ts ***!
+  \**********************************************************/
+/*! exports provided: VoyageService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoyageService", function() { return VoyageService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _entities_voyage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../entities/voyage */ "./src/app/voyage/shared/entities/voyage.ts");
+/* harmony import */ var _destination_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./destination.service */ "./src/app/voyage/shared/services/destination.service.ts");
+
+
+
+
+
+let VoyageService = class VoyageService {
+    constructor(httpClient, destinationService) {
+        this.httpClient = httpClient;
+        this.destinationService = destinationService;
+        // private url = "";
+        // private datesVoyages = new DatesVoyages(1, new Date(),new Date(), 200, 10, 0, 0, "image1.png");
+        // private client = new Client(1, "raoul");
+        // private voyageurs = new Voyageur(1, "M", "Jean", "Robert", new Date());
+        // private voyages = [
+        //   new Voyage(1, "london", "il pleut un peu", this.datesVoyages, this.client, this.voyageurs),
+        //   new Voyage(1, "Paris", "C'est cool quand les gens ne ralent pas trop", this.datesVoyages, this.client, this.voyageurs),
+        //   new Voyage(1, "Cracovie", "la famille", this.datesVoyages, this.client, this.voyageurs)
+        // ];
+        this.voyage = new _entities_voyage__WEBPACK_IMPORTED_MODULE_3__["Voyage"]();
+    }
+    createVoyage(voyage) {
+        console.log("le voyage reçu par createVoyage " + JSON.stringify(this.voyage));
+        voyage = this.voyage;
+        console.log("Le voyage qui s'apprete a etre envoyé à la requête " + JSON.stringify(voyage));
+        console.log("la requete : " + JSON.stringify(this.httpClient.post("/voyage/order", voyage)));
+        this.httpClient.post("/voyage/new", voyage).subscribe((voyage) => { this.voyage; });
+        console.log("je récupère : " + JSON.stringify(this.voyage));
+        return this.voyage;
+    }
+    createVoyageObject(voyageurs, client, datesVoyages, description, region) {
+        this.voyage.voyageurs = voyageurs;
+        this.voyage.client = client;
+        this.voyage.dateVoyage = datesVoyages;
+        this.voyage.descriptif = description;
+        this.voyage.region = region;
+        console.log("createVoyageObject " + JSON.stringify(this.voyage));
+        return this.voyage;
+        // this.voyageur.nom = voyageurForm.nom;
+        // const params = new HttpParams().set('civilite', voyageur.civilite).set('nom', voyageur.nom).set('prenom', voyageur.prenom).set('dateNaissance', voyageur.dateNaissance);
+    }
+    // client = new Client(client.id, client.name);
+    //=> GET localhost:4200/
+    getVoyageById(id) {
+        return this.httpClient.get('/voyage/' + id);
+    }
+    getVoyagesClient(client) {
+        return this.httpClient.post('/voyage/client/all', { 'id': client.id, 'nom': client.name });
+    }
+    updateVoyage(voyage) {
+        return this.httpClient.post('/voyage/new', voyage);
+    }
+};
+VoyageService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _destination_service__WEBPACK_IMPORTED_MODULE_4__["DestinationService"] }
+];
+VoyageService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], VoyageService);
 
 
 
@@ -1623,7 +2221,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Adminl\Documents\jc\Bovoyages-FINAL\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\workspace-angular-ln\Bon dossier FINAL\Bovoyages-FINAL\src\main.ts */"./src/main.ts");
 
 
 /***/ })
